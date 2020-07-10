@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "a4c5f144-b20c-413d-9e7f-197fee3fcd7a",
+            "Value": {
+                "id": "73ca2f4e-6f2b-47d3-9558-643374d3a4c2",
+                "resourcePath": "rooms\\evanTest\\evanTest.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "b8511a1c-7559-424e-8c84-06f94184a9da",
             "Value": {
                 "id": "4d3f95fb-1fd3-43b7-8add-d1c352f66e1e",
