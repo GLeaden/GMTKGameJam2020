@@ -2,7 +2,7 @@
     "id": "24943648-398b-46cf-82ef-396d8f2f94a3",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "crosshairChip",
+    "name": "spr_crosshairChip",
     "For3D": false,
     "HTile": false,
     "VTile": false,
