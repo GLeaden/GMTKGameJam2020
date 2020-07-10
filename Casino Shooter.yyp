@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "24943648-398b-46cf-82ef-396d8f2f94a3",
+            "Value": {
+                "id": "2b39ea8c-fc8b-433d-9a63-3a8d4f34a7f8",
+                "resourcePath": "sprites\\crosshairChip\\crosshairChip.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "31f5a369-a518-4676-82b0-d515f2f7b542",
             "Value": {
                 "id": "7ea7e031-1792-4643-be39-6fc2ce234930",
@@ -156,6 +164,14 @@
                 "id": "4d3f95fb-1fd3-43b7-8add-d1c352f66e1e",
                 "resourcePath": "sprites\\monsterEye\\monsterEye.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b9f56152-8046-48dc-8efb-5f05fc569e8b",
+            "Value": {
+                "id": "1e1de1e5-00d1-40de-936d-97a6f978f2c2",
+                "resourcePath": "objects\\crosshair\\crosshair.yy",
+                "resourceType": "GMObject"
             }
         },
         {
