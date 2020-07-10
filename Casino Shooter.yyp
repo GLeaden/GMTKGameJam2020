@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "3e90b5bf-4015-4c38-9829-8eec4c36b803",
+            "Value": {
+                "id": "ce86171d-0a1e-48b9-87c4-19f8ea3a21e5",
+                "resourcePath": "sprites\\crosshairChipBlack\\crosshairChipBlack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "583d9cc7-7aee-4a99-afd0-71ab216022b3",
             "Value": {
                 "id": "c57f5464-c930-4f3d-a613-bb9569f31a2e",
@@ -180,6 +188,14 @@
                 "id": "1bf39c6d-897f-45bb-a144-8da7c46b9ee1",
                 "resourcePath": "views\\ccb444e1-abcd-4734-8eab-b9adf5742ac6.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "d2118e8e-a4fe-4a23-92ec-960d3e97eb99",
+            "Value": {
+                "id": "b4d11557-3ce1-4331-9002-5ebaedae28ae",
+                "resourcePath": "objects\\CrosshairFollower\\CrosshairFollower.yy",
+                "resourceType": "GMObject"
             }
         },
         {
