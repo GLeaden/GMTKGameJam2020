@@ -119,11 +119,35 @@
             }
         },
         {
+            "Key": "6dd81225-b28f-4233-bcf5-c61e205395b5",
+            "Value": {
+                "id": "ae543c89-5d98-4491-b6d2-da4323f360f7",
+                "resourcePath": "sprites\\diamondB\\diamondB.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "714043db-2acc-47e8-ac0b-6dbc84ab8f79",
+            "Value": {
+                "id": "70f72f08-8163-4b08-adf6-c29d02320599",
+                "resourcePath": "objects\\diamond\\diamond.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7c6449a5-c356-48b7-b0aa-b6b2cdbd9d6e",
             "Value": {
                 "id": "b8bdcd34-50bb-449d-ae8e-148d034efc23",
                 "resourcePath": "views\\7c6449a5-c356-48b7-b0aa-b6b2cdbd9d6e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8fdb38ba-3d92-49de-86b1-4175ccd25a9e",
+            "Value": {
+                "id": "a9a79e3c-c2ee-47d5-9f7b-4d0fd11006dc",
+                "resourcePath": "sprites\\diamondF\\diamondF.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
