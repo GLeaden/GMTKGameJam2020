@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "b8511a1c-7559-424e-8c84-06f94184a9da",
+            "Value": {
+                "id": "4d3f95fb-1fd3-43b7-8add-d1c352f66e1e",
+                "resourcePath": "sprites\\monsterEye\\monsterEye.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cb21cf86-05b2-4312-a444-82bc33f3bfc3",
             "Value": {
                 "id": "96241810-31fe-47bd-b7b5-dfa3e226445c",
