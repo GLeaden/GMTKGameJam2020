@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "23255be5-5ae8-4f68-8f85-d4dcdfdcf593",
+            "Value": {
+                "id": "6dce6ac5-6d43-4974-b769-151d01704f2f",
+                "resourcePath": "objects\\titleScreen\\titleScreen.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "24943648-398b-46cf-82ef-396d8f2f94a3",
             "Value": {
                 "id": "2b39ea8c-fc8b-433d-9a63-3a8d4f34a7f8",
@@ -127,6 +135,14 @@
             }
         },
         {
+            "Key": "671961d8-2a6e-449b-8557-421d87be3cc6",
+            "Value": {
+                "id": "ba1e439b-9bf5-4483-99b7-018dd36f28a5",
+                "resourcePath": "rooms\\title\\title.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "6dd81225-b28f-4233-bcf5-c61e205395b5",
             "Value": {
                 "id": "ae543c89-5d98-4491-b6d2-da4323f360f7",
@@ -143,6 +159,14 @@
             }
         },
         {
+            "Key": "7aad5a7f-750f-4b40-b85f-cd3d01c67714",
+            "Value": {
+                "id": "15448eab-f884-4bed-b1b6-88bc01b1dfc4",
+                "resourcePath": "sprites\\titleImage\\titleImage.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7c6449a5-c356-48b7-b0aa-b6b2cdbd9d6e",
             "Value": {
                 "id": "b8bdcd34-50bb-449d-ae8e-148d034efc23",
@@ -156,6 +180,14 @@
                 "id": "a9a79e3c-c2ee-47d5-9f7b-4d0fd11006dc",
                 "resourcePath": "sprites\\diamondF\\diamondF.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a4c5f144-b20c-413d-9e7f-197fee3fcd7a",
+            "Value": {
+                "id": "73ca2f4e-6f2b-47d3-9558-643374d3a4c2",
+                "resourcePath": "rooms\\evanTest\\evanTest.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -188,14 +220,6 @@
                 "id": "1bf39c6d-897f-45bb-a144-8da7c46b9ee1",
                 "resourcePath": "views\\ccb444e1-abcd-4734-8eab-b9adf5742ac6.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "d2118e8e-a4fe-4a23-92ec-960d3e97eb99",
-            "Value": {
-                "id": "b4d11557-3ce1-4331-9002-5ebaedae28ae",
-                "resourcePath": "objects\\CrosshairFollower\\CrosshairFollower.yy",
-                "resourceType": "GMObject"
             }
         },
         {

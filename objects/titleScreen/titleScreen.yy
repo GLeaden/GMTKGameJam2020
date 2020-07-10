@@ -1,28 +1,28 @@
 {
-    "id": "d2118e8e-a4fe-4a23-92ec-960d3e97eb99",
+    "id": "23255be5-5ae8-4f68-8f85-d4dcdfdcf593",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "CrosshairFollower",
+    "name": "titleScreen",
     "eventList": [
         {
-            "id": "fc295634-0c1e-4828-8b6d-824ee35ee408",
+            "id": "d19298a1-16db-4241-bb98-7624e102405b",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "23255be5-5ae8-4f68-8f85-d4dcdfdcf593"
+        },
+        {
+            "id": "f7051665-a072-437a-8a2e-7e540dd706c1",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "d2118e8e-a4fe-4a23-92ec-960d3e97eb99"
-        },
-        {
-            "id": "fd376326-952c-4c20-a12e-1594bd0e65c0",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 1,
-            "eventtype": 3,
-            "m_owner": "d2118e8e-a4fe-4a23-92ec-960d3e97eb99"
+            "m_owner": "23255be5-5ae8-4f68-8f85-d4dcdfdcf593"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "3e90b5bf-4015-4c38-9829-8eec4c36b803",
+    "spriteId": "7aad5a7f-750f-4b40-b85f-cd3d01c67714",
     "visible": true
 }
