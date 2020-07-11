@@ -107,6 +107,20 @@
             "value": "obj_arBullet",
             "varName": "bullet",
             "varType": 5
+        },
+        {
+            "id": "d3512879-06f8-46d8-8654-0af0c1eccae0",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "snd_thomas",
+            "varName": "gunshot",
+            "varType": 5
         }
     ],
     "solid": false,
