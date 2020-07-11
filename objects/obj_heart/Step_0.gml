@@ -1,21 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (obj_player.x < x)
-{
-	hMove = -spd;
-}
-else
-{
-	hMove = spd;
-}
-
-if (obj_player.y < y)
-{
-	vMove = -spd;
-}
-else
+if(go = 1)
 {
 	vMove = spd;
+	hMove = 0;
+}
+
+if(go = 2)
+{
+	hMove = spd;
+	vMove = 0;
 }
 
 if(place_meeting(x + hMove, y, obj_testWall))
@@ -38,22 +32,3 @@ if(place_meeting(x, y + vMove, obj_testWall))
 
 y += vMove;
 x += hMove;
-
-if (obj_player.y < obj_spade.y)
-{
-	sprite_index = spr_spadeB;
-}
-
-if (obj_player.y > obj_spade.y)
-{
-	sprite_index = spr_spadeF;
-}
-if (obj_player.y < obj_club.y)
-{
-	sprite_index = spr_clubB;
-}
-
-if (obj_player.y > obj_club.y)
-{
-	sprite_index = spr_clubF;
-}

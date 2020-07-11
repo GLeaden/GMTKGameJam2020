@@ -1,10 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 alarm[1] = 90;
-speed = 4;
+spd = choose(-3,3);
+vMove = 0;
+hMove = 0;
 
-direction = choose(90, 180, 270, 360);
-if(direction = 90)
+go = choose(1, 2);
+
+/*
+if(go = "vert")
 {
 	sprite_index = spr_heartB;
 }
+*/
