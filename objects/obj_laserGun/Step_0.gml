@@ -4,7 +4,7 @@ if (ownedByPlayer){
   x = obj_player.x;
   y = obj_player.y;
   if (mouse_check_button(mb_left)){
-	if(mouse_check_button_pressed(mb_left)) noise = audio_play_sound(gunshot, 10, true);
+	if(mouse_check_button_pressed(mb_left)) noise = audio_play_sound(gunshot, 10, false);
   }
 	else{
 		image_angle = point_direction(x,y,mouse_x, mouse_y);
