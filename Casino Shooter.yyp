@@ -271,14 +271,6 @@
             }
         },
         {
-            "Key": "5e6ff39c-5abe-416e-8235-f2918a0fdecc",
-            "Value": {
-                "id": "b4f7b9ea-10b5-4d7b-81d9-350dbbc4ee24",
-                "resourcePath": "sprites\\spr_xbowBolt\\spr_xbowBolt.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "5ea06c41-f667-4dd6-bb38-b497ddd864e1",
             "Value": {
                 "id": "73c7268a-e66a-4c4a-b24f-f51e16ef3c33",
