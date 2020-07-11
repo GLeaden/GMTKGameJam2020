@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "2db23f9f-bd84-4972-8f34-981c67dfa8a4",
+            "Value": {
+                "id": "f7d056d5-b0d4-4379-be2e-991bad1420fb",
+                "resourcePath": "sprites\\spr_pokerTableH\\spr_pokerTableH.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "31f5a369-a518-4676-82b0-d515f2f7b542",
             "Value": {
                 "id": "7ea7e031-1792-4643-be39-6fc2ce234930",
