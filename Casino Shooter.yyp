@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "102e5aa2-4ff9-42e9-b323-f8cf584aee39",
+            "Value": {
+                "id": "7a2f0276-fafb-414e-91b8-92342a966104",
+                "resourcePath": "sprites\\spr_laserBeam\\spr_laserBeam.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "10ecacf5-d4a2-4877-ae49-a2c3854f9ab3",
             "Value": {
                 "id": "b77fa710-e4cb-4856-ab21-b3e733d23f1d",
@@ -175,11 +183,27 @@
             }
         },
         {
+            "Key": "3b36f372-8238-43c3-af3e-f5c09f0256f5",
+            "Value": {
+                "id": "e67e23d8-8a6a-43ec-9389-dff20ae6a44f",
+                "resourcePath": "objects\\obj_pistol\\obj_pistol.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3b73014a-63da-4c6d-9baa-8077c0bc9238",
             "Value": {
                 "id": "a9ad8f71-240d-4db0-b4ea-7774c1a62157",
                 "resourcePath": "objects\\obj_testWall\\obj_testWall.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "43464f53-434d-4287-af34-5a1d6d4d7a83",
+            "Value": {
+                "id": "319fc217-01c6-47cf-a7da-20bd94841c49",
+                "resourcePath": "rooms\\rm_IanTest\\rm_IanTest.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -191,11 +215,11 @@
             }
         },
         {
-            "Key": "4462b2e1-e85d-4bae-b033-38b2bad540fc",
+            "Key": "460e294b-fd57-45f1-afa4-78ab51b0fb37",
             "Value": {
-                "id": "1c99cc1e-a553-4d9e-8d5f-c03899f6076e",
-                "resourcePath": "rooms\\tiledRoomTest\\tiledRoomTest.yy",
-                "resourceType": "GMRoom"
+                "id": "2fd268b1-269f-4720-a74e-3b92f676e8e1",
+                "resourcePath": "objects\\obj_peaBullet\\obj_peaBullet.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -311,6 +335,14 @@
             }
         },
         {
+            "Key": "826b2c24-9c00-480d-9d1e-ee37fcee2c4d",
+            "Value": {
+                "id": "31bc0449-ea32-4f8e-980e-c585fbd89592",
+                "resourcePath": "objects\\obj_laserGun\\obj_laserGun.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8899f080-a925-4890-9267-85acdaf1c250",
             "Value": {
                 "id": "66ea134d-e291-46d6-bb7c-b280ae2521c0",
@@ -332,6 +364,14 @@
                 "id": "a9a79e3c-c2ee-47d5-9f7b-4d0fd11006dc",
                 "resourcePath": "sprites\\spr_diamondF\\spr_diamondF.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "90ac89de-d68c-4b08-9d0a-97e450ba71db",
+            "Value": {
+                "id": "c85d2aab-0a60-4c0d-a94f-28fa887c29dd",
+                "resourcePath": "extensions\\Danmaku_Sheet_1_Cloud\\Danmaku_Sheet_1_Cloud.yy",
+                "resourceType": "GMExtension"
             }
         },
         {
@@ -455,6 +495,14 @@
             }
         },
         {
+            "Key": "e55d3509-0d55-4ca1-b5fa-046af29006fb",
+            "Value": {
+                "id": "25c0b678-e354-4cc8-87b1-55ce5c41b3a7",
+                "resourcePath": "objects\\obj_laserBeam\\obj_laserBeam.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e625785c-f536-46a1-880f-a17595ddc2f8",
             "Value": {
                 "id": "01d30810-9701-44fc-8264-684ee94e4f4a",
@@ -468,6 +516,14 @@
                 "id": "c594c2d4-02d6-4900-b87b-2924473c1596",
                 "resourcePath": "views\\eb0573bd-f404-4356-9ab0-8792f89d6471.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f18b1ee9-b7f0-4d60-9c4e-bd201f02be82",
+            "Value": {
+                "id": "68f678a5-0814-4ae6-a7ce-79e387b0005c",
+                "resourcePath": "sprites\\spr_iantestbackground\\spr_iantestbackground.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

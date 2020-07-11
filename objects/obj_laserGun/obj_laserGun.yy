@@ -1,0 +1,101 @@
+{
+    "id": "826b2c24-9c00-480d-9d1e-ee37fcee2c4d",
+    "modelName": "GMObject",
+    "mvc": "1.0",
+    "name": "obj_laserGun",
+    "eventList": [
+        {
+            "id": "14a6c1d0-f29b-436e-9539-634c790950be",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "0c86a70e-9e5a-4468-ae63-8526f0c6f197",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "826b2c24-9c00-480d-9d1e-ee37fcee2c4d"
+        },
+        {
+            "id": "9fe3f0d4-2d2d-4284-bdb8-a0de4a5ef86c",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "826b2c24-9c00-480d-9d1e-ee37fcee2c4d"
+        },
+        {
+            "id": "0e5f8c2d-c5d5-463a-b698-d5141bb77083",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "826b2c24-9c00-480d-9d1e-ee37fcee2c4d"
+        }
+    ],
+    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "overriddenProperties": null,
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "persistent": false,
+    "physicsAngularDamping": 0.1,
+    "physicsDensity": 0.5,
+    "physicsFriction": 0.2,
+    "physicsGroup": 0,
+    "physicsKinematic": false,
+    "physicsLinearDamping": 0.1,
+    "physicsObject": false,
+    "physicsRestitution": 0.1,
+    "physicsSensor": false,
+    "physicsShape": 1,
+    "physicsShapePoints": null,
+    "physicsStartAwake": true,
+    "properties": [
+        {
+            "id": "f2f566c9-2829-496a-9fc7-cc4f2b548a85",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "fire_rate",
+            "varType": 0
+        },
+        {
+            "id": "16fec77b-613c-4f6a-a4cc-3096590df260",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "bullet_spread",
+            "varType": 0
+        },
+        {
+            "id": "46adbc2e-4b4c-469d-a1ab-5205744e0c2d",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "obj_laserBeam",
+            "varName": "bullet",
+            "varType": 5
+        }
+    ],
+    "solid": false,
+    "spriteId": "dcc9bce9-b088-4637-aa0b-c4f0f7aff838",
+    "visible": true
+}
