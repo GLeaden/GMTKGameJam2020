@@ -1,5 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-show_message("projectile_weapon");
-
+image_xscale = bullet_size;
+image_yscale = bullet_size;
+speed = bullet_speed;

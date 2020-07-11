@@ -12,4 +12,3 @@ if (ownedByPlayer){
 	  image_yscale=1;
   }
 }
-
