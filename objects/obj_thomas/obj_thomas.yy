@@ -2,7 +2,7 @@
     "id": "0aa68d25-ca1f-47cf-ba4a-81c9ba6354f0",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "ak47",
+    "name": "obj_thomas",
     "eventList": [
         {
             "id": "b1899804-d08e-4d68-a0d6-9849257b1e76",
@@ -76,7 +76,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": "16",
             "varName": "bullet_spread",
             "varType": 0
         },
@@ -110,6 +110,6 @@
         }
     ],
     "solid": false,
-    "spriteId": "021ba9c9-7b97-439c-abea-ff999b352e8f",
+    "spriteId": "a998da60-e37b-451d-a4b1-ea54e8d3a033",
     "visible": true
 }
