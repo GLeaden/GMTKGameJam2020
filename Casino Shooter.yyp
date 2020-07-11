@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "021ba9c9-7b97-439c-abea-ff999b352e8f",
+            "Value": {
+                "id": "b2ebc0ae-6f7b-46da-9c31-afa6c2ac9d1a",
+                "resourcePath": "sprites\\spr_russianGun\\spr_russianGun.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "047ea660-8b57-455a-a112-793626b24245",
             "Value": {
                 "id": "c7b38a11-8384-412e-a166-3cf3afaf32d0",
@@ -44,6 +52,14 @@
                 "id": "03fc3656-9858-491d-9d4c-830a0089d5a6",
                 "resourcePath": "views\\091a82fb-4dc0-47cd-98bc-f509ff9ddd19.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "0aa68d25-ca1f-47cf-ba4a-81c9ba6354f0",
+            "Value": {
+                "id": "7f3690e0-7ec4-4019-b9ae-6b53bd205667",
+                "resourcePath": "objects\\ak47\\ak47.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -164,6 +180,14 @@
                 "id": "ba1e439b-9bf5-4483-99b7-018dd36f28a5",
                 "resourcePath": "rooms\\title\\title.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "6c9a2c76-b250-45f6-be3b-a34924c02dce",
+            "Value": {
+                "id": "1b7ba294-7f7e-4802-a58b-1d23df94b0aa",
+                "resourcePath": "scripts\\fire\\fire.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -344,7 +368,7 @@
         }
     ],
     "script_order": [
-        
+        "6c9a2c76-b250-45f6-be3b-a34924c02dce"
     ],
     "tutorial": ""
 }
