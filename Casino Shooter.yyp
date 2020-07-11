@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "4462b2e1-e85d-4bae-b033-38b2bad540fc",
+            "Value": {
+                "id": "d745e928-7a2d-4b3b-97ba-3bc94e402b59",
+                "resourcePath": "rooms\\tiledRoomTest\\tiledRoomTest.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "460e294b-fd57-45f1-afa4-78ab51b0fb37",
             "Value": {
                 "id": "2fd268b1-269f-4720-a74e-3b92f676e8e1",
