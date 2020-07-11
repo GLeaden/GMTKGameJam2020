@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "dcc9bce9-b088-4637-aa0b-c4f0f7aff838",
+            "Value": {
+                "id": "ebb81b7e-e96c-43e8-9fc9-2fd192b41212",
+                "resourcePath": "sprites\\spr_lasergun\\spr_lasergun.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "dd745b5f-9b7d-417e-80ba-34094a3ff917",
             "Value": {
                 "id": "fe100d85-c867-476b-be91-43335dcd6dcd",
