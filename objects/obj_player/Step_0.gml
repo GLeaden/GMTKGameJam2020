@@ -68,23 +68,22 @@ if(mouse_check_button(mb_left)){
 	}
 }
 
-if (collision_line(x, y, x+hMove, y+vMove, obj_testWall, false, false)){
-	while(collision_line(x, y, x+hMove, y+vMove, obj_testWall, false, false)){
-		if (abs(hMove) || abs(vMove) <= 0){
-			break;
-		}
-		if (x > x+hMove){
-			hMove = hMove - 2;
-		}
-		else{
-			hMove = hMove + 2;
-		}
-		if (y > y+vMove){
-			vMove = vMove - 2;
-		}
-		else{
-			vMove = vMove + 2;
-		}
+
+// dash collision (done right before movement cause it messes with it)
+wall = collision_line(x, y, x+hMove, y+vMove, obj_testWall, false, false)
+if (dashing && wall){
+	dist = distance_to_object(wall) - 4
+	if (wall.x < x){
+		hMove = dist*-1;
+	}
+	else{
+		hMove = dist;
+	}
+	if(wall.y < y){
+		vMove = dist*-1;
+	}
+	else{
+		vMove = dist;
 	}
 }
 

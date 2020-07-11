@@ -6,5 +6,6 @@ spd = 3;
 cooldown = 0 // fire rate cooldown
 dashcd   = 0 // dash cooldown
 dashrate = 120;
+dashed = false;
 cursor_sprite = spr_crosshairChip;
 window_set_cursor(cr_none);
