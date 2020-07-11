@@ -14,4 +14,3 @@ if (obj_player.y > obj_spade.y)
 {
 	sprite_index = spr_spadeF;
 }
-
