@@ -1,5 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+if (hp <= 0)
+{
+	instance_destroy();
+}
+
 if(place_meeting(x + hMove, y, obj_testWall))
 {
 	while(!place_meeting(x + sign(hMove), y, obj_testWall))

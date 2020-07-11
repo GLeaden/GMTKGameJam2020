@@ -5,3 +5,5 @@ spd = 2;
 
 vMove = choose(-1, 1, 2, -2);
 hMove = choose(-1, 1, 2, -2);
+
+hp = 8;

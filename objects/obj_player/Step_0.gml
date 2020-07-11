@@ -29,9 +29,6 @@ if(place_meeting(x, y + vMove, obj_testWall))
 	vMove = 0;
 }
 
-x += hMove;
-y += vMove;
-
 if(mouse_check_button(mb_left)){
 	if(cooldown == 0){
 		if (projectile_weapon != pointer_null){
@@ -40,6 +37,11 @@ if(mouse_check_button(mb_left)){
 		}
 	}
 }
+
+x += hMove;
+y += vMove;
+
+
 
 if (cooldown > 0) cooldown = cooldown - 1
 

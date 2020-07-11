@@ -3,3 +3,4 @@
 spd = 5;
 vMove = 0;
 hMove = 0;
+hp = 2;
