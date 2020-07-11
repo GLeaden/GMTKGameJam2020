@@ -91,7 +91,7 @@
             "varType": 0
         },
         {
-            "id": "20ad204b-7654-4acf-952c-c631e1ccd88b",
+            "id": "a60ca4e2-e59d-427d-b5ca-f7bfc2b24644",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -100,8 +100,8 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "snd_plank",
-            "varName": "thwack",
+            "value": "spr_plankHB",
+            "varName": "hitbox",
             "varType": 5
         }
     ],

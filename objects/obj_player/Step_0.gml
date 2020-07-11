@@ -58,6 +58,21 @@ if(mouse_check_button(mb_left)){
 		}
 	}
 }
+
+keyAttack = mouse_check_button(mb_right);
+
+if(melee_weapon != pointer_null)
+{
+	switch (melee_state)
+	{
+		case SWINGSTATE.FREE:
+			meleeState_Free(melee_weapon);
+			break;
+		case SWINGSTATE.ATTACK:
+			meleeState_Attack(melee_weapon);
+			break;
+	}
+}
 /*
 // swing melee
 if(mouse_check_button(mb_right)){
