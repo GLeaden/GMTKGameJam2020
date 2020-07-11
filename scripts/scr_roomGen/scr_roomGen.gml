@@ -9,7 +9,7 @@ for(var i=0;i<4;i++){
 }
 
 //choose starting position
-startingPos = irandom(4)
+startingPos = irandom(3)
 mapGridPath[startingPos,0] = "S"
 mapGridRooms[startingPos,0].rmType = 1 //set to starting
 
@@ -28,12 +28,13 @@ do{
   ds_list_shuffle(dirOrder)
   //check if direction empty (does not have X)
   while(ds_list_size(dirOrder)>0&&!dirFound){
-	  show_debug_message("x,y("+curX+","+curY+")")
+	  show_debug_message(string(curX)+","+string(curY))
 	switch(ds_list_find_value(dirOrder,0)){
 		//0 right, 1 down, 2 left, 3 up
 		case 0:
+			show_debug_message("Testing right: "+(string(curX+1))+","+string(curY))
 			if(curX+1<4){
-				if(mapGridPath[curX+1,curY]!="X"||mapGridPath[curX+1,curY]!="S"){
+				if(mapGridPath[curX+1,curY]=="X"){
 					dirFound=true
 					mapGridRooms[curX,curY].doorRight=true;
 					mapGridRooms[curX+1,curY].doorLeft=true;
@@ -43,8 +44,9 @@ do{
 			}
 		break
 		case 1:
+			show_debug_message("Testing down: "+string(curX)+","+string(curY+1))
 			if(curY+1<4){
-				if(mapGridPath[curX,curY+1]!="X"||mapGridPath[curX,curY+1]!="S"){
+				if(mapGridPath[curX,curY+1]=="X"){
 					dirFound=true
 					mapGridRooms[curX,curY].doorBottom=true;
 					mapGridRooms[curX,curY+1].doorTop=true;
@@ -54,8 +56,9 @@ do{
 			}
 		break
 		case 2:
+			show_debug_message("Testing left: "+string(curX-1)+","+string(curY))
 			if(curX-1>=0){
-				if(mapGridPath[curX-1,curY]!="X"||mapGridPath[curX-1,curY]!="S"){
+				if(mapGridPath[curX-1,curY]=="X"){
 					dirFound=true
 					mapGridRooms[curX,curY].doorLeft=true;
 					mapGridRooms[curX-1,curY].doorRight=true;
@@ -66,7 +69,8 @@ do{
 		break
 		case 3:
 			if(curY-1>=0){
-				if(mapGridPath[curX,curY-1]!="X"||mapGridPath[curX,curY-1]!="S"){
+				show_debug_message("Testing up: "+string(curX)+","+string(curY-1))
+				if(mapGridPath[curX,curY-1]=="X"){
 					dirFound=true
 					mapGridRooms[curX,curY].doorTop=true;
 					mapGridRooms[curX,curY-1].doorBottom=true;
@@ -76,16 +80,27 @@ do{
 			}
 		break
 	}
+	show_debug_message("Find result: "+ string(dirFound))
 	ds_list_delete(dirOrder,0)
   }
   //delete sort order
   ds_list_destroy(dirOrder)
   if(dirFound){
 	  roomsCreated++
-	  if(roomsCreated==10)
-	  mapGridRooms[curX,curY].rmType=2
-	  mapGridPath[curX,curY]="F"
+	  show_debug_message("Rooms found: "+string(roomsCreated))
+	  if(roomsCreated==10){
+		  mapGridRooms[curX,curY].rmType=2
+		  mapGridPath[curX,curY]="F"
+		  endFound=true
+		  //debug
+		  show_debug_message("Done")
+			show_debug_message(string(mapGridPath[0,0])+string(mapGridPath[1,0])+string(mapGridPath[2,0])+string(mapGridPath[3,0]))
+			show_debug_message(string(mapGridPath[0,1])+string(mapGridPath[1,1])+string(mapGridPath[2,1])+string(mapGridPath[3,1]))
+			show_debug_message(string(mapGridPath[0,2])+string(mapGridPath[1,2])+string(mapGridPath[2,2])+string(mapGridPath[3,2]))
+			show_debug_message(string(mapGridPath[0,3])+string(mapGridPath[1,3])+string(mapGridPath[2,3])+string(mapGridPath[3,3]))
+	  }
   }else{
+	  show_debug_message("Fuck")
       //shits fucked
 	  //clear shit, restart
 	  scr_roomGen()
