@@ -16,9 +16,9 @@ if (ownedByPlayer){
 			image_yscale=1;
 		}
 	} 
-}
+
 	if(mouse_check_button_released(mb_left)) {
 		audio_stop_sound(noise);
 		audio_play_sound(gunshot,10,false);
 	}
-
+}
