@@ -319,14 +319,6 @@
             }
         },
         {
-            "Key": "628e5541-5c62-4489-b3b1-a8915c053034",
-            "Value": {
-                "id": "190c2883-8bbb-429f-8869-1e36bdda42e7",
-                "resourcePath": "objects\\obj_rmCell\\obj_rmCell.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "671961d8-2a6e-449b-8557-421d87be3cc6",
             "Value": {
                 "id": "ba1e439b-9bf5-4483-99b7-018dd36f28a5",
