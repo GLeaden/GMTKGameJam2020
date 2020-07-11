@@ -136,6 +136,10 @@ do{
   }
 }until(endFound)
 
+var wallLay_id = layer_get_id("Wall");
+var floorLay_id = layer_get_id("Floor");
+var wallMap_id = layer_tilemap_get_id(wallLay_id);
+var floorMap_id = layer_tilemap_get_id(floorLay_id);
 //Go room by room, creating rooms.
 for(var i=0;i<4;i++){
 	for(var j=0;j<4;j++){
@@ -166,6 +170,10 @@ for(var i=0;i<4;i++){
 		}
 		//open door paths
 		//layout tiles
-
+		for(var m=0;m<32;m++){
+			for(var n=0;n<24;n++){
+				//tilemap_set()
+			}
+		}
 	}
 }
