@@ -7,12 +7,13 @@ right = keyboard_check(ord("D"));
 left = keyboard_check(ord("A"));
 down = keyboard_check(ord("S"));
 up = keyboard_check(ord("W"));
+dashing = keyboard_check(vk_space);
 
 hMove = (right - left) * spd;
 vMove = (down - up) * spd;
 
 // dashing
-if (keyboard_check(vk_space) && dashcd == 0){
+if (dashing && dashcd == 0){
 	if (left || right){
 		hMove = hMove*24;
 		vMove = vMove*12;
@@ -23,6 +24,11 @@ if (keyboard_check(vk_space) && dashcd == 0){
 	} 
 	dashcd = dashrate;
 }
+
+
+//collision_line(x, y, x+hMove, y+vMove, obj_testWall, false, false)
+
+
 
 // collision checking
 if(place_meeting(x + hMove, y, obj_testWall))
@@ -58,6 +64,26 @@ if(mouse_check_button(mb_left)){
 				fire(projectile_weapon);
 			}
 			cooldown = projectile_weapon.fire_rate;
+		}
+	}
+}
+
+if (collision_line(x, y, x+hMove, y+vMove, obj_testWall, false, false)){
+	while(collision_line(x, y, x+hMove, y+vMove, obj_testWall, false, false)){
+		if (abs(hMove) || abs(vMove) <= 0){
+			break;
+		}
+		if (x > x+hMove){
+			hMove = hMove - 2;
+		}
+		else{
+			hMove = hMove + 2;
+		}
+		if (y > y+vMove){
+			vMove = vMove - 2;
+		}
+		else{
+			vMove = vMove + 2;
 		}
 	}
 }
