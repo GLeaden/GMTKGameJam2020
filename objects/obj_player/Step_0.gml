@@ -11,6 +11,20 @@ up = keyboard_check(ord("W"));
 hMove = (right - left) * spd;
 vMove = (down - up) * spd;
 
+// dashing
+if (keyboard_check(vk_space) && dashcd == 0){
+	if (left || right){
+		hMove = hMove*24;
+		vMove = vMove*12;
+	}
+	else{
+		hMove = hMove*12;
+		vMove = vMove*24;
+	} 
+	dashcd = dashrate;
+}
+
+// collision checking
 if(place_meeting(x + hMove, y, obj_testWall))
 {
 	while(!place_meeting(x + sign(hMove), y, obj_testWall))
@@ -29,6 +43,7 @@ if(place_meeting(x, y + vMove, obj_testWall))
 	vMove = 0;
 }
 
+// fire weapon
 if(mouse_check_button(mb_left)){
 	if(cooldown == 0){
 		if (projectile_weapon != pointer_null){
@@ -47,13 +62,17 @@ if(mouse_check_button(mb_left)){
 	}
 }
 
+// movement
 x += hMove;
 y += vMove;
 
+// cooldown management
+if (dashcd > 0) dashcd = dashcd - 1;
+if (cooldown > 0) cooldown = cooldown - 1;
 
 
-if (cooldown > 0) cooldown = cooldown - 1
 
+// aesthetics
 if (mouse_x < obj_player.x){
 	image_xscale=-1;
 }
