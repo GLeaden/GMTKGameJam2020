@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "1cd8d5d8-5561-42e1-adee-06be4d416bb7",
+            "Value": {
+                "id": "8efc33cd-168e-48d7-8a42-2225a8f1c19c",
+                "resourcePath": "sprites\\spr_shotgun\\spr_shotgun.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2120da57-de08-49b9-a1f9-573a634cf2f0",
             "Value": {
                 "id": "33245fb1-80b7-4441-b3b7-c38f87fa6fa7",
