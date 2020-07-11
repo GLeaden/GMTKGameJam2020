@@ -52,7 +52,62 @@
     "physicsShapePoints": null,
     "physicsStartAwake": true,
     "properties": [
-        
+        {
+            "id": "f86d81fe-8cf2-4b03-a174-fd32aeaac84f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "5",
+            "varName": "fire_rate",
+            "varType": 0
+        },
+        {
+            "id": "106fbd74-e265-4077-a922-a7633df90ef8",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "bullet_spread",
+            "varType": 0
+        },
+        {
+            "id": "eac100c1-61bd-48f7-ab08-58519f26f2d6",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "bullet_spread_max",
+            "varType": 0
+        },
+        {
+            "id": "ae1777a2-fbcc-4abc-9e5d-3fb05a861947",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "obj_arBullet",
+            "varName": "bullet",
+            "varType": 5
+        }
     ],
     "solid": false,
     "spriteId": "021ba9c9-7b97-439c-abea-ff999b352e8f",

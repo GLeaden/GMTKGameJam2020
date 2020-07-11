@@ -13,6 +13,16 @@
             "enumb": 0,
             "eventtype": 0,
             "m_owner": "5ea06c41-f667-4dd6-bb38-b497ddd864e1"
+        },
+        {
+            "id": "1b2fdac0-6aa8-4916-9c85-37f069666e87",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 7,
+            "eventtype": 7,
+            "m_owner": "5ea06c41-f667-4dd6-bb38-b497ddd864e1"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -42,9 +52,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "5",
+            "value": "10",
             "varName": "bullet_speed",
-            "varType": 1
+            "varType": 0
         },
         {
             "id": "8717b064-2f79-420c-8e8e-85d32c629618",
@@ -56,9 +66,9 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": ".5",
             "varName": "bullet_size",
-            "varType": 1
+            "varType": 0
         }
     ],
     "solid": false,

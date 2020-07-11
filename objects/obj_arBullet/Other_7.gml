@@ -1,5 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-show_message("projectile_weapon");
-
+image_index = 1;
+image_speed = 0;
