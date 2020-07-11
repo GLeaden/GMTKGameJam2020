@@ -18,5 +18,6 @@ endFound=false
 
 //loopy boi
 do{
-  if(
+	//random order of directions
+	randOrd = ds_list_create()
 }until(endFound)
