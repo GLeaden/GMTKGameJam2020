@@ -104,7 +104,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "snd_thomas",
+            "value": "snd_laser",
             "varName": "gunshot",
             "varType": 5
         }
