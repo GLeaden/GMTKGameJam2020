@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "065ec5cf-226b-4184-8720-753f91c570fd",
+            "Value": {
+                "id": "79d4c80b-f3a6-4bcf-91d1-9a4ba89e1c02",
+                "resourcePath": "scripts\\plankDiamondAttack\\plankDiamondAttack.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "091a82fb-4dc0-47cd-98bc-f509ff9ddd19",
             "Value": {
                 "id": "03fc3656-9858-491d-9d4c-830a0089d5a6",
@@ -116,6 +124,14 @@
                 "id": "2c8287ff-8ec3-4963-85ee-a41d6b03f9bb",
                 "resourcePath": "views\\194ba8cd-4c3c-4cc8-a5a2-cbebd615391b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "1c8be5a0-f932-4d5c-bfbb-0685343411d7",
+            "Value": {
+                "id": "e296c059-ebd3-4754-a745-0a6dae867c00",
+                "resourcePath": "scripts\\plankClubAttack\\plankClubAttack.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -551,6 +567,14 @@
             }
         },
         {
+            "Key": "b841a66f-65cb-4495-b7b2-e86c45e28345",
+            "Value": {
+                "id": "3970229e-3475-4fd6-af07-7595522da252",
+                "resourcePath": "scripts\\plankSpadeAttack\\plankSpadeAttack.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b8511a1c-7559-424e-8c84-06f94184a9da",
             "Value": {
                 "id": "4d3f95fb-1fd3-43b7-8add-d1c352f66e1e",
@@ -695,6 +719,14 @@
             }
         },
         {
+            "Key": "e3b5eab4-c6f4-4cab-b27c-c893b3a64cdc",
+            "Value": {
+                "id": "40bb7021-7960-4d78-a2d6-374d21adea48",
+                "resourcePath": "scripts\\plankHeartAttack\\plankHeartAttack.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e4476cd9-e5c4-463d-a9e6-73a45b880dbb",
             "Value": {
                 "id": "ba59245e-c83e-4eef-9fac-c502e49dbbda",
@@ -798,7 +830,11 @@
         "34c707bb-07f7-4562-a96c-0a711acb769a",
         "5451001b-646c-4184-9d0d-2992210eae91",
         "baab3cfa-c166-4a07-89ae-bfd084b6f78f",
-        "989eed75-8996-4668-9247-1521ca34d6e9"
+        "989eed75-8996-4668-9247-1521ca34d6e9",
+        "e3b5eab4-c6f4-4cab-b27c-c893b3a64cdc",
+        "065ec5cf-226b-4184-8720-753f91c570fd",
+        "b841a66f-65cb-4495-b7b2-e86c45e28345",
+        "1c8be5a0-f932-4d5c-bfbb-0685343411d7"
     ],
     "tutorial": ""
 }

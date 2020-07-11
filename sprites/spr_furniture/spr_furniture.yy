@@ -38,19 +38,31 @@
             ]
         },
         {
+<<<<<<< HEAD:sprites/spr_furniture/spr_furniture.yy
             "id": "57c94b17-0740-42e7-b00c-be83d2371fc9",
+=======
+            "id": "2c64de6f-7ce7-4417-a2e6-239f1d988730",
+>>>>>>> master:sprites/spr_testWall/spr_testWall.yy
             "modelName": "GMSpriteFrame",
             "mvc": "1.0",
             "SpriteId": "4375d2c7-47aa-42a3-9d77-151dd9252b47",
             "compositeImage": {
+<<<<<<< HEAD:sprites/spr_furniture/spr_furniture.yy
                 "id": "4d35af4c-aba8-4277-8aff-89595e24703d",
                 "modelName": "GMSpriteImage",
                 "mvc": "1.0",
                 "FrameId": "57c94b17-0740-42e7-b00c-be83d2371fc9",
+=======
+                "id": "c41b68e0-3c67-4f9d-9596-eee6635fd0b9",
+                "modelName": "GMSpriteImage",
+                "mvc": "1.0",
+                "FrameId": "2c64de6f-7ce7-4417-a2e6-239f1d988730",
+>>>>>>> master:sprites/spr_testWall/spr_testWall.yy
                 "LayerId": "00000000-0000-0000-0000-000000000000"
             },
             "images": [
                 {
+<<<<<<< HEAD:sprites/spr_furniture/spr_furniture.yy
                     "id": "d8d218ee-f1f6-4097-8396-df7548605eb7",
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
@@ -121,6 +133,12 @@
                     "modelName": "GMSpriteImage",
                     "mvc": "1.0",
                     "FrameId": "229bd1c9-4c1a-488c-bec9-632ddf38b739",
+=======
+                    "id": "6508cf7e-02ff-4484-a226-3a205905ce21",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "2c64de6f-7ce7-4417-a2e6-239f1d988730",
+>>>>>>> master:sprites/spr_testWall/spr_testWall.yy
                     "LayerId": "4609908b-2798-41ea-bfee-292d60ab4c57"
                 }
             ]
