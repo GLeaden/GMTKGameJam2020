@@ -503,6 +503,7 @@
             }
         },
         {
+<<<<<<< HEAD
             "Key": "9236e541-a699-4ce3-954c-3c85a1946941",
             "Value": {
                 "id": "8709bc11-d349-4a9f-a144-296f61c8b7ab",
@@ -516,6 +517,13 @@
                 "id": "522d506f-f95a-46e5-8fee-8498935f5331",
                 "resourcePath": "objects\\obj_moneyStack\\obj_moneyStack.yy",
                 "resourceType": "GMObject"
+=======
+            "Key": "997a407b-f120-41c8-9237-ace9dda1de29",
+            "Value": {
+                "id": "1551eba8-4018-43b2-90f7-c9b4c7cf9152",
+                "resourcePath": "sounds\\snd_laser\\snd_laser.yy",
+                "resourceType": "GMSound"
+>>>>>>> 1a83fb9f7b8ca12315d6149d0d6da06f5009dae3
             }
         },
         {
