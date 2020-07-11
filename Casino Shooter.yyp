@@ -455,6 +455,14 @@
             }
         },
         {
+            "Key": "c7f5f232-39ac-4eb1-84b1-5fd37c557ad8",
+            "Value": {
+                "id": "b624a294-7d87-4bee-845c-f765ff346b48",
+                "resourcePath": "objects\\obj_roomCell\\obj_roomCell.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cb21cf86-05b2-4312-a444-82bc33f3bfc3",
             "Value": {
                 "id": "96241810-31fe-47bd-b7b5-dfa3e226445c",
