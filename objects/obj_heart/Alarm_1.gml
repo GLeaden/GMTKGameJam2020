@@ -4,8 +4,16 @@ if(direction = 90)
 {
 	direction = 270;
 }
-else
+else if(direction = 270)
 {
 	direction = 90;
 }
-alarm[1] = 300;
+else if(direction = 180)
+{
+	direction = 360;
+}
+else
+{
+	direction = 180;
+}
+alarm[1] = 90;
