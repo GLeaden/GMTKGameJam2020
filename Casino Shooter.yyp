@@ -551,6 +551,14 @@
             }
         },
         {
+            "Key": "eec5f044-042f-406f-82af-f48849f4b028",
+            "Value": {
+                "id": "de74b66f-66d2-4893-b4c3-dc2ac3b63d5c",
+                "resourcePath": "sprites\\spr_bolt\\spr_bolt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f18b1ee9-b7f0-4d60-9c4e-bd201f02be82",
             "Value": {
                 "id": "68f678a5-0814-4ae6-a7ce-79e387b0005c",
