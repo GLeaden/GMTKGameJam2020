@@ -8,27 +8,33 @@ if(sprite_index != spr_plankSwingHB)
 
 // Attack Hitbox and Hits
 mask_index = spr_plankSwingHB;
+var hitEnemiesNow = ds_list_create();
 
-/*
 var Enemies = ds_list_create();
 ds_list_add(Enemies, obj_heart);
 ds_list_add(Enemies, obj_spade);
 ds_list_add(Enemies, obj_diamond);
 ds_list_add(Enemies, obj_club);
-*/
 
+/*
 plankHeartAttack();
 plankDiamondAttack();
 plankSpadeAttack();
 plankClubAttack();
 
-/*
 var hit1 = instance_place_list(x,y,obj_heart,hitEnemiesNow,false);
 var hit2 = instance_place_list(x,y,obj_spade,hitEnemiesNow,false);
 var hit3 = instance_place_list(x,y,obj_club,hitEnemiesNow,false);
 var hit4 = instance_place_list(x,y,obj_diamond,hitEnemiesNow,false);
 
-hits = hit1 + hit2 + hit3 + hit4;
+hits = instance_place_list(x,y,Enemies,hitEnemiesNow,false);
+*/
+
+hits = 0;
+
+for (i = 0; i < ds_list_size(Enemies); i += 1){
+    hits += instance_place_list(x, y, Enemies[| i], hitEnemiesNow, false);
+}
 
 if (hits > 0)
 {
@@ -46,7 +52,7 @@ if (hits > 0)
 	}
 }
 ds_list_destroy(hitEnemiesNow);
-*/
+
 mask_index = spr_plank;
 
 if (endSwing())
