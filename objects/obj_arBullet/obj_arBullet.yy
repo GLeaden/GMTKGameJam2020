@@ -69,6 +69,20 @@
             "value": ".75",
             "varName": "bullet_size",
             "varType": 0
+        },
+        {
+            "id": "9587c9e0-e270-4f0f-b019-ded8d2a45eb8",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "damage",
+            "varType": 1
         }
     ],
     "solid": false,
