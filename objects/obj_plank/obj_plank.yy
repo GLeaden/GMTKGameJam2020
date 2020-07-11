@@ -89,6 +89,20 @@
             "value": "120",
             "varName": "swing_rate",
             "varType": 0
+        },
+        {
+            "id": "a60ca4e2-e59d-427d-b5ca-f7bfc2b24644",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "spr_plankHB",
+            "varName": "hitbox",
+            "varType": 5
         }
     ],
     "solid": false,

@@ -1,13 +1,17 @@
+/// @function plankState_Attack(melee)
+/// @description plankState_Attack(melee)
+/// @arg melee object_index
+var _melee = argument0;
+
 // Attack Start
-if(sprite_index != spr_plankSwingHB)
+if(image_index == 0)
 {
-	sprite_index = spr_plankSwingHB;
-	image_index = 0;
+	image_index = 1;
 	ds_list_clear(hitEnemies);
 }
 
 // Attack Hitbox and Hits
-mask_index = spr_plankSwingHB;
+//mask_index = _melee.hitbox.mask_index;
 var hitEnemiesNow = ds_list_create();
 
 var Enemies = ds_list_create();
@@ -53,10 +57,12 @@ if (hits > 0)
 }
 ds_list_destroy(hitEnemiesNow);
 
-mask_index = spr_plank;
+//mask_index = spr_plank;
+image_index++;
 
-if (endSwing())
+if (endSwing(sprite_index,image_index,1))
 {
-	sprite_index = spr_plank;
+	mask_index = spr_plank;
+	image_index = 0;
 	state = SWINGSTATE.FREE;
 }

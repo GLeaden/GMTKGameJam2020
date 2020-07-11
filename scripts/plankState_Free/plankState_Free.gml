@@ -11,7 +11,6 @@ if (instance_exists(obj_player))
 	  else{
 		  image_yscale=1;
 	  }
-	}
-
 	if (keyAttack) state = SWINGSTATE.ATTACK;
+	}
 }

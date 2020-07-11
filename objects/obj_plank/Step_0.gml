@@ -10,7 +10,7 @@ if(ownedByPlayer)
 			plankState_Free();
 			break;
 		case SWINGSTATE.ATTACK:
-			plankState_Attack();
+			plankState_Attack(obj_plank);
 			break;
 	}
 }
