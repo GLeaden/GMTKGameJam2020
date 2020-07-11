@@ -567,14 +567,6 @@
             }
         },
         {
-            "Key": "c6ccc0ca-d057-46a1-98f7-cf6c79257c5e",
-            "Value": {
-                "id": "625f7935-562d-4f48-97f7-5ba27311940b",
-                "resourcePath": "sprites\\spr_itemTileSheet\\spr_itemTileSheet.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "c7f5f232-39ac-4eb1-84b1-5fd37c557ad8",
             "Value": {
                 "id": "b624a294-7d87-4bee-845c-f765ff346b48",
