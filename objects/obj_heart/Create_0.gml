@@ -7,6 +7,8 @@ hMove = 0;
 
 go = choose(1, 2);
 
+
+hp = 6;
 /*
 if(go = "vert")
 {
