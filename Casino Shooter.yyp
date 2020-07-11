@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "330f3f7a-ecfc-4b6f-bcbf-283d0fc7d09c",
+            "Value": {
+                "id": "9ffaca1e-c3c6-45c9-9ae0-82c2fa47639c",
+                "resourcePath": "sprites\\spr_swingBox\\spr_swingBox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "337cd060-925d-4e82-9957-c09858f031d8",
             "Value": {
                 "id": "52b6f289-b733-4a19-9ddc-e721ede5037b",
@@ -239,10 +247,34 @@
             }
         },
         {
+            "Key": "4462b2e1-e85d-4bae-b033-38b2bad540fc",
+            "Value": {
+                "id": "d745e928-7a2d-4b3b-97ba-3bc94e402b59",
+                "resourcePath": "rooms\\tiledRoomTest\\tiledRoomTest.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "460e294b-fd57-45f1-afa4-78ab51b0fb37",
             "Value": {
                 "id": "2fd268b1-269f-4720-a74e-3b92f676e8e1",
                 "resourcePath": "objects\\obj_peaBullet\\obj_peaBullet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4d9eea89-edf1-43a6-8905-b4fa2caba2d0",
+            "Value": {
+                "id": "61db3065-6bfb-40ae-b84f-254f97c9ea1b",
+                "resourcePath": "sprites\\spr_plank\\spr_plank.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4e070864-05d0-48f7-b39a-771bdc97e4d3",
+            "Value": {
+                "id": "575c2850-3f0a-4932-b663-db1d7e32dfa5",
+                "resourcePath": "objects\\obj_plank\\obj_plank.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -447,6 +479,14 @@
             }
         },
         {
+            "Key": "b3b62e47-09be-4134-b8ac-9021976f1946",
+            "Value": {
+                "id": "ce373bc2-68f2-46b9-bda3-1c57c83d1da9",
+                "resourcePath": "sounds\\snd_pickup\\snd_pickup.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "b603bc60-d6d6-433d-85f7-4ad55e2a58d6",
             "Value": {
                 "id": "cd2c6cd1-318c-4c44-9e14-3dcec7e12088",
@@ -511,11 +551,27 @@
             }
         },
         {
+            "Key": "cd427d7f-8a22-42d9-8cb1-b0727f3c30a9",
+            "Value": {
+                "id": "f8672e06-fa27-4620-9847-5631c263a594",
+                "resourcePath": "scripts\\whack\\whack.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "cd8ab66a-e520-462f-8631-edfe610e5d29",
             "Value": {
                 "id": "094e6f01-7b66-4714-a884-e420b3b37989",
                 "resourcePath": "sprites\\spr_spadeB\\spr_spadeB.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "cf105347-8c53-4ff4-91d6-63a6808635e8",
+            "Value": {
+                "id": "c6060421-4ddf-4ae8-964f-6550509284a7",
+                "resourcePath": "objects\\obj_plankSwing\\obj_plankSwing.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -609,7 +665,8 @@
     ],
     "script_order": [
         "6c9a2c76-b250-45f6-be3b-a34924c02dce",
-        "b85fbfd7-b7b9-424d-9a9e-0d80a809dfcc"
+        "b85fbfd7-b7b9-424d-9a9e-0d80a809dfcc",
+        "cd427d7f-8a22-42d9-8cb1-b0727f3c30a9"
     ],
     "tutorial": ""
 }
