@@ -93,6 +93,20 @@
             "value": "obj_laserBeam",
             "varName": "bullet",
             "varType": 5
+        },
+        {
+            "id": "1e8a713b-66a4-4963-9fce-0dc9b10e00a2",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "snd_thomas",
+            "varName": "gunshot",
+            "varType": 5
         }
     ],
     "solid": false,
