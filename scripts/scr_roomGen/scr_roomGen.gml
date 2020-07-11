@@ -1,5 +1,5 @@
 //room generation by ya boi ian
-/*
+
 //define mapgrid to all 0s
 for(var i=0;i<4;i++){
   for(var j=0;j<4;j++){
@@ -21,4 +21,3 @@ do{
 	//random order of directions
 	randOrd = ds_list_create()
 }until(endFound)
-*/

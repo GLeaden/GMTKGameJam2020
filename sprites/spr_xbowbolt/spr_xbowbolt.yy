@@ -2,7 +2,7 @@
     "id": "5e6ff39c-5abe-416e-8235-f2918a0fdecc",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_xbowBolt",
+    "name": "spr_xbowbolt",
     "For3D": false,
     "HTile": false,
     "VTile": false,
