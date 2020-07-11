@@ -10,6 +10,15 @@ spd = 5;
 if (instance_exists(obj_player))
 {
 	move_towards_point(obj_player.x,obj_player.y,max(spd,0));
+	if (obj_player.y < y)
+	{
+		sprite_index = spr_spadeB;
+	}
+
+	if (obj_player.y > y)
+	{
+		sprite_index = spr_spadeF;
+	}
 }
 /*
 if (obj_player.x < x)
@@ -51,12 +60,3 @@ if(place_meeting(x, y + vMove, obj_testWall))
 y += vMove;
 x += hMove;
 */
-if (obj_player.y < y)
-{
-	sprite_index = spr_spadeB;
-}
-
-if (obj_player.y > y)
-{
-	sprite_index = spr_spadeF;
-}
