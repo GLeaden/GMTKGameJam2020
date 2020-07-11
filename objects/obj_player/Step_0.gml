@@ -49,7 +49,7 @@ if (mouse_x < obj_player.x){
 else{
 	image_xscale=1;
 }
-if (mouse_y < obj_player.y+128){
+if (mouse_y < obj_player.y-128){
 	sprite_index = spr_ladyback;
 }
 else{
