@@ -112,7 +112,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "10",
+            "value": "14",
             "varName": "bullet_speed",
             "varType": 0
         },
@@ -126,7 +126,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": "1.5",
             "varName": "bullet_size",
             "varType": 0
         },
@@ -146,6 +146,6 @@
         }
     ],
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "eec5f044-042f-406f-82af-f48849f4b028",
     "visible": true
 }
