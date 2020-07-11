@@ -107,6 +107,20 @@
             "value": "obj_peaBullet",
             "varName": "bullet",
             "varType": 5
+        },
+        {
+            "id": "bde55b92-b676-443a-bcc9-47f59dcf4106",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "snd_pistol",
+            "varName": "gunshot",
+            "varType": 5
         }
     ],
     "solid": false,
