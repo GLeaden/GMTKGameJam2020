@@ -62,7 +62,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
+            "value": "0",
             "varName": "fire_rate",
             "varType": 0
         },
@@ -95,7 +95,7 @@
             "varType": 5
         },
         {
-            "id": "a4882d77-bcfa-4a27-bdcb-42b88d8462b4",
+            "id": "1e8a713b-66a4-4963-9fce-0dc9b10e00a2",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -104,7 +104,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "snd_laser",
+            "value": "snd_thomas",
             "varName": "gunshot",
             "varType": 5
         }

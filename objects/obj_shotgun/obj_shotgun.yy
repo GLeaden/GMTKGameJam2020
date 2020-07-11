@@ -109,7 +109,7 @@
             "varType": 5
         },
         {
-            "id": "e46fd039-fca0-45e7-be7b-e28c2c4d9808",
+            "id": "d3512879-06f8-46d8-8654-0af0c1eccae0",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,

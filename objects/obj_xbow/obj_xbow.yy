@@ -107,6 +107,20 @@
             "value": "obj_xbowBolt",
             "varName": "bullet",
             "varType": 5
+        },
+        {
+            "id": "7e8f3d3b-49d4-4c01-a0e4-f18f1ebbe81f",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "snd_pistol",
+            "varName": "gunshot",
+            "varType": 5
         }
     ],
     "solid": false,
