@@ -1,5 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
-move = 1;
+/*
+move = random_range(0,10);
 
-y = y + move;
+if (move < 5)
+{
+	y = y + move;
+}
+else
+{
+	y = y - move;
+}
+*/
