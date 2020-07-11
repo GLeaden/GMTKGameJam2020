@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "34c707bb-07f7-4562-a96c-0a711acb769a",
+            "Value": {
+                "id": "a4f40e45-73fe-49b1-8dd8-0368654df401",
+                "resourcePath": "scripts\\melee\\melee.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3a945b91-b35f-4d6e-842a-6259fa31bdb3",
             "Value": {
                 "id": "e7e5168e-a0e6-461a-9fb0-4610969f0b5c",
@@ -284,6 +292,22 @@
                 "id": "86ed6c0c-e7fc-41db-8c82-0b63c12711e4",
                 "resourcePath": "sprites\\spr_spadeF\\spr_spadeF.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "53c09657-d178-4b9b-9029-1efd83a39c8b",
+            "Value": {
+                "id": "1242dceb-eed4-4143-bfb3-a3a27580093c",
+                "resourcePath": "sprites\\spr_plankSwingHB\\spr_plankSwingHB.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5451001b-646c-4184-9d0d-2992210eae91",
+            "Value": {
+                "id": "07257270-1159-4980-933c-67d404512f43",
+                "resourcePath": "scripts\\plankState_Free\\plankState_Free.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -463,6 +487,14 @@
             }
         },
         {
+            "Key": "989eed75-8996-4668-9247-1521ca34d6e9",
+            "Value": {
+                "id": "1aadb57f-bc49-42fd-a343-4fd246b0a09c",
+                "resourcePath": "scripts\\endSwing\\endSwing.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a4c5f144-b20c-413d-9e7f-197fee3fcd7a",
             "Value": {
                 "id": "73ca2f4e-6f2b-47d3-9558-643374d3a4c2",
@@ -523,6 +555,14 @@
             "Value": {
                 "id": "36833447-a14e-42ea-8ebf-5365f1732e62",
                 "resourcePath": "scripts\\scr_roomGen\\scr_roomGen.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "baab3cfa-c166-4a07-89ae-bfd084b6f78f",
+            "Value": {
+                "id": "72d0aabd-e583-4eac-a6a2-2d9c8948ab3e",
+                "resourcePath": "scripts\\plankState_Attack\\plankState_Attack.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -730,7 +770,11 @@
     "script_order": [
         "6c9a2c76-b250-45f6-be3b-a34924c02dce",
         "b85fbfd7-b7b9-424d-9a9e-0d80a809dfcc",
-        "cd427d7f-8a22-42d9-8cb1-b0727f3c30a9"
+        "cd427d7f-8a22-42d9-8cb1-b0727f3c30a9",
+        "34c707bb-07f7-4562-a96c-0a711acb769a",
+        "5451001b-646c-4184-9d0d-2992210eae91",
+        "baab3cfa-c166-4a07-89ae-bfd084b6f78f",
+        "989eed75-8996-4668-9247-1521ca34d6e9"
     ],
     "tutorial": ""
 }
