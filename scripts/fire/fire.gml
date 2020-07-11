@@ -5,8 +5,7 @@ var _gun = argument0;
 
 laser = _gun.object_index == obj_laserGun
 
-if (laser) audio_play_sound(_gun.gunshot, 10 , false);
-else audio_play_sound(_gun.gunshot, 10 , false);
+if (!laser) audio_play_sound(_gun.gunshot, 10 , false);
 
 
 if (_gun.object_index == obj_shotgun){

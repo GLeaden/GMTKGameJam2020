@@ -58,7 +58,7 @@ if(mouse_check_button(mb_left)){
 		}
 	}
 }
-
+/*
 // swing melee
 if(mouse_check_button(mb_right)){
 	if(winddown == 0){
@@ -69,7 +69,7 @@ if(mouse_check_button(mb_right)){
 	}
 }
 if (winddown > 0) winddown = winddown - 1
-
+*/
 // dash collision (done right before movement cause it messes with it)
 wall = collision_line(x, y, x+hMove, y+vMove, obj_testWall, false, false)
 if (dashing && wall){
