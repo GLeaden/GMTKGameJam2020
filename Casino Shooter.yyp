@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "14a547f2-091f-4f83-9745-269d04489ce9",
+            "Value": {
+                "id": "7d4be9c7-f689-4b4c-88e1-823aebff4e7e",
+                "resourcePath": "rooms\\ianGenerationTest\\ianGenerationTest.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "194ba8cd-4c3c-4cc8-a5a2-cbebd615391b",
             "Value": {
                 "id": "2c8287ff-8ec3-4963-85ee-a41d6b03f9bb",
@@ -155,6 +163,14 @@
             "Value": {
                 "id": "52b6f289-b733-4a19-9ddc-e721ede5037b",
                 "resourcePath": "sprites\\spr_crossbow\\spr_crossbow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3704f2bc-32ec-474e-8544-6119434d9231",
+            "Value": {
+                "id": "b1ac81e5-4f4a-44bf-85f9-348ec5936975",
+                "resourcePath": "sprites\\spr_testWallIan\\spr_testWallIan.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -315,6 +331,14 @@
             "Value": {
                 "id": "a399e0b6-b8a4-402a-81a6-faa028659b4d",
                 "resourcePath": "sprites\\spr_tommygun\\spr_tommygun.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ad5c8afe-2edd-4bd6-b130-306ebe568725",
+            "Value": {
+                "id": "ccc1696f-fba6-4344-b896-bee5acdc4150",
+                "resourcePath": "sprites\\spr_testFloorIan\\spr_testFloorIan.yy",
                 "resourceType": "GMSprite"
             }
         },
