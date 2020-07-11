@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "2466c1b7-7716-47af-92e3-5a67a328c946",
+            "Value": {
+                "id": "de0d0c05-7fa9-4463-ba06-9d2da624817a",
+                "resourcePath": "objects\\obj_shotgun\\obj_shotgun.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "24943648-398b-46cf-82ef-396d8f2f94a3",
             "Value": {
                 "id": "2b39ea8c-fc8b-433d-9a63-3a8d4f34a7f8",
@@ -252,6 +260,14 @@
                 "id": "26c52f2e-1c5e-417d-9c20-d10d05c8b0e4",
                 "resourcePath": "views\\5bb9f58c-2ae7-47ee-b749-950b1aca3693.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5e6ff39c-5abe-416e-8235-f2918a0fdecc",
+            "Value": {
+                "id": "b4f7b9ea-10b5-4d7b-81d9-350dbbc4ee24",
+                "resourcePath": "sprites\\spr_xbowbolt\\spr_xbowbolt.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -423,6 +439,14 @@
             }
         },
         {
+            "Key": "b85fbfd7-b7b9-424d-9a9e-0d80a809dfcc",
+            "Value": {
+                "id": "36833447-a14e-42ea-8ebf-5365f1732e62",
+                "resourcePath": "scripts\\scr_roomGen\\scr_roomGen.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c555b604-9533-4cdf-9141-e5f8a2cc962e",
             "Value": {
                 "id": "79493351-39b5-409a-93c2-8f97c1b5f708",
@@ -552,7 +576,8 @@
         }
     ],
     "script_order": [
-        "6c9a2c76-b250-45f6-be3b-a34924c02dce"
+        "6c9a2c76-b250-45f6-be3b-a34924c02dce",
+        "b85fbfd7-b7b9-424d-9a9e-0d80a809dfcc"
     ],
     "tutorial": ""
 }
