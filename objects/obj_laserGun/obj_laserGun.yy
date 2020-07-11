@@ -62,7 +62,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "1",
             "varName": "fire_rate",
             "varType": 0
         },
@@ -92,6 +92,20 @@
             "resourceFilter": 1023,
             "value": "obj_laserBeam",
             "varName": "bullet",
+            "varType": 5
+        },
+        {
+            "id": "a4882d77-bcfa-4a27-bdcb-42b88d8462b4",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "snd_laser",
+            "varName": "gunshot",
             "varType": 5
         }
     ],
