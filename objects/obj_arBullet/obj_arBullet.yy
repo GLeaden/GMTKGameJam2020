@@ -2,7 +2,7 @@
     "id": "5ea06c41-f667-4dd6-bb38-b497ddd864e1",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "object5",
+    "name": "obj_arBullet",
     "eventList": [
         {
             "id": "1f52348f-80b3-40e6-810f-0ac2840019ca",
@@ -62,6 +62,6 @@
         }
     ],
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "785a35cb-fedc-498a-b272-68f80f7ed4ee",
     "visible": true
 }
