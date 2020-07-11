@@ -759,6 +759,14 @@
             }
         },
         {
+            "Key": "e8691f63-33fa-49b2-96ab-79ea42256b42",
+            "Value": {
+                "id": "069ae807-fade-43df-b921-004f816f8ca5",
+                "resourcePath": "sounds\\snd_plank\\snd_plank.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "e94aa8e8-6fcc-47d4-8a98-bdfabf6288c3",
             "Value": {
                 "id": "d1d664c1-4a63-4722-a476-ceab2a2ecad4",

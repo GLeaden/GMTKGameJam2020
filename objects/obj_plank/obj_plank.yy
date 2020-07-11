@@ -89,6 +89,20 @@
             "value": "120",
             "varName": "swing_rate",
             "varType": 0
+        },
+        {
+            "id": "20ad204b-7654-4acf-952c-c631e1ccd88b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "snd_plank",
+            "varName": "thwack",
+            "varType": 5
         }
     ],
     "solid": false,
