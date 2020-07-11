@@ -95,14 +95,6 @@
             }
         },
         {
-            "Key": "10d88e55-6e4c-4270-84ac-8b3a21d8a4e5",
-            "Value": {
-                "id": "b5099a39-2cf4-403b-b4fc-57763c591a2f",
-                "resourcePath": "tilesets\\ts_item\\ts_item.yy",
-                "resourceType": "GMTileSet"
-            }
-        },
-        {
             "Key": "10ecacf5-d4a2-4877-ae49-a2c3854f9ab3",
             "Value": {
                 "id": "b77fa710-e4cb-4856-ab21-b3e733d23f1d",
@@ -164,14 +156,6 @@
                 "id": "2b39ea8c-fc8b-433d-9a63-3a8d4f34a7f8",
                 "resourcePath": "sprites\\spr_crosshairChip\\spr_crosshairChip.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "2c2d4d08-5129-4131-8b6e-7dc002027805",
-            "Value": {
-                "id": "31cb223b-1940-47a9-af72-834d7ad78af0",
-                "resourcePath": "tilesets\\floorTileSet\\floorTileSet.yy",
-                "resourceType": "GMTileSet"
             }
         },
         {
@@ -351,14 +335,6 @@
             }
         },
         {
-            "Key": "628e5541-5c62-4489-b3b1-a8915c053034",
-            "Value": {
-                "id": "190c2883-8bbb-429f-8869-1e36bdda42e7",
-                "resourcePath": "objects\\obj_rmCell\\obj_rmCell.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "671961d8-2a6e-449b-8557-421d87be3cc6",
             "Value": {
                 "id": "ba1e439b-9bf5-4483-99b7-018dd36f28a5",
@@ -495,19 +471,19 @@
             }
         },
         {
-            "Key": "997a407b-f120-41c8-9237-ace9dda1de29",
-            "Value": {
-                "id": "1551eba8-4018-43b2-90f7-c9b4c7cf9152",
-                "resourcePath": "sounds\\snd_laser\\snd_laser.yy",
-                "resourceType": "GMSound"
-            }
-        },
-        {
             "Key": "989eed75-8996-4668-9247-1521ca34d6e9",
             "Value": {
                 "id": "1aadb57f-bc49-42fd-a343-4fd246b0a09c",
                 "resourcePath": "scripts\\endSwing\\endSwing.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "997a407b-f120-41c8-9237-ace9dda1de29",
+            "Value": {
+                "id": "1551eba8-4018-43b2-90f7-c9b4c7cf9152",
+                "resourcePath": "sounds\\snd_laser\\snd_laser.yy",
+                "resourceType": "GMSound"
             }
         },
         {
