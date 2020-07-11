@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "3a945b91-b35f-4d6e-842a-6259fa31bdb3",
+            "Value": {
+                "id": "e7e5168e-a0e6-461a-9fb0-4610969f0b5c",
+                "resourcePath": "objects\\obj_roomGenDriver\\obj_roomGenDriver.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3b36f372-8238-43c3-af3e-f5c09f0256f5",
             "Value": {
                 "id": "e67e23d8-8a6a-43ec-9389-dff20ae6a44f",
@@ -228,6 +236,14 @@
                 "id": "1ba04eda-c637-408b-8c4b-2693d62133d8",
                 "resourcePath": "sprites\\spr_testWall\\spr_testWall.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "4462b2e1-e85d-4bae-b033-38b2bad540fc",
+            "Value": {
+                "id": "d745e928-7a2d-4b3b-97ba-3bc94e402b59",
+                "resourcePath": "rooms\\tiledRoomTest\\tiledRoomTest.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -275,6 +291,14 @@
             "Value": {
                 "id": "73c7268a-e66a-4c4a-b24f-f51e16ef3c33",
                 "resourcePath": "objects\\obj_arBullet\\obj_arBullet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "628e5541-5c62-4489-b3b1-a8915c053034",
+            "Value": {
+                "id": "190c2883-8bbb-429f-8869-1e36bdda42e7",
+                "resourcePath": "objects\\obj_rmCell\\obj_rmCell.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -460,6 +484,14 @@
                 "id": "79493351-39b5-409a-93c2-8f97c1b5f708",
                 "resourcePath": "sprites\\spr_heartF\\spr_heartF.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c7f5f232-39ac-4eb1-84b1-5fd37c557ad8",
+            "Value": {
+                "id": "b624a294-7d87-4bee-845c-f765ff346b48",
+                "resourcePath": "objects\\obj_roomCell\\obj_roomCell.yy",
+                "resourceType": "GMObject"
             }
         },
         {
