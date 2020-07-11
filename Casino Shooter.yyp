@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "3a945b91-b35f-4d6e-842a-6259fa31bdb3",
+            "Value": {
+                "id": "e7e5168e-a0e6-461a-9fb0-4610969f0b5c",
+                "resourcePath": "objects\\obj_roomGenDriver\\obj_roomGenDriver.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3b36f372-8238-43c3-af3e-f5c09f0256f5",
             "Value": {
                 "id": "e67e23d8-8a6a-43ec-9389-dff20ae6a44f",
