@@ -4,7 +4,7 @@
 for(var i=0;i<4;i++){
   for(var j=0;j<4;j++){
     mapGridPath[i,j]="X"
-	mapGridRooms[i,j]=instance_create_layer(0,0,"instances",obj_roomCell)
+	mapGridRooms[i,j]=instance_create_layer(0,0,"instances",obj_rmCell)
   }
 }
 
