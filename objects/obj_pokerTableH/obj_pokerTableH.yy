@@ -1,18 +1,18 @@
 {
-    "id": "44828bdd-f73d-416e-8788-720a011630c5",
+    "id": "56a23a62-18cc-420f-8cbb-59268b77ca09",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_openChest",
+    "name": "obj_pokerTableH",
     "eventList": [
         {
-            "id": "535c29bf-5009-4fdb-9f72-178e7ab81cf1",
+            "id": "a4b80b49-353f-4375-98fc-383e4d975ce3",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "0c86a70e-9e5a-4468-ae63-8526f0c6f197",
             "enumb": 0,
             "eventtype": 4,
-            "m_owner": "44828bdd-f73d-416e-8788-720a011630c5"
+            "m_owner": "56a23a62-18cc-420f-8cbb-59268b77ca09"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -33,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": true,
-    "spriteId": "b904492d-4040-4c61-82fd-dfc1d99a2cb1",
+    "spriteId": "2db23f9f-bd84-4972-8f34-981c67dfa8a4",
     "visible": true
 }

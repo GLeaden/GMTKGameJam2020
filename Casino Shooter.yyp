@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "56a23a62-18cc-420f-8cbb-59268b77ca09",
+            "Value": {
+                "id": "ebf974e8-f193-43e6-9e26-59ce728e4af6",
+                "resourcePath": "objects\\obj_pokerTableH\\obj_pokerTableH.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "583d9cc7-7aee-4a99-afd0-71ab216022b3",
             "Value": {
                 "id": "c57f5464-c930-4f3d-a613-bb9569f31a2e",
@@ -500,6 +508,14 @@
                 "id": "c85d2aab-0a60-4c0d-a94f-28fa887c29dd",
                 "resourcePath": "extensions\\Danmaku_Sheet_1_Cloud\\Danmaku_Sheet_1_Cloud.yy",
                 "resourceType": "GMExtension"
+            }
+        },
+        {
+            "Key": "97e93b70-2f91-4688-8568-fadc4dc561d7",
+            "Value": {
+                "id": "f29d64c1-88b1-4393-bc12-0e27c99f00d2",
+                "resourcePath": "objects\\obj_pokerTableV\\obj_pokerTableV.yy",
+                "resourceType": "GMObject"
             }
         },
         {
