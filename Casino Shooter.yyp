@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "4029f9a9-478b-48a7-8a28-8a2df305b8fa",
+            "Value": {
+                "id": "633c3bdb-eff0-448a-8507-c7da73767037",
+                "resourcePath": "objects\\obj_xbowBolt\\obj_xbowBolt.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "43464f53-434d-4287-af34-5a1d6d4d7a83",
             "Value": {
                 "id": "319fc217-01c6-47cf-a7da-20bd94841c49",
@@ -266,7 +274,7 @@
             "Key": "5e6ff39c-5abe-416e-8235-f2918a0fdecc",
             "Value": {
                 "id": "b4f7b9ea-10b5-4d7b-81d9-350dbbc4ee24",
-                "resourcePath": "sprites\\spr_xbowbolt\\spr_xbowbolt.yy",
+                "resourcePath": "sprites\\spr_xbowBolt\\spr_xbowBolt.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -412,6 +420,14 @@
                 "id": "a399e0b6-b8a4-402a-81a6-faa028659b4d",
                 "resourcePath": "sprites\\spr_tommygun\\spr_tommygun.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b080dcf5-db85-406f-bdca-7a2de2e6b1fd",
+            "Value": {
+                "id": "eca51e12-4a15-46f3-8ee1-c6be0892cd8b",
+                "resourcePath": "objects\\obj_xbow\\obj_xbow.yy",
+                "resourceType": "GMObject"
             }
         },
         {
