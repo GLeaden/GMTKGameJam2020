@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-//Move in four directions when pressing arrow keys.
-//spd = 3;
+// Move in four directions when pressing arrow keys.
+// spd = 3;
 
 right = keyboard_check(ord("D"));
 left = keyboard_check(ord("A"));
