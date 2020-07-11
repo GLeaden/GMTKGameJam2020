@@ -104,7 +104,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "obj_arBullet",
+            "value": "obj_peaBullet",
             "varName": "bullet",
             "varType": 5
         },
