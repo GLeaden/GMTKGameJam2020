@@ -11,7 +11,7 @@ rmType=0 //0 - Normal, 1 - Start, 2 - Finish
 
 
 for(var i=0;i<32;i++){
-	for(var j=0;j<20;j++){
+	for(var j=0;j<24;j++){
 		rmLayout[i,j]="X"
 	}
 }

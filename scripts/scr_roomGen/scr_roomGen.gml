@@ -28,6 +28,9 @@ roomLayoutType[0,21]="xoooooooooooooooooooooooooooooox"
 roomLayoutType[0,22]="xoooooooooooooooooooooooooooooox"
 roomLayoutType[0,23]="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 
+//randomize
+randomize()
+
 //define mapgrid to all 0s
 for(var i=0;i<4;i++){
   for(var j=0;j<4;j++){
@@ -143,6 +146,7 @@ var floorMap_id = layer_tilemap_get_id(floorLay_id);
 //Go room by room, creating rooms.
 for(var i=0;i<4;i++){
 	for(var j=0;j<4;j++){
+		show_debug_message("Generating "+string(i)+","+string(j)+" Type "+string(mapGridPath[i,j]))
 		switch(mapGridPath[i,j]){
 			case "X":
 			break
@@ -169,9 +173,35 @@ for(var i=0;i<4;i++){
 			break
 		}
 		//open door paths
+		if(mapGridRooms[i,j].doorRight){
+			mapGridRooms[i,j].rmLayout[31,12]="O"
+			mapGridRooms[i,j].rmLayout[31,13]="O"
+		}
+		if(mapGridRooms[i,j].doorBottom){
+			mapGridRooms[i,j].rmLayout[15,23]="O"
+			mapGridRooms[i,j].rmLayout[16,23]="O"
+		}
+		if(mapGridRooms[i,j].doorLeft){
+			mapGridRooms[i,j].rmLayout[0,12]="O"
+			mapGridRooms[i,j].rmLayout[0,13]="O"
+		}
+		if(mapGridRooms[i,j].doorTop){
+			mapGridRooms[i,j].rmLayout[15,0]="O"
+			mapGridRooms[i,j].rmLayout[16,0]="O"
+			mapGridRooms[i,j].rmLayout[15,1]="O"
+			mapGridRooms[i,j].rmLayout[16,1]="O"
+		}
 		//layout tiles
 		for(var m=0;m<32;m++){
 			for(var n=0;n<24;n++){
+				switch(mapGridRooms[i,j].rmLayout[m,n]){
+				case "O":
+					tilemap_set(floorMap_id,2,m+(32*i),n+(24*j))
+				break
+				default:
+					tilemap_set(wallMap_id,1,m+(32*i),n+(24*j))
+				break
+				}
 				//tilemap_set()
 			}
 		}
