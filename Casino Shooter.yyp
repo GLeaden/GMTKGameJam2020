@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "5e6ff39c-5abe-416e-8235-f2918a0fdecc",
+            "Value": {
+                "id": "b4f7b9ea-10b5-4d7b-81d9-350dbbc4ee24",
+                "resourcePath": "sprites\\spr_xbowbolt\\spr_xbowbolt.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5ea06c41-f667-4dd6-bb38-b497ddd864e1",
             "Value": {
                 "id": "73c7268a-e66a-4c4a-b24f-f51e16ef3c33",
@@ -383,6 +391,14 @@
             }
         },
         {
+            "Key": "b85fbfd7-b7b9-424d-9a9e-0d80a809dfcc",
+            "Value": {
+                "id": "36833447-a14e-42ea-8ebf-5365f1732e62",
+                "resourcePath": "scripts\\scr_roomGen\\scr_roomGen.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c555b604-9533-4cdf-9141-e5f8a2cc962e",
             "Value": {
                 "id": "79493351-39b5-409a-93c2-8f97c1b5f708",
@@ -496,7 +512,8 @@
         }
     ],
     "script_order": [
-        "6c9a2c76-b250-45f6-be3b-a34924c02dce"
+        "6c9a2c76-b250-45f6-be3b-a34924c02dce",
+        "b85fbfd7-b7b9-424d-9a9e-0d80a809dfcc"
     ],
     "tutorial": ""
 }
