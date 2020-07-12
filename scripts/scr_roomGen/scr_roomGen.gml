@@ -158,7 +158,7 @@ for(var i=0;i<4;i++){
 			  }
 			  playSpawnX=((1024*(i))+512)
 			  instance_create_layer(playSpawnX,96,"Instances",obj_player)
-			  instance_create_layer(playSpawnX,50,"Instances",obj_thomas)
+			  instance_create_layer(playSpawnX,96+64,"Instances",obj_thomas)
 			break
 			case "F":
 			  for(var k=1;k<31;k++){
