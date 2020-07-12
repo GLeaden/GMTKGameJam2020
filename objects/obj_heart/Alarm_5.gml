@@ -1,5 +1,5 @@
-/// @description Insert description here
+/// @description card loading
 // You can write your code in this editor
 sprite_index = spr_cardLoad;
 spd = 0;
-alarm[10] = 120;
+alarm[10] = 90;
