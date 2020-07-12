@@ -5,19 +5,26 @@ if (hp <= 0)
 	instance_destroy();
 }
 
-spd = 5;
-
-if (instance_exists(obj_player))
+if hitstun > 1
 {
-	move_towards_point(obj_player.x,obj_player.y,max(spd,0));
-	if (obj_player.y < y)
-	{
-		sprite_index = spr_spadeB;
-	}
+	hitstun -= 1;
+}
+else
+{
+	spd = 5;
 
-	if (obj_player.y > y)
+	if (instance_exists(obj_player))
 	{
-		sprite_index = spr_spadeF;
+		move_towards_point(obj_player.x,obj_player.y,max(spd,0));
+		if (obj_player.y < y)
+		{
+			sprite_index = spr_spadeB;
+		}
+
+		if (obj_player.y > y)
+		{
+			sprite_index = spr_spadeF;
+		}
 	}
 }
 /*

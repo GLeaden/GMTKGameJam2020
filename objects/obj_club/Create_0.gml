@@ -7,3 +7,4 @@ spd = 2;
 vMove = 0;
 hMove = 0;
 hitstun = 0;
+alarm[5] = 1;

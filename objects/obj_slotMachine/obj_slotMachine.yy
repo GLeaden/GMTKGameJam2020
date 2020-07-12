@@ -88,7 +88,7 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "obj_poolStick, obj_rod, obj_poker, obj_sword",
-            "varName": "cqc",
+            "varName": "cqcs",
             "varType": 6
         }
     ],
