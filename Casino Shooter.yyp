@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "147400b3-ddae-4a97-9724-fae822ab135b",
+            "Value": {
+                "id": "7fdc038f-8e60-4377-8102-c83ec9bc9d0a",
+                "resourcePath": "sprites\\spr_poolStick\\spr_poolStick.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "194ba8cd-4c3c-4cc8-a5a2-cbebd615391b",
             "Value": {
                 "id": "2c8287ff-8ec3-4963-85ee-a41d6b03f9bb",
@@ -455,6 +463,14 @@
             }
         },
         {
+            "Key": "8f1081fe-8693-4caf-b89a-0f698aedc3d4",
+            "Value": {
+                "id": "3ca6d233-a59d-47fd-bd7a-e75cdb68691a",
+                "resourcePath": "sprites\\spr_rodHB\\spr_rodHB.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8fc4d44a-1d3b-4024-af2a-3b2c0cf9ba62",
             "Value": {
                 "id": "cce13c3a-9ca5-40ad-98ef-21f38518df73",
@@ -703,6 +719,14 @@
             }
         },
         {
+            "Key": "e3f9671d-76f5-4be2-9f47-9cf224329e9a",
+            "Value": {
+                "id": "6d713513-f1dc-4638-9256-56457420e636",
+                "resourcePath": "sprites\\spr_poolStickHB\\spr_poolStickHB.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e4476cd9-e5c4-463d-a9e6-73a45b880dbb",
             "Value": {
                 "id": "ba59245e-c83e-4eef-9fac-c502e49dbbda",
@@ -751,6 +775,14 @@
             }
         },
         {
+            "Key": "eaec47f0-83d6-4da9-bd5c-4f98e2c15a9c",
+            "Value": {
+                "id": "0d9e4d97-3342-41b8-b6fc-3c667921e023",
+                "resourcePath": "sprites\\spr_evTest\\spr_evTest.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "eb0573bd-f404-4356-9ab0-8792f89d6471",
             "Value": {
                 "id": "c594c2d4-02d6-4900-b87b-2924473c1596",
@@ -796,6 +828,14 @@
                 "id": "aeb745ca-6900-4abe-9be7-12d45c1260de",
                 "resourcePath": "rooms\\ded\\ded.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "f674ed15-b40c-4183-b39b-1ffa52900aee",
+            "Value": {
+                "id": "09d031dd-b04e-4f27-875f-b76b27be51ba",
+                "resourcePath": "sprites\\spr_rod\\spr_rod.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
