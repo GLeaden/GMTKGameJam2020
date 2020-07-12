@@ -2,9 +2,11 @@
 // You can write your code in this editor
 with(other)
 {
-	hp -= obj_peaBullet.damage;
+	hp -= other.damage;
 	hit = 1;
+	hitstun = 1;
 	sprite_index = spr_cardHurt;
+	knockback = other.direction;
 }
 
 instance_destroy();

@@ -5,10 +5,16 @@ if (hp <= 0)
 	instance_destroy();
 }
 
-if hitstun > 1
+while (speed > 0){
+	speed = lerp(speed, 0, 0.2);
+}
+
+if hitstun > 0
 {
 	hitstun -= 1;
 	sprite_index = spr_cardHurt;
+	direction = knockback;
+	speed = 4
 }
 else
 {

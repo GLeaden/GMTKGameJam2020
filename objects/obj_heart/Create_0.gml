@@ -10,3 +10,4 @@ go = choose(1, 2);
 
 hp = 6;
 hitstun = 0;
+knockback = 0;

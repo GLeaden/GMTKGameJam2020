@@ -17,12 +17,15 @@ if (_gun.object_index == obj_shotgun){
 		with (projectile){
 			destX = mouse_x + random_range(_gun.bullet_spread*-1, _gun.bullet_spread)
 			destY = mouse_y + random_range(_gun.bullet_spread*-1, _gun.bullet_spread)
-			direction = point_direction(x, y, destX, destY);
+			direction = point_direction(_gun.x, _gun.y, destX, destY);
 			image_angle = direction;
 			// bullet casing effect
-	        part_particles_create(global.P_System, x, y, global.bullet_casing_Particle, 1);
+	        part_particles_create(global.P_System, _gun.x, _gun.y, global.bullet_casing_Particle, 1);
 		}
 	}
+	//movement
+	direction = _gun.image_angle+180;
+	speed = 32;
 }
 else{
 	var projectile = instance_create_layer(_gun.x, _gun.y, "BulletLayer", _gun.bullet);
@@ -35,10 +38,10 @@ else{
 		with (projectile){
 			destX = mouse_x + random_range(_gun.bullet_spread*-1, _gun.bullet_spread)
 			destY = mouse_y + random_range(_gun.bullet_spread*-1, _gun.bullet_spread)
-			direction = point_direction(x, y, destX, destY);
+			direction = point_direction(_gun.x, _gun.y, destX, destY);
 			image_angle = direction;
 			// bullet casing effect
-	        part_particles_create(global.P_System, x, y, global.bullet_casing_Particle, 1);
+	        part_particles_create(global.P_System, _gun.x, _gun.y, global.bullet_casing_Particle, 1);
 
 		}
 	}
