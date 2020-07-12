@@ -183,6 +183,14 @@
             }
         },
         {
+            "Key": "1c2594c4-5793-4304-9dcd-8d1c1f993bb5",
+            "Value": {
+                "id": "a0defbc9-dbce-41e8-b9a0-dfd752b913be",
+                "resourcePath": "objects\\obj_chest\\obj_chest.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1cd8d5d8-5561-42e1-adee-06be4d416bb7",
             "Value": {
                 "id": "8efc33cd-168e-48d7-8a42-2225a8f1c19c",
@@ -511,6 +519,14 @@
             }
         },
         {
+            "Key": "6a652eb5-8d66-4e08-8830-c2d2b0ed934f",
+            "Value": {
+                "id": "63bfcaf1-1fe3-4ed6-a343-21f5e678c3e9",
+                "resourcePath": "objects\\obj_winScreen\\obj_winScreen.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6bec02a2-9ee3-46f4-b80c-2bacb5bafa39",
             "Value": {
                 "id": "b80d164a-e9e1-48c7-bf6d-390a83567f76",
@@ -548,6 +564,14 @@
                 "id": "9fb60c1c-bf10-4abc-80b3-f04c0b67275d",
                 "resourcePath": "scripts\\colorFloor\\colorFloor.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7475425f-9fd2-4099-a041-23aa21096fae",
+            "Value": {
+                "id": "be7b2acb-89a3-49bb-93ac-dbe5d77e2f87",
+                "resourcePath": "sprites\\spr_winScreen\\spr_winScreen.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1028,6 +1052,14 @@
                 "id": "fe100d85-c867-476b-be91-43335dcd6dcd",
                 "resourcePath": "views\\dd745b5f-9b7d-417e-80ba-34094a3ff917.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "de2f37b5-e64c-4e9a-ad55-99216c225f6f",
+            "Value": {
+                "id": "4663f9b0-5a8a-4767-8670-98eca86c531d",
+                "resourcePath": "rooms\\win\\win.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
