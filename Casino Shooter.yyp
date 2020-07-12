@@ -511,6 +511,14 @@
             }
         },
         {
+            "Key": "929249b4-8255-4057-8dec-2bf78d3372b2",
+            "Value": {
+                "id": "9ccc9bd6-cf4d-4c5c-a9c4-99a134cb2156",
+                "resourcePath": "sprites\\spr_bullet_casing\\spr_bullet_casing.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9491a9b7-2a1e-470d-8808-0730dc6ea0b2",
             "Value": {
                 "id": "ba4b98a0-0f58-4154-bf9e-b6249b29d1ab",

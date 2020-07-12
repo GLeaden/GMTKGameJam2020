@@ -16,6 +16,8 @@ if (_gun.object_index == obj_shotgun){
 			destY = mouse_y + random_range(_gun.bullet_spread*-1, _gun.bullet_spread)
 			direction = point_direction(x, y, destX, destY);
 			image_angle = direction;
+			// bullet casing effect
+	        part_particles_create(global.P_System, x, y, global.bullet_casing_Particle, 1);
 		}
 	}
 }
@@ -31,6 +33,9 @@ else{
 			destY = mouse_y + random_range(_gun.bullet_spread*-1, _gun.bullet_spread)
 			direction = point_direction(x, y, destX, destY);
 			image_angle = direction;
+			// bullet casing effect
+	        part_particles_create(global.P_System, x, y, global.bullet_casing_Particle, 1);
+
 		}
 	}
 }
