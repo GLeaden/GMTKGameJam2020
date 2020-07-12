@@ -59,10 +59,7 @@ if(place_meeting(x, y + vMove, obj_testWall))
 if(mouse_check_button(mb_left)){
 	if(cooldown == 0){
 		if (projectile_weapon != pointer_null){
-			shot = fire(projectile_weapon)
-			if (projectile_weapon.object_index = obj_laserGun){
-				// particle emitter stuff here 
-			}
+			fire(projectile_weapon)
 			cooldown = projectile_weapon.fire_rate;
 		}
 	}

@@ -13,6 +13,7 @@ if hitstun > 1
 else
 {
 	if (sprite_index = spr_cardHurt) sprite_index = spr_diamondF;
+	/*
 	if(place_meeting(x + hMove, y, obj_testWall))
 	{
 		while(!place_meeting(x + sign(hMove), y, obj_testWall))
@@ -29,8 +30,20 @@ else
 			y += sign(vMove);
 		}
 		vMove = 0;
+	}*/
+	while(tilePlaceMeeting(x+hMove,y,"Wall")){
+	hMove=lerp(hMove,0,.1)
+	}
+	while(tilePlaceMeeting(x,y+vMove,"Wall")){
+		vMove=lerp(vMove,0,.1)
 	}
 
+	while(place_meeting(x+hMove,y,obj_furniture)){
+		hMove=lerp(hMove,0,.1)
+	}
+	while(place_meeting(x,y+vMove,obj_furniture)){
+		vMove=lerp(vMove,0,.1)
+	}
 	y += vMove;
 	x += hMove;
 }
