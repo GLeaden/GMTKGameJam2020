@@ -11,4 +11,5 @@ dashrate = 120; // can dash every 120 frames (2sec)
 
 melee_state = SWINGSTATE.FREE;
 dead = false;
+died = false;
 image_speed = 0;

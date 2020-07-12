@@ -4,6 +4,7 @@ var wallLay_id = layer_get_id("Wall");
 var wallMap_id = layer_tilemap_get_id(wallLay_id);
 
 global.roomLocked=false
+global.roomSlotUsed=false
 
 if(global.gridRooms[curCellX,curCellY].doorRight){
 	doorSpawnX=((1024*curCellX)+(1024-32))
