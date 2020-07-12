@@ -14,7 +14,7 @@ if(keyboard_check_released(ord("L"))){
 }
 
 if(keyboard_check_released(ord("P"))){
-	instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_xbow)
+	instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_shotgun)
 }
 
 

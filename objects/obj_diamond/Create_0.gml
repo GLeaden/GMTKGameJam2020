@@ -8,3 +8,4 @@ hMove = 0;
 
 hp = 8;
 hitstun = 0;
+knockback = 0;

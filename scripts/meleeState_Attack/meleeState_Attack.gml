@@ -50,6 +50,7 @@ with(_melee){
             {
                 ds_list_add(hitEnemies, hitID);
                 with (hitID) {
+					hitID.knockback = image_angle + 180;
                     hitID.hp -= 2;
 					hitID.hitstun = _melee.hitstun;
                 }
