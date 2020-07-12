@@ -5,3 +5,4 @@ image_yscale = bullet_size;
 speed = bullet_speed;
 direction = obj_player.projectile_weapon.image_angle;
 image_angle = direction;
+image_speed = 0;

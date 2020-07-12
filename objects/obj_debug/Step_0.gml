@@ -8,3 +8,7 @@ if (keyboard_check(ord("O"))){
 		enemySpawn(irandom(3))
 	}
 }
+
+if(keyboard_check_released(ord("L"))){
+	instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_laserGun)
+}

@@ -56,10 +56,18 @@ if(place_meeting(x, y + vMove, obj_testWall))
 */
 
 // fire weapon
+shot = pointer_null;
 if(mouse_check_button(mb_left)){
 	if(cooldown == 0){
 		if (projectile_weapon != pointer_null){
-			fire(projectile_weapon)
+			shot = fire(projectile_weapon)
+			if (projectile_weapon.object_index = obj_laserGun){
+				// particle emitter stuff here 
+				shotDir = projectile_weapon.image_angle;
+				part_type_direction(global.laser_Particle,shotDir,shotDir,0,0);
+				part_emitter_region(global.P_System,global.particle_system_Emitter,shot.x,shot.x,shot.y,shot.y,ps_shape_line,ps_distr_invgaussian);
+				part_emitter_burst(global.P_System,global.particle_system_Emitter,global.laser_Particle,1+irandom(2))
+			}
 			cooldown = projectile_weapon.fire_rate;
 		}
 	}
