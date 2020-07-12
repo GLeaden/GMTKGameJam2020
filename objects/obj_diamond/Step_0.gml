@@ -8,9 +8,11 @@ if (hp <= 0)
 if hitstun > 1
 {
 	hitstun -= 1;
+	sprite_index = spr_cardHurt;
 }
 else
 {
+	if (sprite_index = spr_cardHurt) sprite_index = spr_diamondF;
 	if(place_meeting(x + hMove, y, obj_testWall))
 	{
 		while(!place_meeting(x + sign(hMove), y, obj_testWall))

@@ -36,9 +36,11 @@ if (hp <= 0)
 if hitstun > 1
 {
 	hitstun -= 1;
+	sprite_index = spr_cardHurt;
 }
 else
 {
+	if (sprite_index = spr_cardHurt) sprite_index = spr_clubF;
 	if (obj_player.x < x)
 	{
 		hMove = -spd;
