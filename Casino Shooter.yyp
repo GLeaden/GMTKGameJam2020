@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "14ed7e21-ad45-452a-b733-64b0430d87c7",
+            "Value": {
+                "id": "9bd287cc-1cf4-4c01-b749-f7eda03cbf87",
+                "resourcePath": "objects\\obj_settingsGear\\obj_settingsGear.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "17e2ed12-72b1-4847-a06a-3cc31afd9cb3",
             "Value": {
                 "id": "b661e3a2-9a52-499c-81aa-970d6468f5f0",
@@ -228,6 +236,14 @@
                 "id": "fc145c07-856b-47ba-a1d4-fd9851ce8cb1",
                 "resourcePath": "objects\\obj_restart\\obj_restart.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "2fe3ae6d-3c9d-479c-a44c-1a84f097985d",
+            "Value": {
+                "id": "28b96c51-dd89-4dd4-a01b-70d1b3f26a6a",
+                "resourcePath": "sprites\\spr_gear\\spr_gear.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -719,6 +735,14 @@
             }
         },
         {
+            "Key": "9de8667e-8965-4c13-889f-d229b62be61c",
+            "Value": {
+                "id": "6b4676fa-0ee2-45c2-a883-0d2b583b1564",
+                "resourcePath": "sprites\\spr_backButton\\spr_backButton.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a1285027-4860-4f15-bff9-84f3ef745e7a",
             "Value": {
                 "id": "8be0ccfd-18e7-4736-8e78-b608b4e1d3fc",
@@ -787,6 +811,14 @@
             "Value": {
                 "id": "cd2c6cd1-318c-4c44-9e14-3dcec7e12088",
                 "resourcePath": "sprites\\spr_ladyback\\spr_ladyback.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b7f77d76-d329-476a-9ff1-f6fd56fab2aa",
+            "Value": {
+                "id": "b099aa7b-7aca-42d6-9366-fdda696cb3fc",
+                "resourcePath": "sprites\\spr_instructionImage\\spr_instructionImage.yy",
                 "resourceType": "GMSprite"
             }
         },
