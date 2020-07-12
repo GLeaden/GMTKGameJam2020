@@ -8,7 +8,6 @@ var _range   = argument1;
 
 
 if (_shaking){
-	show_debug_message("shaking");
     _angle=random_range(-0.25,0.25)
     camera_set_view_angle(view_camera[0],_angle);
 }else
