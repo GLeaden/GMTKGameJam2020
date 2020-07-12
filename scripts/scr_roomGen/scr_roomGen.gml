@@ -314,7 +314,7 @@ for(var i=0;i<4;i++){
 							instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
 						}else{
 							chestSpawnX=(1024*i)+(1024/2)
-							chestSpawnY=(768*i)+(768/2)
+							chestSpawnY=(768*j)+(768/2)
 							instance_create_layer(chestSpawnX,chestSpawnY,"Instances",obj_chest)			
 						}
 					}else{
