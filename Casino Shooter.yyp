@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "0cfdc275-8b28-4195-bd61-2577c06c66ef",
+            "Value": {
+                "id": "722d339b-2815-4d33-85dc-88edbad85862",
+                "resourcePath": "sprites\\spr_32xTiles\\spr_32xTiles.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0e71bd83-ceb4-44e0-a173-fb6b9409538b",
             "Value": {
                 "id": "b9d32a98-0013-4513-afe7-de764a52c07a",
@@ -364,6 +372,14 @@
                 "id": "26c52f2e-1c5e-417d-9c20-d10d05c8b0e4",
                 "resourcePath": "views\\5bb9f58c-2ae7-47ee-b749-950b1aca3693.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5bed450a-e5f9-4b3d-8d39-2819da649ce1",
+            "Value": {
+                "id": "2c2e3787-8edf-44e5-a78b-905caf4e06cd",
+                "resourcePath": "tilesets\\ts_32x\\ts_32x.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -913,6 +929,6 @@
         "44c7eb5f-a276-4c7d-a80f-21f2b0f8a256",
         "ce942d4d-7d11-410b-bc56-16da0e69a5a2",
         "d286a657-3c73-400f-8e19-ee2836dbce84"
-        ],
+    ],
     "tutorial": ""
 }

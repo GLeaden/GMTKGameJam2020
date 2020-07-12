@@ -199,10 +199,18 @@ for(var i=0;i<4;i++){
 			for(var n=0;n<24;n++){
 				switch(mapGridRooms[i,j].rmLayout[m,n]){
 				case "O":
-					tilemap_set(floorMap_id,2,m+(32*i),n+(24*j))
+					tilemap_set(floorMap_id,11,m+(32*i),n+(24*j))
 				break
 				default:
-					tilemap_set(wallMap_id,1,m+(32*i),n+(24*j))
+					if(n<23){
+						if(mapGridRooms[i,j].rmLayout[m,n+1]=="O"){
+							tilemap_set(wallMap_id,24,m+(32*i),n+(24*j))
+						}else{
+							tilemap_set(wallMap_id,8,m+(32*i),n+(24*j))
+						}
+					}else{
+						tilemap_set(wallMap_id,8,m+(32*i),n+(24*j))
+					}
 				break
 				}
 				//tilemap_set()
