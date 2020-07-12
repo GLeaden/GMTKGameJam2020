@@ -13,3 +13,5 @@ melee_state = SWINGSTATE.FREE;
 cursor_sprite = spr_crosshairChip;
 window_set_cursor(cr_none);
 
+dead = false;
+image_speed = 0;
