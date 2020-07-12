@@ -2,12 +2,11 @@
 /// @description plankState_Attack(melee)
 /// @arg melee object_index
 var _melee = argument0;
-
 // Attack Start
-if(image_index == 0)
+if(_melee.image_index == 0)
 {
-	image_index = 1;
-	ds_list_clear(hitEnemies);
+	_melee.image_index = 1;
+	ds_list_clear(_melee.hitEnemies);
 }
 
 // Attack Hitbox and Hits
@@ -37,7 +36,7 @@ hits = instance_place_list(x,y,Enemies,hitEnemiesNow,false);
 hits = 0;
 
 for (i = 0; i < ds_list_size(Enemies); i += 1){
-    hits += instance_place_list(x, y, Enemies[| i], hitEnemiesNow, false);
+    hits += instance_place_list(_melee.x, _melee.y, Enemies[| i], hitEnemiesNow, false);
 }
 
 if (hits > 0)
@@ -46,9 +45,9 @@ if (hits > 0)
 	{
 		// New Enemy
 		var hitID = hitEnemiesNow[| i];
-		if (ds_list_find_index(hitEnemies, hitID) == -1)
+		if (ds_list_find_index(_melee.hitEnemies, hitID) == -1)
 		{
-			ds_list_add(hitEnemies, hitID);
+			ds_list_add(_melee.hitEnemies, hitID);
 			with (hitID) {
 				hitID.hp -= 2
 			}
@@ -58,11 +57,11 @@ if (hits > 0)
 ds_list_destroy(hitEnemiesNow);
 
 //mask_index = spr_plank;
-image_index++;
+_melee.image_index++;
 
-if (endSwing(sprite_index,image_index,1))
+if (endSwing(_melee.sprite_index,_melee.image_index,1))
 {
-	mask_index = spr_plank;
-	image_index = 0;
-	state = SWINGSTATE.FREE;
+	_melee.mask_index = spr_plank;
+	_melee.image_index = 0;
+	melee_state = SWINGSTATE.FREE;
 }

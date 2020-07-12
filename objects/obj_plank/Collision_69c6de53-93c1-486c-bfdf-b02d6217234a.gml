@@ -2,5 +2,4 @@
 // You can write your code in this editor
 ownedByPlayer = true;
 obj_player.melee_weapon = id;
-
 mask_index = hitbox;

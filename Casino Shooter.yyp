@@ -314,7 +314,7 @@
             "Key": "5451001b-646c-4184-9d0d-2992210eae91",
             "Value": {
                 "id": "07257270-1159-4980-933c-67d404512f43",
-                "resourcePath": "scripts\\plankState_Free\\plankState_Free.yy",
+                "resourcePath": "scripts\\meleeState_Free\\meleeState_Free.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -594,7 +594,7 @@
             "Key": "baab3cfa-c166-4a07-89ae-bfd084b6f78f",
             "Value": {
                 "id": "72d0aabd-e583-4eac-a6a2-2d9c8948ab3e",
-                "resourcePath": "scripts\\plankState_Attack\\plankState_Attack.yy",
+                "resourcePath": "scripts\\meleeState_Attack\\meleeState_Attack.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -748,6 +748,14 @@
                 "id": "01d30810-9701-44fc-8264-684ee94e4f4a",
                 "resourcePath": "views\\e625785c-f536-46a1-880f-a17595ddc2f8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e8691f63-33fa-49b2-96ab-79ea42256b42",
+            "Value": {
+                "id": "069ae807-fade-43df-b921-004f816f8ca5",
+                "resourcePath": "sounds\\snd_plank\\snd_plank.yy",
+                "resourceType": "GMSound"
             }
         },
         {
