@@ -8,6 +8,7 @@ left = keyboard_check(ord("A"));
 down = keyboard_check(ord("S"));
 up = keyboard_check(ord("W"));
 dashing = keyboard_check(vk_space);
+dashed = keyboard_check_released(vk_space);
 
 hMove = (right - left) * spd;
 vMove = (down - up) * spd;
@@ -22,6 +23,8 @@ if (dashing && dashcd == 0){
 		hMove = hMove*12;
 		vMove = vMove*24;
 	} 
+	// dash particle
+	part_particles_create(global.P_System, x, y, global.dash_Particle, 1);
 	dashcd = dashrate;
 }
 
@@ -136,6 +139,10 @@ while(place_meeting(x,y+vMove,obj_furniture)){
 // movement
 x += hMove;
 y += vMove;
+
+if (dashed) {
+	part_particles_create(global.P_System, x, y, global.dash_Particle, 1);
+}
 
 // cooldown management
 if (dashcd > 0) dashcd = dashcd - 1;

@@ -7,4 +7,7 @@
 if (part_type_exists(global.bullet_casing_Particle)) {
 	part_type_destroy(global.bullet_casing_Particle);
 }
+/*if (part_type_exists(global.dash_Particle)) {
+	part_type_destroy(global.dash_Particle);
+}*/
 

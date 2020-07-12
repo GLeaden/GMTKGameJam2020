@@ -3,6 +3,7 @@
 global.P_System = part_system_create_layer(layer, true);
 global.dust_Particle = part_type_create();
 global.bullet_casing_Particle = part_type_create();
+global.dash_Particle = part_type_create();
 
 // dust particle
 
@@ -35,3 +36,19 @@ part_type_life(global.bullet_casing_Particle, 50, 999);
 part_type_orientation(global.bullet_casing_Particle, 0, 359, 0.1, 1, 0);
 
 part_type_alpha1(global.bullet_casing_Particle, 1);
+
+// dash
+
+part_type_sprite(global.dash_Particle, spr_dash_cloud, 0, 0, 1);
+
+part_type_size(global.dash_Particle, 1, 1.5, 0.001, 0);
+
+part_type_direction(global.dash_Particle, 0, 359, 0, 1);
+
+part_type_speed(global.dash_Particle, 0.1, 0.2, -0.004, 0);
+
+part_type_life(global.dash_Particle, 50, 60);
+
+part_type_orientation(global.dash_Particle, 0, 359, 0.1, 1, 0);
+
+part_type_alpha3(global.dash_Particle, 0.2, 0.4, 0.1);

@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "60829139-790b-4307-a7b9-a73e83c2e1b6",
+            "Value": {
+                "id": "37c25187-5dfb-42f1-89cc-1d0eece41526",
+                "resourcePath": "sprites\\spr_dash_cloud\\spr_dash_cloud.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6626fde9-655e-47cd-b879-f4c3c0d14827",
             "Value": {
                 "id": "510bba83-ab8c-4d41-9b1b-0b030e570e00",
