@@ -65,7 +65,7 @@ if(mouse_check_button(mb_left)){
 	}
 }
 
-if (projectile_weapon)
+//if (projectile_weapon)
 
 show_debug_message(melee_weapon)
 if(melee_weapon != pointer_null)
