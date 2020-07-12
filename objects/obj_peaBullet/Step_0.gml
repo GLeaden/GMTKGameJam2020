@@ -1,10 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-	if (mouse_check_button_pressed(mb_left)){
-	
-	}
 image_index = 1;
 
+if(tilePlaceMeeting(x+bullet_speed,y+bullet_speed,"Wall")){
+	image_index = 3
+}
 if(tilePlaceMeeting(x,y,"Wall")){
 	instance_destroy()
 }
