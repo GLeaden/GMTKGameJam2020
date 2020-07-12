@@ -57,9 +57,14 @@ if(place_meeting(x, y + vMove, obj_testWall))
 
 // fire weapon
 shot = pointer_null;
-if(mouse_check_button(mb_left)){
-	if(cooldown == 0){
-		if (projectile_weapon != pointer_null){
+if (projectile_weapon != pointer_null){
+	if (projectile_weapon.object_index = obj_pistol){
+		if(mouse_check_button_pressed(mb_left)){
+			fire(projectile_weapon);
+		}
+	}
+	else if(mouse_check_button(mb_left)){
+		if(cooldown == 0){
 			shot = fire(projectile_weapon)
 			if (projectile_weapon.object_index = obj_laserGun){
 				// particle emitter stuff here 
@@ -69,8 +74,8 @@ if(mouse_check_button(mb_left)){
 				part_emitter_burst(global.P_System,global.particle_system_Emitter,global.laser_Particle,1+irandom(2))
 			}
 			cooldown = projectile_weapon.fire_rate;
+			}
 		}
-	}
 }
 
 //if (projectile_weapon)
