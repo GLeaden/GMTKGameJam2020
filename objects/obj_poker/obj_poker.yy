@@ -114,7 +114,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "20",
+            "value": "5",
             "varName": "hitstun",
             "varType": 1
         }

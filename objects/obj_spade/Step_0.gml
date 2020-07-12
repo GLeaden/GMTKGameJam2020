@@ -108,5 +108,7 @@ while(place_meeting(x,y+vMove,obj_furniture)){
 		vMove=lerp(vMove,0,.1)
 }
 
-y += vMove;
-x += hMove;
+if(!tilePlaceMeeting(x+hMove,y+vMove,"Wall")){
+	x += hMove;
+	y += vMove;	
+}
