@@ -43,6 +43,9 @@ if hitstun > 0
 	sprite_index = spr_cardHurt;
 	direction = knockback;
 	speed = 4
+	if(tilePlaceMeeting(x+lengthdir_x(speed, direction),y+lengthdir_y(speed, direction),"Wall")){
+		speed = 0;	
+	}
 }
 
 else

@@ -83,7 +83,6 @@ if (projectile_weapon != pointer_null){
 
 //if (projectile_weapon)
 
-show_debug_message(melee_weapon)
 if(melee_weapon != pointer_null)
 {
 	
