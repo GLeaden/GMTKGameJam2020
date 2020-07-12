@@ -132,7 +132,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0.25",
+            "value": "0.2",
             "varName": "shake",
             "varType": 0
         }
