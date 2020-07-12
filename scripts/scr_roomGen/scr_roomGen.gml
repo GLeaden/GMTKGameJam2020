@@ -143,6 +143,9 @@ for(var i=0;i<4;i++){
 					mapGridRooms[i,j].rmLayout[k,l]="O"
 				}
 			  }
+			  chestSpawnX=(1024*i)+(1024/2)
+			  chestSpawnY=(768*i)+(768/2)
+			  instance_create_layer(chestSpawnX,chestSpawnY,"Instances",obj_chest)
 			break
 			default:
 			  for(var k=1;k<31;k++){
@@ -163,10 +166,7 @@ for(var i=0;i<4;i++){
 							slotSpawnX=((1024*(i))+(1024-96))
 							slotSpawnY=((768*(j))+(11*32))
 							instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
-						}else{
-							chestSpawnX=(1024*i)+(1024/2)
-							chestSpawnY=(768*i)+(768/2)
-							instance_create_layer(chestSpawnX,chestSpawnY,"Instances",obj_chest)			
+						}else{		
 						}
 					}else{
 						if(mapGridPath[i+1,j]<mapGridPath[i,j]){
@@ -212,10 +212,7 @@ for(var i=0;i<4;i++){
 							slotSpawnX=((1024*(i))+(14*32))
 							slotSpawnY=((768*(j))+(768-96))
 							instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
-						}else{
-							chestSpawnX=(1024*i)+(1024/2)
-							chestSpawnY=(768*i)+(768/2)
-							instance_create_layer(chestSpawnX,chestSpawnY,"Instances",obj_chest)			
+						}else{		
 						}
 					}else{
 						if(mapGridPath[i,j+1]<mapGridPath[i,j]){
@@ -261,10 +258,7 @@ for(var i=0;i<4;i++){
 							slotSpawnX=((1024*(i))+64)
 							slotSpawnY=((768*(j))+(11*32))
 							instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
-						}else{
-							chestSpawnX=(1024*i)+(1024/2)
-							chestSpawnY=(768*i)+(768/2)
-							instance_create_layer(chestSpawnX,chestSpawnY,"Instances",obj_chest)			
+						}else{		
 						}
 					}else{
 						if(mapGridPath[i-1,j]<mapGridPath[i,j]){
@@ -312,10 +306,7 @@ for(var i=0;i<4;i++){
 							slotSpawnX=((1024*(i))+(14*32))
 							slotSpawnY=((768*(j))+(96))
 							instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
-						}else{
-							chestSpawnX=(1024*i)+(1024/2)
-							chestSpawnY=(768*j)+(768/2)
-							instance_create_layer(chestSpawnX,chestSpawnY,"Instances",obj_chest)			
+						}else{	
 						}
 					}else{
 						if(mapGridPath[i,j-1]<mapGridPath[i,j]){
