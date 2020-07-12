@@ -1,9 +1,7 @@
 curCellX=(obj_player.x div 1028)
 curCellY=(obj_player.y div 768)
 var wallLay_id = layer_get_id("Wall");
-var floorLay_id = layer_get_id("Floor");
 var wallMap_id = layer_tilemap_get_id(wallLay_id);
-var floorMap_id = layer_tilemap_get_id(floorLay_id);
 
 /*
 
@@ -36,6 +34,8 @@ if(global.roomLocked=false){
 					doorSpawnX=((1024*curCellX)+(1024-32))
 					doorSpawnY=((768*curCellY)+(11*32))
 					instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_vDoor)
+					tilemap_set(wallMap_id,8,32+(32*curCellX),12+(24*curCellY))
+					tilemap_set(wallMap_id,8,32+(32*curCellX),13+(24*curCellY))
 					tilemap_set(wallMap_id,8,31+(32*curCellX),12+(24*curCellY))
 					tilemap_set(wallMap_id,8,31+(32*curCellX),13+(24*curCellY))
 				}else{
@@ -43,6 +43,8 @@ if(global.roomLocked=false){
 						doorSpawnX=((1024*curCellX)+(1024-32))
 						doorSpawnY=((768*curCellY)+(11*32))
 						instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_vDoor)
+						tilemap_set(wallMap_id,8,32+(32*curCellX),12+(24*curCellY))
+						tilemap_set(wallMap_id,8,32+(32*curCellX),13+(24*curCellY))
 						tilemap_set(wallMap_id,8,31+(32*curCellX),12+(24*curCellY))
 						tilemap_set(wallMap_id,8,31+(32*curCellX),13+(24*curCellY))
 					}
@@ -59,12 +61,16 @@ if(global.roomLocked=false){
 					instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_hDoor)
 					tilemap_set(wallMap_id,8,15+(32*curCellX),23+(24*curCellY))
 					tilemap_set(wallMap_id,8,16+(32*curCellX),23+(24*curCellY))
+					tilemap_set(wallMap_id,8,15+(32*curCellX),24+(24*curCellY))
+					tilemap_set(wallMap_id,8,16+(32*curCellX),24+(24*curCellY))
 				}else{
 					if(global.gridPath[curCellX,curCellY+1]<global.gridPath[curCellX,curCellY]){
 						doorSpawnX=((1024*curCellX)+(15*32))
 						doorSpawnY=((768*curCellY)+(768-32))
 						tilemap_set(wallMap_id,8,15+(32*curCellX),23+(24*curCellY))
 						tilemap_set(wallMap_id,8,16+(32*curCellX),23+(24*curCellY))
+						tilemap_set(wallMap_id,8,15+(32*curCellX),24+(24*curCellY))
+						tilemap_set(wallMap_id,8,16+(32*curCellX),24+(24*curCellY))
 						instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_hDoor)
 					}
 				}
@@ -80,6 +86,8 @@ if(global.roomLocked=false){
 					instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_vDoor)
 					tilemap_set(wallMap_id,8,(32*curCellX),12+(24*curCellY))
 					tilemap_set(wallMap_id,8,(32*curCellX),13+(24*curCellY))
+					tilemap_set(wallMap_id,8,(32*curCellX)-1,12+(24*curCellY))
+					tilemap_set(wallMap_id,8,(32*curCellX)-1,13+(24*curCellY))
 				}else{
 					if(global.gridPath[curCellX-1,curCellY]<global.gridPath[curCellX,curCellY]){
 						doorSpawnX=((1024*curCellX))
@@ -87,6 +95,8 @@ if(global.roomLocked=false){
 						instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_vDoor)
 						tilemap_set(wallMap_id,8,(32*curCellX),12+(24*curCellY))
 						tilemap_set(wallMap_id,8,(32*curCellX),13+(24*curCellY))
+						tilemap_set(wallMap_id,8,(32*curCellX)-1,12+(24*curCellY))
+						tilemap_set(wallMap_id,8,(32*curCellX)-1,13+(24*curCellY))
 					}
 				}
 			}
@@ -101,6 +111,8 @@ if(global.roomLocked=false){
 					instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_hDoor)
 					tilemap_set(wallMap_id,8,15+(32*curCellX),1+(24*curCellY))
 					tilemap_set(wallMap_id,8,16+(32*curCellX),1+(24*curCellY))
+					tilemap_set(wallMap_id,8,15+(32*curCellX),(24*curCellY))
+					tilemap_set(wallMap_id,8,16+(32*curCellX),(24*curCellY))
 				}else{
 					if(global.gridPath[curCellX,curCellY-1]<global.gridPath[curCellX,curCellY]){
 						doorSpawnX=((1024*curCellX)+(15*32))
@@ -108,6 +120,8 @@ if(global.roomLocked=false){
 						instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_hDoor)
 						tilemap_set(wallMap_id,8,15+(32*curCellX),1+(24*curCellY))
 						tilemap_set(wallMap_id,8,16+(32*curCellX),1+(24*curCellY))
+						tilemap_set(wallMap_id,8,15+(32*curCellX),(24*curCellY))
+						tilemap_set(wallMap_id,8,16+(32*curCellX),(24*curCellY))
 					}
 				}
 			}
