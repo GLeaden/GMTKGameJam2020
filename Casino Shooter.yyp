@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "67432a09-342f-4738-9beb-36ab6b0fa1d2",
+            "Value": {
+                "id": "74b3ae7b-f740-4027-b910-34088086c53c",
+                "resourcePath": "objects\\obj_slotMachine\\obj_slotMachine.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "6746236c-2907-4f1d-9958-e63ad76739a2",
             "Value": {
                 "id": "c7236992-6c16-4ad3-8ba1-67d09e32c0ad",
@@ -913,6 +921,6 @@
         "44c7eb5f-a276-4c7d-a80f-21f2b0f8a256",
         "ce942d4d-7d11-410b-bc56-16da0e69a5a2",
         "d286a657-3c73-400f-8e19-ee2836dbce84"
-        ],
+    ],
     "tutorial": ""
 }

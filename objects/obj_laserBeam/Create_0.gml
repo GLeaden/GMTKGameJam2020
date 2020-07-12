@@ -3,5 +3,5 @@
 image_xscale = bullet_size;
 image_yscale = bullet_size;
 speed = bullet_speed;
-direction = obj_laserGun.image_angle
+direction = obj_player.projectile_weapon.image_angle;
 image_angle = direction;
