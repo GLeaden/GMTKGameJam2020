@@ -2,6 +2,9 @@
 // You can write your code in this editor
 // Move in four directions when pressing arrow keys.
 // spd = 3;
+while (speed > 0){
+	speed = lerp(speed, 0, 0.05);
+}
 
 right = keyboard_check(ord("D"));
 left = keyboard_check(ord("A"));

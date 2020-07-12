@@ -10,7 +10,5 @@ dashcd   = 0 // dash cooldown
 dashrate = 120; // can dash every 120 frames (2sec)
 
 melee_state = SWINGSTATE.FREE;
-window_set_cursor(cr_none);
-
 dead = false;
 image_speed = 0;
