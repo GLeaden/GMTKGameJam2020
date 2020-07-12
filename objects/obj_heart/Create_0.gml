@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-alarm[1] = 90;
-spd = choose(-3,3);
+alarm[1] = 210;
+alarm[5] = 1;
 vMove = 0;
 hMove = 0;
 
