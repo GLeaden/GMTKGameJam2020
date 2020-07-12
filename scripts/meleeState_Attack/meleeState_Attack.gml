@@ -2,66 +2,68 @@
 /// @description plankState_Attack(melee)
 /// @arg melee object_index
 var _melee = argument0;
-// Attack Start
-if(_melee.image_index == 0)
-{
-	_melee.image_index = 1;
-	ds_list_clear(_melee.hitEnemies);
-}
-
-// Attack Hitbox and Hits
-//mask_index = _melee.hitbox.mask_index;
-var hitEnemiesNow = ds_list_create();
-
-var Enemies = ds_list_create();
-ds_list_add(Enemies, obj_heart);
-ds_list_add(Enemies, obj_spade);
-ds_list_add(Enemies, obj_diamond);
-ds_list_add(Enemies, obj_club);
-
-/*
-plankHeartAttack();
-plankDiamondAttack();
-plankSpadeAttack();
-plankClubAttack();
-
-var hit1 = instance_place_list(x,y,obj_heart,hitEnemiesNow,false);
-var hit2 = instance_place_list(x,y,obj_spade,hitEnemiesNow,false);
-var hit3 = instance_place_list(x,y,obj_club,hitEnemiesNow,false);
-var hit4 = instance_place_list(x,y,obj_diamond,hitEnemiesNow,false);
-
-hits = instance_place_list(x,y,Enemies,hitEnemiesNow,false);
-*/
-
-hits = 0;
-
-for (i = 0; i < ds_list_size(Enemies); i += 1){
-    hits += instance_place_list(_melee.x, _melee.y, Enemies[| i], hitEnemiesNow, false);
-}
-
-if (hits > 0)
-{
-	for (var i = 0; i < hits; i++)
+with(_melee){
+	// Attack Start
+	if(image_index == 0)
 	{
-		// New Enemy
-		var hitID = hitEnemiesNow[| i];
-		if (ds_list_find_index(_melee.hitEnemies, hitID) == -1)
+		image_index = 1;
+		ds_list_clear(hitEnemies);
+	}
+
+	// Attack Hitbox and Hits
+	//mask_index = hitboxmask_index;
+	var hitEnemiesNow = ds_list_create();
+
+	var Enemies = ds_list_create();
+	ds_list_add(Enemies, obj_heart);
+	ds_list_add(Enemies, obj_spade);
+	ds_list_add(Enemies, obj_diamond);
+	ds_list_add(Enemies, obj_club);
+
+	/*
+	plankHeartAttack();
+	plankDiamondAttack();
+	plankSpadeAttack();
+	plankClubAttack();
+
+	var hit1 = instance_place_list(x,y,obj_heart,hitEnemiesNow,false);
+	var hit2 = instance_place_list(x,y,obj_spade,hitEnemiesNow,false);
+	var hit3 = instance_place_list(x,y,obj_club,hitEnemiesNow,false);
+	var hit4 = instance_place_list(x,y,obj_diamond,hitEnemiesNow,false);
+
+	hits = instance_place_list(x,y,Enemies,hitEnemiesNow,false);
+	*/
+
+	hits = 0;
+
+	for (i = 0; i < ds_list_size(Enemies); i += 1){
+	    hits += instance_place_list(x, y, Enemies[| i], hitEnemiesNow, false);
+	}
+
+	if (hits > 0)
+	{
+		for (var i = 0; i < hits; i++)
 		{
-			ds_list_add(_melee.hitEnemies, hitID);
-			with (hitID) {
-				hitID.hp -= 2
+			// New Enemy
+			var hitID = hitEnemiesNow[| i];
+			if (ds_list_find_index(hitEnemies, hitID) == -1)
+			{
+				ds_list_add(hitEnemies, hitID);
+				with (hitID) {
+					hitID.hp -= 2
+				}
 			}
 		}
 	}
-}
-ds_list_destroy(hitEnemiesNow);
+	ds_list_destroy(hitEnemiesNow);
 
-//mask_index = spr_plank;
-_melee.image_index++;
+	//mask_index = spr_plank;
+	image_index++;
 
-if (endSwing(_melee.sprite_index,_melee.image_index,1))
-{
-	_melee.mask_index = spr_plank;
-	_melee.image_index = 0;
-	melee_state = SWINGSTATE.FREE;
+	if (endSwing(sprite_index,image_index,1))
+	{
+		mask_index = spr_plank;
+		image_index = 0;
+		obj_player.melee_state = SWINGSTATE.FREE;
+	}
 }
