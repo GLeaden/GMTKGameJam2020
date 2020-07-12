@@ -1039,6 +1039,14 @@
             }
         },
         {
+            "Key": "dafce844-c515-4384-bd1b-3061f5fd5dbe",
+            "Value": {
+                "id": "fe961c3b-3cb7-4b33-8fa1-be4b99c237ac",
+                "resourcePath": "sounds\\snd_lmao\\snd_lmao.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "db911699-3796-4ab3-b65a-62ed36090a9e",
             "Value": {
                 "id": "f1e3abaf-ea17-4266-913c-0e988565f7d6",
