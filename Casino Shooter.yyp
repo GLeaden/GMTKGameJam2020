@@ -567,6 +567,14 @@
             }
         },
         {
+            "Key": "74107ccc-cbfd-45a5-9a33-4c2b1c075162",
+            "Value": {
+                "id": "8b0bae48-b236-4fb3-b32d-903bbae13cf5",
+                "resourcePath": "sounds\\snd_winMusic\\snd_winMusic.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "7475425f-9fd2-4099-a041-23aa21096fae",
             "Value": {
                 "id": "be7b2acb-89a3-49bb-93ac-dbe5d77e2f87",
