@@ -4,6 +4,7 @@ with(other)
 {
 	hp -= obj_arBullet.damage;
 	hit = 1;
+	sprite_index = spr_cardHurt;
 }
 
 instance_destroy();
