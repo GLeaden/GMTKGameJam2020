@@ -5,6 +5,6 @@ if (keyboard_check(ord("R"))){
 }
 if (keyboard_check(ord("O"))){
 	if(instance_exists(obj_player)){
-		enemySpawn()
+		enemySpawn(irandom(3))
 	}
 }
