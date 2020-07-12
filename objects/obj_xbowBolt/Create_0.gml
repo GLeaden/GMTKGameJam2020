@@ -3,3 +3,4 @@
 image_xscale = bullet_size;
 image_yscale = bullet_size;
 speed = bullet_speed;
+damage = 10;

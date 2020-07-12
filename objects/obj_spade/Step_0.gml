@@ -11,7 +11,7 @@ if hitstun > 1
 }
 else
 {
-	spd = 5;
+	spd = 4;
 	if (sprite_index = spr_cardHurt) sprite_index = spr_spadeF;
 	if (obj_player.x div spd < x div spd)
 			{

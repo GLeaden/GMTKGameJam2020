@@ -29,12 +29,6 @@ else{
 	if (laser){
 		obj_player.hMove = 0;
 		obj_player.vMove = 0;
-		with(projectile) {
-			//global.laser_Emitter = part_emitter_create(global.P_System);
-			part_particles_create(global.P_System, x, y, global.bullet_casing_Particle, 5);
-			//part_emitter_region(global.P_System, global.laser_Emitter, x - 5, x + 5, y - 2, y + 2, ps_shape_line, ps_distr_invgaussian);
-			//part_emitter_stream(global.P_System, global.laser_Emitter, global.bullet_casing_Particle, 5);
-		}
 		
 	}
 	else{
@@ -51,4 +45,4 @@ else{
 }
 
 
-return;
+return projectile;

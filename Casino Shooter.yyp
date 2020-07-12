@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "12bd651f-e752-4bda-a745-df3142e57f70",
+            "Value": {
+                "id": "a2aeda01-9945-4a63-8d24-f2a6d71ebba7",
+                "resourcePath": "objects\\obj_dancingCard\\obj_dancingCard.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "13dfe659-56af-4a5c-8587-5a531a5c0ec1",
             "Value": {
                 "id": "7c977108-28fe-4f21-bdbe-0a1e7c5d27b2",
@@ -204,6 +212,14 @@
                 "id": "2b39ea8c-fc8b-433d-9a63-3a8d4f34a7f8",
                 "resourcePath": "sprites\\spr_crosshairChip\\spr_crosshairChip.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2edf2e72-7b4a-4393-a66b-e39d04df4969",
+            "Value": {
+                "id": "fc145c07-856b-47ba-a1d4-fd9851ce8cb1",
+                "resourcePath": "objects\\obj_restart\\obj_restart.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -687,6 +703,14 @@
             }
         },
         {
+            "Key": "9b935738-881a-4762-bfc8-bfbe0fedac6f",
+            "Value": {
+                "id": "1ed0728a-073b-427d-923e-bd7ce96c5497",
+                "resourcePath": "sprites\\spr_startWords\\spr_startWords.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a1285027-4860-4f15-bff9-84f3ef745e7a",
             "Value": {
                 "id": "8be0ccfd-18e7-4736-8e78-b608b4e1d3fc",
@@ -847,6 +871,14 @@
             }
         },
         {
+            "Key": "cd135c51-0ade-4206-8e83-f57489e37174",
+            "Value": {
+                "id": "a33c869f-d5a0-4df3-b415-5dc0f8b104b1",
+                "resourcePath": "sprites\\spr_restart\\spr_restart.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cd8ab66a-e520-462f-8631-edfe610e5d29",
             "Value": {
                 "id": "094e6f01-7b66-4714-a884-e420b3b37989",
@@ -940,6 +972,14 @@
                 "id": "fe100d85-c867-476b-be91-43335dcd6dcd",
                 "resourcePath": "views\\dd745b5f-9b7d-417e-80ba-34094a3ff917.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "de6883d8-1034-40f6-9cb7-8a513b9ee03d",
+            "Value": {
+                "id": "ccfa36e0-5d28-4d95-a614-8c251eff26f5",
+                "resourcePath": "objects\\obj_startWords\\obj_startWords.yy",
+                "resourceType": "GMObject"
             }
         },
         {
