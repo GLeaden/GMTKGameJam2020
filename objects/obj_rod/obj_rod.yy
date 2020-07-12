@@ -63,20 +63,6 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "5fec9583-a83f-4256-a91d-7c27c570fcba",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "obj_plankSwing",
-            "varName": "hit",
-            "varType": 5
-        },
-        {
             "id": "10f25bff-b9a4-4640-8a9e-0f5ed1dd8b23",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
@@ -86,7 +72,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "120",
+            "value": "60",
             "varName": "swing_rate",
             "varType": 0
         },
@@ -100,9 +86,23 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "spr_plankHB",
+            "value": "spr_rodHB",
             "varName": "hitbox",
             "varType": 5
+        },
+        {
+            "id": "222fbb35-2209-46f3-8772-5c845d1a5c98",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "5",
+            "varName": "dmg",
+            "varType": 0
         }
     ],
     "solid": false,

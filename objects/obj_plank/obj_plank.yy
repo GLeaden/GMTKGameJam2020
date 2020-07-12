@@ -63,20 +63,6 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "b0289530-3910-4a96-b7fa-286bb211cb2b",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "obj_plankSwing",
-            "varName": "hit",
-            "varType": 5
-        },
-        {
             "id": "d30116be-dcd2-44c9-be78-13dafdc080d8",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",

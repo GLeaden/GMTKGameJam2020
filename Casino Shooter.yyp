@@ -671,14 +671,6 @@
             }
         },
         {
-            "Key": "cf105347-8c53-4ff4-91d6-63a6808635e8",
-            "Value": {
-                "id": "c6060421-4ddf-4ae8-964f-6550509284a7",
-                "resourcePath": "objects\\obj_plankSwing\\obj_plankSwing.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "d1a7e827-555c-4011-8647-ab20355c7e75",
             "Value": {
                 "id": "09cbc833-c12f-4f0b-b7a7-303b808c5294",
