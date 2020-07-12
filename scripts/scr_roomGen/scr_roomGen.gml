@@ -156,6 +156,8 @@ for(var i=0;i<4;i++){
 					mapGridRooms[i,j].rmLayout[k,l]="O"
 				}
 			  }
+			  playSpawnX=((1024*(i))+512)
+			  instance_create_layer(playSpawnX,96,"Instances",obj_player)
 			break
 			case "F":
 			  for(var k=1;k<31;k++){

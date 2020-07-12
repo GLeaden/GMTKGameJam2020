@@ -26,7 +26,7 @@ if (dashing && dashcd == 0){
 }
 
 
-//collision_line(x, y, x+hMove, y+vMove, obj_testWall, false, false)
+// collision_line(x, y, x+hMove, y+vMove, obj_testWall, false, false)
 
 
 
@@ -56,6 +56,34 @@ if(mouse_check_button(mb_left)){
 			fire(projectile_weapon)
 			cooldown = projectile_weapon.fire_rate;
 		}
+	}
+}
+
+
+if(melee_weapon != pointer_null)
+{
+	
+	switch (melee_state)
+	{
+		case SWINGSTATE.FREE:
+			meleeState_Free(melee_weapon);
+			break;
+		case SWINGSTATE.ATTACK:
+			meleeState_Attack(melee_weapon);
+			break;
+	}
+}
+
+keyAttack = mouse_check_button(mb_right);
+
+if(melee_weapon != pointer_null && projectile_weapon != pointer_null){
+	if (keyAttack){
+		projectile_weapon.image_alpha = 0;
+		melee_weapon.image_alpha = 1;
+	}
+	else{
+		projectile_weapon.image_alpha = 1;
+		melee_weapon.image_alpha = 0;
 	}
 }
 /*
