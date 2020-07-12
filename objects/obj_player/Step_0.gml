@@ -57,9 +57,14 @@ if(place_meeting(x, y + vMove, obj_testWall))
 
 // fire weapon
 shot = pointer_null;
-if(mouse_check_button(mb_left)){
-	if(cooldown == 0){
-		if (projectile_weapon != pointer_null){
+if (projectile_weapon != pointer_null){
+	if (projectile_weapon.object_index = obj_pistol){
+		if(mouse_check_button_pressed(mb_left)){
+			fire(projectile_weapon);
+		}
+	}
+	else if(mouse_check_button(mb_left)){
+		if(cooldown == 0){
 			shot = fire(projectile_weapon)
 			if (projectile_weapon.object_index = obj_laserGun){
 				// particle emitter stuff here 
@@ -69,8 +74,8 @@ if(mouse_check_button(mb_left)){
 				part_emitter_burst(global.P_System,global.particle_system_Emitter,global.laser_Particle,1+irandom(2))
 			}
 			cooldown = projectile_weapon.fire_rate;
+			}
 		}
-	}
 }
 
 //if (projectile_weapon)
@@ -160,24 +165,26 @@ if (dashcd > 0) dashcd = dashcd - 1;
 if (cooldown > 0) cooldown = cooldown - 1;
 
 
+if(!dead)
+{
+	// aesthetics
+	if (mouse_x < obj_player.x){
+		image_xscale=-1;
+	}
+	else{
+		image_xscale=1;
+	}
+	if (mouse_y < obj_player.y-128){
+		sprite_index = spr_ladyback;
+		if (projectile_weapon != pointer_null) projectile_weapon.depth = 100;
+	}
+	else{
+		sprite_index = spr_lady;
+		if (projectile_weapon != pointer_null) projectile_weapon.depth = -100;
+	}
 
-// aesthetics
-if (mouse_x < obj_player.x){
-	image_xscale=-1;
-}
-else{
-	image_xscale=1;
-}
-if (mouse_y < obj_player.y-128){
-	sprite_index = spr_ladyback;
-	if (projectile_weapon != pointer_null) projectile_weapon.depth = 100;
-}
-else{
-	sprite_index = spr_lady;
-	if (projectile_weapon != pointer_null) projectile_weapon.depth = -100;
-}
-
-// dust effect
-if ((right || left || up || down)){
-	part_particles_create(global.P_System, x, y, global.dust_Particle, 4);
+	// dust effect
+	if ((right || left || up || down)){
+		part_particles_create(global.P_System, x, y, global.dust_Particle, 4);
+	}
 }
