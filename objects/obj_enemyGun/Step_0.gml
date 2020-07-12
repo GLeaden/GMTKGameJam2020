@@ -1,9 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-if(ownedBy.hp==0){
-	instance_destroy()
-}
 x = lerp(x,ownedBy.x+8,.5)
 y = lerp(y,ownedBy.y,.5)
 

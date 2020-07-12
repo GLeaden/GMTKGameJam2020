@@ -12,3 +12,7 @@ if (keyboard_check(ord("O"))){
 if(keyboard_check_released(ord("L"))){
 	instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_laserGun)
 }
+
+if(keyboard_check_released(ord("P"))){
+	instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_xbow)
+}
