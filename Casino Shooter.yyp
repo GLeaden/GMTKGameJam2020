@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "316d0dcd-4d12-4cd7-8a2f-9dc3ff4633e9",
+            "Value": {
+                "id": "c010de85-fe22-4a0f-912e-8d9b76c8e9bf",
+                "resourcePath": "sprites\\spr_slotMachine\\spr_slotMachine.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "31f5a369-a518-4676-82b0-d515f2f7b542",
             "Value": {
                 "id": "7ea7e031-1792-4643-be39-6fc2ce234930",
