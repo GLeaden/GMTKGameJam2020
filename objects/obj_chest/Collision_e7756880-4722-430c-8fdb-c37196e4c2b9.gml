@@ -3,7 +3,7 @@
 if(!opened)
 {
 image_index = 1;
-audio_play_sound(snd_lmao,5,false);
+audio_play_sound(snd_slots,5,true);
 alarm[6] = 60;
 opened = true;
 }
