@@ -4,6 +4,7 @@ global.P_System = part_system_create_layer(layer, true);
 global.dust_Particle = part_type_create();
 global.bullet_casing_Particle = part_type_create();
 global.dash_Particle = part_type_create();
+//global.laser_Emitter = part_emitter_create(global.P_System);
 
 // dust particle
 
@@ -52,3 +53,7 @@ part_type_life(global.dash_Particle, 50, 60);
 part_type_orientation(global.dash_Particle, 0, 359, 0.1, 1, 0);
 
 part_type_alpha3(global.dash_Particle, 0.2, 0.4, 0.1);
+
+// laser emitter
+
+
