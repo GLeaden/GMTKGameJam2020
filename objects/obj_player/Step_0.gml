@@ -116,6 +116,25 @@ if (dashing && wall){
 	}
 }
 
+while(tilePlaceMeeting(x+hMove,y,"Wall")){
+	hMove=lerp(hMove,0,.1)
+}
+while(tilePlaceMeeting(x,y+vMove,"Wall")){
+	vMove=lerp(vMove,0,.1)
+}
+
+while(place_meeting(x+hMove,y,obj_furniture)){
+	hMove=lerp(hMove,0,.1)
+}
+while(place_meeting(x,y+vMove,obj_furniture)){
+	vMove=lerp(vMove,0,.1)
+}
+
+
+
+
+
+
 // movement
 x += hMove;
 y += vMove;
