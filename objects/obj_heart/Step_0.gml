@@ -6,7 +6,7 @@ if (hp <= 0)
 }
 
 while (speed > 0){
-	speed = lerp(speed, 0, 0.2);
+	speed = lerp(speed, 0, 0.5);
 }
 
 if hitstun > 0
@@ -50,6 +50,15 @@ else
 		vMove = 0;
 	}
 	*/
+	if (speed>0){	
+		while(tilePlaceMeeting(x+lengthdir_x(speed, direction),y+lengthdir_y(speed, direction),"Wall")){
+			speed=lerp(speed,0,.1)
+		}
+
+		while(place_meeting(x+lengthdir_x(speed, direction),y+lengthdir_y(speed, direction),obj_furniture)){
+			speed=lerp(speed,0,.1)
+		}
+	}
 	while(tilePlaceMeeting(x+hMove,y,"Wall")){
 	hMove=lerp(hMove,0,.1)
 	}
@@ -63,8 +72,12 @@ else
 	while(place_meeting(x,y+vMove,obj_furniture)){
 		vMove=lerp(vMove,0,.1)
 	}
+	if(tilePlaceMeeting(x+lengthdir_x(speed, direction),y+lengthdir_y(speed, direction),"Wall")){
+	speed = 0;	
+}
 
-
-	y += vMove;
-	x += hMove;
+	if(!tilePlaceMeeting(x+hMove,y+vMove,"Wall")){
+		x += hMove;
+		y += vMove;	
+	}
 }

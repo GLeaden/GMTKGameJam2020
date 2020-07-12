@@ -140,6 +140,16 @@ if (dashing && wall){
 		vMove = dist;
 	}
 }*/
+if (speed>0){	
+	while(tilePlaceMeeting(x+lengthdir_x(speed, direction),y+lengthdir_y(speed, direction),"Wall")){
+		speed--
+	}
+
+	while(place_meeting(x+lengthdir_x(speed, direction),y+lengthdir_y(speed, direction),obj_furniture)){
+		speed--
+	}
+}
+
 
 while(tilePlaceMeeting(x+hMove,y,"Wall")&&hMove!=0){
 	hMove=lerp(hMove,0,.1)
@@ -156,6 +166,9 @@ while(place_meeting(x,y+vMove,obj_furniture)){
 }
 
 // movement
+if(tilePlaceMeeting(x+lengthdir_x(speed, direction),y+lengthdir_y(speed, direction),"Wall")){
+	speed = 0;	
+}
 if(!tilePlaceMeeting(x+hMove,y+vMove,"Wall")){
 	x += hMove;
 	y += vMove;	
