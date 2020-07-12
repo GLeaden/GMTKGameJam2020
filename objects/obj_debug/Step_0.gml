@@ -20,6 +20,6 @@ if(keyboard_check_released(ord("P"))){
 
 if (keyboard_check(ord("M"))){
 	if(instance_exists(obj_player)){
-		global.roomLocked=false;
+		unlockRoom();
 	}
 }

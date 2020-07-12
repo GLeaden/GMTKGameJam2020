@@ -1,9 +1,7 @@
 curCellX=(obj_player.x div 1028)
 curCellY=(obj_player.y div 768)
 var wallLay_id = layer_get_id("Wall");
-var floorLay_id = layer_get_id("Floor");
 var wallMap_id = layer_tilemap_get_id(wallLay_id);
-var floorMap_id = layer_tilemap_get_id(floorLay_id);
 
 /*
 
