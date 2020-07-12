@@ -159,9 +159,15 @@ for(var i=0;i<4;i++){
 			if(i<3){
 				if(mapGridPath[i+1,j]!="F"&&mapGridPath[i,j]!="S"){
 					if(mapGridPath[i+1,j]=="S"||mapGridPath[i,j]=="F"){
-						slotSpawnX=((1024*(i))+(1024-96))
-						slotSpawnY=((768*(j))+(11*32))
-						instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
+						if(mapGridPath[i,j]!="F"){
+							slotSpawnX=((1024*(i))+(1024-96))
+							slotSpawnY=((768*(j))+(11*32))
+							instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
+						}else{
+							chestSpawnX=(1024*i)+(1024/2)
+							chestSpawnY=(768*i)+(768/2)
+							instance_create_layer(chestSpawnX,chestSpawnY,"Instances",obj_chest)			
+						}
 					}else{
 						if(mapGridPath[i+1,j]<mapGridPath[i,j]){
 							slotSpawnX=((1024*(i))+(1024-96))
@@ -202,9 +208,15 @@ for(var i=0;i<4;i++){
 			if(j<3){
 				if(mapGridPath[i,j+1]!="F"&&mapGridPath[i,j]!="S"){
 					if(mapGridPath[i,j+1]=="S"||mapGridPath[i,j]=="F"){
-						slotSpawnX=((1024*(i))+(14*32))
-						slotSpawnY=((768*(j))+(768-96))
-						instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
+						if(mapGridPath[i,j]!="F"){
+							slotSpawnX=((1024*(i))+(14*32))
+							slotSpawnY=((768*(j))+(768-96))
+							instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
+						}else{
+							chestSpawnX=(1024*i)+(1024/2)
+							chestSpawnY=(768*i)+(768/2)
+							instance_create_layer(chestSpawnX,chestSpawnY,"Instances",obj_chest)			
+						}
 					}else{
 						if(mapGridPath[i,j+1]<mapGridPath[i,j]){
 							slotSpawnX=((1024*(i))+(14*32))
@@ -245,9 +257,15 @@ for(var i=0;i<4;i++){
 			if(i>0){
 				if(mapGridPath[i-1,j]!="F"&&mapGridPath[i,j]!="S"){
 					if(mapGridPath[i-1,j]=="S"||mapGridPath[i,j]=="F"){
-						slotSpawnX=((1024*(i))+64)
-						slotSpawnY=((768*(j))+(11*32))
-						instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
+						if(mapGridPath[i,j]!="F"){
+							slotSpawnX=((1024*(i))+64)
+							slotSpawnY=((768*(j))+(11*32))
+							instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
+						}else{
+							chestSpawnX=(1024*i)+(1024/2)
+							chestSpawnY=(768*i)+(768/2)
+							instance_create_layer(chestSpawnX,chestSpawnY,"Instances",obj_chest)			
+						}
 					}else{
 						if(mapGridPath[i-1,j]<mapGridPath[i,j]){
 							slotSpawnX=((1024*(i))+64)
@@ -290,9 +308,15 @@ for(var i=0;i<4;i++){
 			if(j>0){
 				if(mapGridPath[i,j-1]!="F"&&mapGridPath[i,j]!="S"){
 					if(mapGridPath[i,j-1]=="S"||mapGridPath[i,j]=="F"){
-						slotSpawnX=((1024*(i))+(14*32))
-						slotSpawnY=((768*(j))+(96))
-						instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
+						if(mapGridPath[i,j]!="F"){
+							slotSpawnX=((1024*(i))+(14*32))
+							slotSpawnY=((768*(j))+(96))
+							instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
+						}else{
+							chestSpawnX=(1024*i)+(1024/2)
+							chestSpawnY=(768*i)+(768/2)
+							instance_create_layer(chestSpawnX,chestSpawnY,"Instances",obj_chest)			
+						}
 					}else{
 						if(mapGridPath[i,j-1]<mapGridPath[i,j]){
 							slotSpawnX=((1024*(i))+(14*32))
