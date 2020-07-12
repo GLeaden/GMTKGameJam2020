@@ -287,6 +287,14 @@
             }
         },
         {
+            "Key": "44c7eb5f-a276-4c7d-a80f-21f2b0f8a256",
+            "Value": {
+                "id": "af72bdc5-1458-414d-bf74-2f310ab7f798",
+                "resourcePath": "scripts\\scrshake\\scrshake.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "460e294b-fd57-45f1-afa4-78ab51b0fb37",
             "Value": {
                 "id": "2fd268b1-269f-4720-a74e-3b92f676e8e1",
@@ -687,11 +695,27 @@
             }
         },
         {
+            "Key": "ce942d4d-7d11-410b-bc56-16da0e69a5a2",
+            "Value": {
+                "id": "adf3b736-6a3f-4f8b-8fb1-f4129bab856e",
+                "resourcePath": "scripts\\tilePlaceMeeting\\tilePlaceMeeting.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d1a7e827-555c-4011-8647-ab20355c7e75",
             "Value": {
                 "id": "09cbc833-c12f-4f0b-b7a7-303b808c5294",
                 "resourcePath": "sprites\\spr_floorTileSheet\\spr_floorTileSheet.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d286a657-3c73-400f-8e19-ee2836dbce84",
+            "Value": {
+                "id": "f5c37cc4-32bf-42f1-8100-6795639a1665",
+                "resourcePath": "scripts\\tilePositionMeeting\\tilePositionMeeting.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -885,7 +909,10 @@
         "34c707bb-07f7-4562-a96c-0a711acb769a",
         "5451001b-646c-4184-9d0d-2992210eae91",
         "baab3cfa-c166-4a07-89ae-bfd084b6f78f",
-        "989eed75-8996-4668-9247-1521ca34d6e9"
-    ],
+        "989eed75-8996-4668-9247-1521ca34d6e9",
+        "44c7eb5f-a276-4c7d-a80f-21f2b0f8a256",
+        "ce942d4d-7d11-410b-bc56-16da0e69a5a2",
+        "d286a657-3c73-400f-8e19-ee2836dbce84"
+        ],
     "tutorial": ""
 }
