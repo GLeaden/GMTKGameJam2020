@@ -1,48 +1,48 @@
 {
-    "id": "4e070864-05d0-48f7-b39a-771bdc97e4d3",
+    "id": "a1285027-4860-4f15-bff9-84f3ef745e7a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_plank",
+    "name": "obj_poolStick",
     "eventList": [
         {
-            "id": "ae503284-4009-4f53-9501-3da0bd872a03",
+            "id": "48534c34-425f-42e9-bd99-3a71cbc8e9e7",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "4e070864-05d0-48f7-b39a-771bdc97e4d3"
+            "m_owner": "a1285027-4860-4f15-bff9-84f3ef745e7a"
         },
         {
-            "id": "10e2c4b4-2e4d-414f-ba03-04692c6eb6c7",
+            "id": "2c037fba-de92-4c69-9e66-b077c1685c24",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "4e070864-05d0-48f7-b39a-771bdc97e4d3"
+            "m_owner": "a1285027-4860-4f15-bff9-84f3ef745e7a"
         },
         {
-            "id": "69c6de53-93c1-486c-bfdf-b02d6217234a",
+            "id": "1df9c2f1-cb19-4cbb-9c0a-02ea7e376cff",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "0c86a70e-9e5a-4468-ae63-8526f0c6f197",
             "enumb": 0,
             "eventtype": 4,
-            "m_owner": "4e070864-05d0-48f7-b39a-771bdc97e4d3"
+            "m_owner": "a1285027-4860-4f15-bff9-84f3ef745e7a"
         },
         {
-            "id": "e443206e-68d0-44cf-b11e-562aae48f078",
+            "id": "fc009a76-eecc-407d-9d83-086a3aaa18a1",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 12,
-            "m_owner": "4e070864-05d0-48f7-b39a-771bdc97e4d3"
+            "m_owner": "a1285027-4860-4f15-bff9-84f3ef745e7a"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -63,7 +63,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "d30116be-dcd2-44c9-be78-13dafdc080d8",
+            "id": "d29aa909-8189-455a-8e4f-28f317f3a634",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -72,12 +72,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "120",
+            "value": "45",
             "varName": "swing_rate",
             "varType": 0
         },
         {
-            "id": "a60ca4e2-e59d-427d-b5ca-f7bfc2b24644",
+            "id": "9f4cdb47-3d80-4940-88d7-e1d212b6a6e1",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -86,12 +86,26 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "spr_plankHB",
+            "value": "spr_poolStickHB",
             "varName": "hitbox",
             "varType": 5
+        },
+        {
+            "id": "aa1102e0-485a-4f04-92e7-fbfac78ce1fa",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "2",
+            "varName": "dmg",
+            "varType": 0
         }
     ],
     "solid": false,
-    "spriteId": "4d9eea89-edf1-43a6-8905-b4fa2caba2d0",
+    "spriteId": "147400b3-ddae-4a97-9724-fae822ab135b",
     "visible": true
 }
