@@ -1,28 +1,48 @@
 {
-    "id": "ea632c7a-b5f2-4920-ad86-6389dfafdd84",
+    "id": "58f04ea1-0385-44d2-9212-ece5fbb85c2e",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_enemyGun",
+    "name": "obj_enemyBullet",
     "eventList": [
         {
-            "id": "2f2542b7-73e5-45b7-aa17-5de37f318eda",
+            "id": "04a27682-2fbc-4089-ac99-66495db5b192",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "ea632c7a-b5f2-4920-ad86-6389dfafdd84"
+            "m_owner": "58f04ea1-0385-44d2-9212-ece5fbb85c2e"
         },
         {
-            "id": "f3ce65b8-05be-4c58-9eac-da7b73718fc5",
+            "id": "f3d37bb3-3fc4-48a0-80e8-426c1691a44e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 7,
+            "eventtype": 7,
+            "m_owner": "58f04ea1-0385-44d2-9212-ece5fbb85c2e"
+        },
+        {
+            "id": "810d0a6d-ad8c-4288-95ae-7da57c86e34e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 7,
+            "m_owner": "58f04ea1-0385-44d2-9212-ece5fbb85c2e"
+        },
+        {
+            "id": "c200e291-e693-4614-8f7d-3c40d9ec6dbe",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
-            "m_owner": "ea632c7a-b5f2-4920-ad86-6389dfafdd84"
+            "m_owner": "58f04ea1-0385-44d2-9212-ece5fbb85c2e"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,21 +63,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "178e4648-9024-40ba-b2da-1692ee963f7c",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "20",
-            "varName": "fire_rate",
-            "varType": 0
-        },
-        {
-            "id": "37da2e7c-3046-4164-bda2-39384efc904d",
+            "id": "dd8207c3-e758-4343-95a2-cf6bcba9049d",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -67,11 +73,11 @@
             "rangeMin": 0,
             "resourceFilter": 1023,
             "value": "8",
-            "varName": "bullet_spread",
+            "varName": "bullet_speed",
             "varType": 0
         },
         {
-            "id": "0d71acdb-9abd-40fc-8538-b78fb59c836d",
+            "id": "579a2b7c-739a-4997-a9c5-c4e65e28adc4",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -80,12 +86,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "1",
-            "varName": "bullet_spread_max",
+            "value": ".75",
+            "varName": "bullet_size",
             "varType": 0
         },
         {
-            "id": "ef22df60-25ed-42a7-9024-ac7426bdc407",
+            "id": "fb124d48-fc90-4e5d-9539-6f9118c2f62a",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -94,40 +100,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "obj_enemyBullet",
-            "varName": "bullet",
-            "varType": 5
-        },
-        {
-            "id": "a3422a4c-dc94-468a-9230-d09c34748277",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "snd_pistol",
-            "varName": "gunshot",
-            "varType": 5
-        },
-        {
-            "id": "aa14cf77-7a9d-4132-8d5a-86f3028c5267",
-            "modelName": "GMObjectProperty",
-            "mvc": "1.0",
-            "listItems": null,
-            "multiselect": false,
-            "rangeEnabled": false,
-            "rangeMax": 10,
-            "rangeMin": 0,
-            "resourceFilter": 1023,
-            "value": "0.15",
-            "varName": "shake",
-            "varType": 0
+            "value": "2",
+            "varName": "damage",
+            "varType": 1
         }
     ],
     "solid": false,
-    "spriteId": "d29f0e79-297e-4299-9d74-a90c6a54b9b5",
+    "spriteId": "785a35cb-fedc-498a-b272-68f80f7ed4ee",
     "visible": true
 }
