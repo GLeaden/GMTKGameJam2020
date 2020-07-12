@@ -50,7 +50,8 @@ with(_melee){
             {
                 ds_list_add(hitEnemies, hitID);
                 with (hitID) {
-                    hitID.hp -= 2
+                    hitID.hp -= 2;
+					hitID.hitstun = _melee.hitstun;
                 }
             }
         }

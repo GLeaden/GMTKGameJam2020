@@ -103,6 +103,20 @@
             "value": "5",
             "varName": "dmg",
             "varType": 0
+        },
+        {
+            "id": "c5ff8675-f1a9-4051-95b5-94d4389237da",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "60",
+            "varName": "hitstun",
+            "varType": 1
         }
     ],
     "solid": false,

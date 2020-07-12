@@ -5,23 +5,30 @@ if (hp <= 0)
 	instance_destroy();
 }
 
-if(place_meeting(x + hMove, y, obj_testWall))
+if hitstun > 1
 {
-	while(!place_meeting(x + sign(hMove), y, obj_testWall))
-	{
-		x += sign(hMove);
-	}
-	hMove = 0;
+	hitstun -= 1;
 }
-
-if(place_meeting(x, y + vMove, obj_testWall))
+else
 {
-	while(!place_meeting(x, y + sign(vMove), obj_testWall))
+	if(place_meeting(x + hMove, y, obj_testWall))
 	{
-		y += sign(vMove);
+		while(!place_meeting(x + sign(hMove), y, obj_testWall))
+		{
+			x += sign(hMove);
+		}
+		hMove = 0;
 	}
-	vMove = 0;
-}
 
-y += vMove;
-x += hMove;
+	if(place_meeting(x, y + vMove, obj_testWall))
+	{
+		while(!place_meeting(x, y + sign(vMove), obj_testWall))
+		{
+			y += sign(vMove);
+		}
+		vMove = 0;
+	}
+
+	y += vMove;
+	x += hMove;
+}

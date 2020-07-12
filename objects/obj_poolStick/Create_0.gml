@@ -4,3 +4,4 @@ ownedByPlayer = false;
 hitbox = spr_poolStickHB;
 hitEnemies = ds_list_create();
 image_speed = 0;
+hitstun = 20;
