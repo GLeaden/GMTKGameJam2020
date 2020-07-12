@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "089578f3-801f-415f-8c12-b3e6213b034e",
+            "Value": {
+                "id": "866fe171-df17-4f20-bcab-50586ef9d417",
+                "resourcePath": "sprites\\spr_poker\\spr_poker.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "091a82fb-4dc0-47cd-98bc-f509ff9ddd19",
             "Value": {
                 "id": "03fc3656-9858-491d-9d4c-830a0089d5a6",
@@ -327,6 +335,14 @@
             }
         },
         {
+            "Key": "663d433a-5636-43dc-8b72-6bcaf41190b9",
+            "Value": {
+                "id": "b987e83c-f716-4638-8973-28f3c441cae2",
+                "resourcePath": "sprites\\spr_pokerHB\\spr_pokerHB.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "671961d8-2a6e-449b-8557-421d87be3cc6",
             "Value": {
                 "id": "ba1e439b-9bf5-4483-99b7-018dd36f28a5",
@@ -588,6 +604,14 @@
                 "id": "72d0aabd-e583-4eac-a6a2-2d9c8948ab3e",
                 "resourcePath": "scripts\\meleeState_Attack\\meleeState_Attack.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c478f46d-40b1-4eb6-9763-297a2f1d9260",
+            "Value": {
+                "id": "78471740-43d8-4388-853b-84c0374f8816",
+                "resourcePath": "objects\\obj_poker\\obj_poker.yy",
+                "resourceType": "GMObject"
             }
         },
         {
