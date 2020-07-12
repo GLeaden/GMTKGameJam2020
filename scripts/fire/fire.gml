@@ -5,7 +5,10 @@ var _gun = argument0;
 
 laser = _gun.object_index == obj_laserGun
 
-if (!laser) audio_play_sound(_gun.gunshot, 10 , false);
+if (!laser) {
+	audio_play_sound(_gun.gunshot, 10 , false);
+	scrshake(true, 0.5);
+}
 
 
 if (_gun.object_index == obj_shotgun){
@@ -34,5 +37,6 @@ else{
 		}
 	}
 }
+
 
 return;
