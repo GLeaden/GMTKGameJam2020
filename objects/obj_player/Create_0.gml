@@ -5,7 +5,7 @@ melee_weapon = pointer_null;
 spd = 3;
 cooldown = 0 // fire rate cooldown
 
-
+depth = 0;
 dashcd   = 0 // dash cooldown
 dashrate = 120; // can dash every 120 frames (2sec)
 

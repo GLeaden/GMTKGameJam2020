@@ -152,9 +152,11 @@ else{
 }
 if (mouse_y < obj_player.y-128){
 	sprite_index = spr_ladyback;
+	if (projectile_weapon != pointer_null) projectile_weapon.depth = 100;
 }
 else{
 	sprite_index = spr_lady;
+	if (projectile_weapon != pointer_null) projectile_weapon.depth = -100;
 }
 
 // dust effect
