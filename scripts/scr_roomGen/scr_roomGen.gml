@@ -146,6 +146,7 @@ var floorMap_id = layer_tilemap_get_id(floorLay_id);
 //Go room by room, creating rooms.
 for(var i=0;i<4;i++){
 	for(var j=0;j<4;j++){
+		rmColor=irandom(3)
 		show_debug_message("Generating "+string(i)+","+string(j)+" Type "+string(mapGridPath[i,j]))
 		switch(mapGridPath[i,j]){
 			case "X":
@@ -179,27 +180,61 @@ for(var i=0;i<4;i++){
 		if(mapGridRooms[i,j].doorRight){
 			mapGridRooms[i,j].rmLayout[31,12]="O"
 			mapGridRooms[i,j].rmLayout[31,13]="O"
+			if(i<3){
+				if(mapGridPath[i+1,j]!="F"){
+					if(mapGridPath[i+1,j]=="S"){
+						slotSpawnX=((1024*(i))+(1024-96))
+						slotSpawnY=((768*(j))+(12*32))
+						instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
+					}else{
+						if(mapGridPath[i+1,j]<mapGridPath[i,j]){
+							slotSpawnX=((1024*(i))+(1024-96))
+							slotSpawnY=((768*(j))+(12*32))
+							instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
+						}
+					}
+				}
+			}
 		}
 		if(mapGridRooms[i,j].doorBottom){
 			mapGridRooms[i,j].rmLayout[15,23]="O"
 			mapGridRooms[i,j].rmLayout[16,23]="O"
+			if(j>3){
+			}
 		}
 		if(mapGridRooms[i,j].doorLeft){
 			mapGridRooms[i,j].rmLayout[0,12]="O"
 			mapGridRooms[i,j].rmLayout[0,13]="O"
+			if(i>0){
+			}
 		}
 		if(mapGridRooms[i,j].doorTop){
 			mapGridRooms[i,j].rmLayout[15,0]="O"
 			mapGridRooms[i,j].rmLayout[16,0]="O"
 			mapGridRooms[i,j].rmLayout[15,1]="O"
 			mapGridRooms[i,j].rmLayout[16,1]="O"
+			if(j>0){
+			}
 		}
 		//layout tiles
 		for(var m=0;m<32;m++){
 			for(var n=0;n<24;n++){
 				switch(mapGridRooms[i,j].rmLayout[m,n]){
 				case "O":
-					tilemap_set(floorMap_id,11,m+(32*i),n+(24*j))
+					switch(rmColor){
+					case 0:
+					  tilemap_set(floorMap_id,11,m+(32*i),n+(24*j))
+					break
+					case 1:
+					  tilemap_set(floorMap_id,14,m+(32*i),n+(24*j))
+					break
+					case 2:
+					  tilemap_set(floorMap_id,35,m+(32*i),n+(24*j))
+					break
+					case 3:
+					  tilemap_set(floorMap_id,38,m+(32*i),n+(24*j))
+					break
+					}
 				break
 				default:
 					if(n<23){
