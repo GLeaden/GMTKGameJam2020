@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "3ba451c1-597b-47c1-b443-df22c38538e9",
+            "Value": {
+                "id": "ca57a42c-c2bb-4dd7-b58c-1f193381bff7",
+                "resourcePath": "sprites\\spr_cardLoad\\spr_cardLoad.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3d947115-d9b2-4ebb-88a1-ed0fe5ffe35d",
             "Value": {
                 "id": "74b58047-0ac6-41b2-a7be-898e646a7588",
@@ -276,6 +284,14 @@
                 "id": "633c3bdb-eff0-448a-8507-c7da73767037",
                 "resourcePath": "objects\\obj_xbowBolt\\obj_xbowBolt.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4313f196-e4c3-4f00-833d-849f214bf823",
+            "Value": {
+                "id": "d35781db-9e58-4d9b-87b8-383f3a833d21",
+                "resourcePath": "sprites\\spr_cardHurt\\spr_cardHurt.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

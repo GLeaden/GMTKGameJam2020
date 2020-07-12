@@ -9,9 +9,11 @@ if (hp <= 0)
 if hitstun > 0
 {
 	hitstun -= 1;
+	sprite_index = spr_cardHurt;
 }
 else
 {
+	if(sprite_index = spr_cardHurt) sprite_index = spr_heartF;
 	if(go = 1)
 	{
 		vMove = spd;

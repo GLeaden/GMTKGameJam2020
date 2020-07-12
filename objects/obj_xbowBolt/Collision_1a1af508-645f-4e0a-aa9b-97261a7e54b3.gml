@@ -4,4 +4,5 @@ with(other)
 {
 	hp -= obj_xbowBolt.damage;
 	hit = 1;
+	sprite_index = spr_cardHurt;
 }
