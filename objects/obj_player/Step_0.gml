@@ -138,10 +138,10 @@ if (dashing && wall){
 	}
 }*/
 
-while(tilePlaceMeeting(x+hMove,y,"Wall")){
+while(tilePlaceMeeting(x+hMove,y,"Wall")&&hMove!=0){
 	hMove=lerp(hMove,0,.1)
 }
-while(tilePlaceMeeting(x,y+vMove,"Wall")){
+while(tilePlaceMeeting(x,y+vMove,"Wall")&&vMove!=0){
 	vMove=lerp(vMove,0,.1)
 }
 
@@ -153,8 +153,10 @@ while(place_meeting(x,y+vMove,obj_furniture)){
 }
 
 // movement
-x += hMove;
-y += vMove;
+if(!tilePlaceMeeting(x+hMove,y+vMove,"Wall")){
+	x += hMove;
+	y += vMove;	
+}
 
 if (dashed) {
 	part_particles_create(global.P_System, x, y, global.dash_Particle, 1);

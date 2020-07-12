@@ -10,7 +10,6 @@ dashcd   = 0 // dash cooldown
 dashrate = 120; // can dash every 120 frames (2sec)
 
 melee_state = SWINGSTATE.FREE;
-cursor_sprite = spr_crosshairChip;
 window_set_cursor(cr_none);
 
 dead = false;
