@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "089578f3-801f-415f-8c12-b3e6213b034e",
+            "Value": {
+                "id": "866fe171-df17-4f20-bcab-50586ef9d417",
+                "resourcePath": "sprites\\spr_poker\\spr_poker.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "091a82fb-4dc0-47cd-98bc-f509ff9ddd19",
             "Value": {
                 "id": "03fc3656-9858-491d-9d4c-830a0089d5a6",
@@ -127,14 +135,6 @@
             }
         },
         {
-            "Key": "1221e534-ecb5-46d9-9d41-4966e31ec21b",
-            "Value": {
-                "id": "a4dd8d6d-4629-4f63-80ff-853f87a928fd",
-                "resourcePath": "sprites\\spr_plankHB\\spr_plankHB.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "13dfe659-56af-4a5c-8587-5a531a5c0ec1",
             "Value": {
                 "id": "7c977108-28fe-4f21-bdbe-0a1e7c5d27b2",
@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "316d0dcd-4d12-4cd7-8a2f-9dc3ff4633e9",
+            "Value": {
+                "id": "c010de85-fe22-4a0f-912e-8d9b76c8e9bf",
+                "resourcePath": "sprites\\spr_slotMachine\\spr_slotMachine.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "31f5a369-a518-4676-82b0-d515f2f7b542",
             "Value": {
                 "id": "7ea7e031-1792-4643-be39-6fc2ce234930",
@@ -212,14 +220,6 @@
                 "id": "9b270303-a8b8-4313-bcea-01a312be01e3",
                 "resourcePath": "objects\\obj_heart\\obj_heart.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "330f3f7a-ecfc-4b6f-bcbf-283d0fc7d09c",
-            "Value": {
-                "id": "9ffaca1e-c3c6-45c9-9ae0-82c2fa47639c",
-                "resourcePath": "sprites\\spr_swingBox\\spr_swingBox.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -311,14 +311,6 @@
             }
         },
         {
-            "Key": "4d9eea89-edf1-43a6-8905-b4fa2caba2d0",
-            "Value": {
-                "id": "61db3065-6bfb-40ae-b84f-254f97c9ea1b",
-                "resourcePath": "sprites\\spr_plank\\spr_plank.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "4e070864-05d0-48f7-b39a-771bdc97e4d3",
             "Value": {
                 "id": "575c2850-3f0a-4932-b663-db1d7e32dfa5",
@@ -331,14 +323,6 @@
             "Value": {
                 "id": "86ed6c0c-e7fc-41db-8c82-0b63c12711e4",
                 "resourcePath": "sprites\\spr_spadeF\\spr_spadeF.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "53c09657-d178-4b9b-9029-1efd83a39c8b",
-            "Value": {
-                "id": "1242dceb-eed4-4143-bfb3-a3a27580093c",
-                "resourcePath": "sprites\\spr_plankSwingHB\\spr_plankSwingHB.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -388,6 +372,14 @@
                 "id": "73c7268a-e66a-4c4a-b24f-f51e16ef3c33",
                 "resourcePath": "objects\\obj_arBullet\\obj_arBullet.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "663d433a-5636-43dc-8b72-6bcaf41190b9",
+            "Value": {
+                "id": "b987e83c-f716-4638-8973-28f3c441cae2",
+                "resourcePath": "sprites\\spr_pokerHB\\spr_pokerHB.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -684,6 +676,14 @@
                 "id": "9b8c3625-a40d-4fb9-ae8a-42f4b1ba386e",
                 "resourcePath": "sounds\\snd_slotsEnd\\snd_slotsEnd.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "c478f46d-40b1-4eb6-9763-297a2f1d9260",
+            "Value": {
+                "id": "78471740-43d8-4388-853b-84c0374f8816",
+                "resourcePath": "objects\\obj_poker\\obj_poker.yy",
+                "resourceType": "GMObject"
             }
         },
         {

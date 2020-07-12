@@ -78,19 +78,20 @@
             "mvc": "1.0",
             "listItems": [
                 "obj_poolStick",
-                "obj_rod"
+                "obj_rod",
+                "obj_poker"
             ],
             "multiselect": true,
             "rangeEnabled": false,
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "obj_poolStick, obj_rod",
+            "value": "obj_poolStick, obj_rod, obj_poker",
             "varName": "cqc",
             "varType": 6
         }
     ],
     "solid": false,
-    "spriteId": "4d9eea89-edf1-43a6-8905-b4fa2caba2d0",
+    "spriteId": "316d0dcd-4d12-4cd7-8a2f-9dc3ff4633e9",
     "visible": true
 }

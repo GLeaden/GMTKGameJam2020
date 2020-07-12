@@ -63,7 +63,7 @@ with(_melee){
 
     if (endSwing(sprite_index,image_index,1))
     {
-        mask_index = spr_plank;
+        //mask_index = spr_plank;
         image_index = 0;
         obj_player.melee_state = SWINGSTATE.FREE;
     }
