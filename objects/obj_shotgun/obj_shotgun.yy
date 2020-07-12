@@ -121,6 +121,20 @@
             "value": "snd_thomas",
             "varName": "gunshot",
             "varType": 5
+        },
+        {
+            "id": "8959a556-accd-4151-8d26-8f4dd2865b8c",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0.3",
+            "varName": "shake",
+            "varType": 0
         }
     ],
     "solid": false,

@@ -121,6 +121,20 @@
             "value": "snd_pistol",
             "varName": "gunshot",
             "varType": 5
+        },
+        {
+            "id": "4bbea5c9-837b-42d7-9f4f-4031dcc0f6ba",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "shake",
+            "varType": 0
         }
     ],
     "solid": false,
