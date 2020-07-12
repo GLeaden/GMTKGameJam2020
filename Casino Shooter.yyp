@@ -503,6 +503,14 @@
             }
         },
         {
+            "Key": "79a12454-d2f5-4924-aaec-c3287a8b652c",
+            "Value": {
+                "id": "96f5cbb5-700e-4f55-a947-04e160158fbc",
+                "resourcePath": "scripts\\enemySpawn\\enemySpawn.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7aad5a7f-750f-4b40-b85f-cd3d01c67714",
             "Value": {
                 "id": "15448eab-f884-4bed-b1b6-88bc01b1dfc4",
@@ -1026,7 +1034,8 @@
         "ce942d4d-7d11-410b-bc56-16da0e69a5a2",
         "d286a657-3c73-400f-8e19-ee2836dbce84",
         "72688ce6-64e3-4254-a5db-21fe4cef6842",
-        "f85ba4e3-4ac3-426e-819e-bded1df3aaef"
+        "f85ba4e3-4ac3-426e-819e-bded1df3aaef",
+        "79a12454-d2f5-4924-aaec-c3287a8b652c"
     ],
     "tutorial": ""
 }
