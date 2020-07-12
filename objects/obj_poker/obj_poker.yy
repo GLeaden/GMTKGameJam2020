@@ -72,7 +72,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "45",
+            "value": "85",
             "varName": "swing_rate",
             "varType": 0
         },
@@ -114,7 +114,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "5",
+            "value": "0",
             "varName": "hitstun",
             "varType": 1
         }
