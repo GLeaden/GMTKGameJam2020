@@ -1,7 +1,6 @@
 /// @param {real} <sprite_index> the index of the sprite being animated
 /// @param {real} <image_index> the current frame value
 // returns true if animation will stop
-
 var _sprite = sprite_index;
 var _image = image_index;
 if (argument_count > 0) _sprite=argument[0];
