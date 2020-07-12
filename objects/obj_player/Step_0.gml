@@ -26,7 +26,7 @@ if (dashing && dashcd == 0){
 }
 
 
-//collision_line(x, y, x+hMove, y+vMove, obj_testWall, false, false)
+// collision_line(x, y, x+hMove, y+vMove, obj_testWall, false, false)
 
 
 
