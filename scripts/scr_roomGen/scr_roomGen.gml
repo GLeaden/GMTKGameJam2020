@@ -144,7 +144,7 @@ for(var i=0;i<4;i++){
 				}
 			  }
 			  chestSpawnX=(1024*i)+(1024/2)
-			  chestSpawnY=(768*i)+(768/2)
+			  chestSpawnY=(768*j)+(768/2)
 			  instance_create_layer(chestSpawnX,chestSpawnY,"Instances",obj_chest)
 			break
 			default:
