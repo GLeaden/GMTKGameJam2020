@@ -1135,6 +1135,14 @@
             }
         },
         {
+            "Key": "ef43b5b3-ccad-425c-8078-be00a62433cf",
+            "Value": {
+                "id": "116cfe68-2ffb-490b-be60-dec815acc536",
+                "resourcePath": "sprites\\spr_die\\spr_die.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f18b1ee9-b7f0-4d60-9c4e-bd201f02be82",
             "Value": {
                 "id": "68f678a5-0814-4ae6-a7ce-79e387b0005c",

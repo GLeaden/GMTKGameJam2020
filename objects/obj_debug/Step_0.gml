@@ -16,3 +16,10 @@ if(keyboard_check_released(ord("L"))){
 if(keyboard_check_released(ord("P"))){
 	instance_create_layer(obj_player.x, obj_player.y, "Instances", obj_xbow)
 }
+
+
+if (keyboard_check(ord("M"))){
+	if(instance_exists(obj_player)){
+		global.roomLocked=false;
+	}
+}
