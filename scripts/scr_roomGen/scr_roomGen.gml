@@ -2,32 +2,8 @@
 
 //room layouts
 
-//0 - generic room
-roomLayoutType[0,0]= "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-roomLayoutType[0,1]= "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-roomLayoutType[0,2]= "xoooooooooooooooooooooooooooooox"
-roomLayoutType[0,3]= "xoooooooooooooooooooooooooooooox"
-roomLayoutType[0,4]= "xoooooooooooooooooooooooooooooox"
-roomLayoutType[0,5]= "xoooooooooooooooooooooooooooooox"
-roomLayoutType[0,6]= "xoooooooooooooooooooooooooooooox"
-roomLayoutType[0,7]= "xoooooooooooooooooooooooooooooox"
-roomLayoutType[0,8]= "xoooooooooooooooooooooooooooooox"
-roomLayoutType[0,9]= "xoooooooooooooooooooooooooooooox"
-roomLayoutType[0,10]="xoooooooooooooooooooooooooooooox"
-roomLayoutType[0,11]="xoooooooooooooooooooooooooooooox"
-roomLayoutType[0,12]="xoooooooooooooooooooooooooooooox"
-roomLayoutType[0,13]="xoooooooooooooooooooooooooooooox"
-roomLayoutType[0,14]="xoooooooooooooooooooooooooooooox"
-roomLayoutType[0,15]="xoooooooooooooooooooooooooooooox"
-roomLayoutType[0,16]="xoooooooooooooooooooooooooooooox"
-roomLayoutType[0,17]="xoooooooooooooooooooooooooooooox"
-roomLayoutType[0,18]="xoooooooooooooooooooooooooooooox"
-roomLayoutType[0,19]="xoooooooooooooooooooooooooooooox"
-roomLayoutType[0,20]="xoooooooooooooooooooooooooooooox"
-roomLayoutType[0,21]="xoooooooooooooooooooooooooooooox"
-roomLayoutType[0,22]="xoooooooooooooooooooooooooooooox"
-roomLayoutType[0,23]="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-
+var mapGridPath
+var mapGridRooms
 //randomize
 randomize()
 
@@ -292,3 +268,5 @@ for(var i=0;i<4;i++){
 		}
 	}
 }
+global.gridPath = mapGridPath
+global.gridRooms = mapGridRooms

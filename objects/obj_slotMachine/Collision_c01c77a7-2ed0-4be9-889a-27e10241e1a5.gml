@@ -12,4 +12,5 @@ if (spun == false){
 	if (cqc != pointer_null) instance_destroy(cqc);
 	obj_player.projectile_weapon = pointer_null;
 	obj_player.melee_weapon = pointer_null;
+	lockRoom();
 }
