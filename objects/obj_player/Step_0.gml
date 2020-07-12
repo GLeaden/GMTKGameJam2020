@@ -59,10 +59,10 @@ if(mouse_check_button(mb_left)){
 	}
 }
 
-keyAttack = mouse_check_button(mb_right);
 
 if(melee_weapon != pointer_null)
 {
+	
 	switch (melee_state)
 	{
 		case SWINGSTATE.FREE:
@@ -71,6 +71,19 @@ if(melee_weapon != pointer_null)
 		case SWINGSTATE.ATTACK:
 			meleeState_Attack(melee_weapon);
 			break;
+	}
+}
+
+keyAttack = mouse_check_button(mb_right);
+
+if(melee_weapon != pointer_null && projectile_weapon != pointer_null){
+	if (keyAttack){
+		projectile_weapon.image_alpha = 0;
+		melee_weapon.image_alpha = 1;
+	}
+	else{
+		projectile_weapon.image_alpha = 1;
+		melee_weapon.image_alpha = 0;
 	}
 }
 /*
@@ -125,4 +138,9 @@ if (mouse_y < obj_player.y-128){
 }
 else{
 	sprite_index = spr_lady;
+}
+
+// dust effect
+if ((right || left || up || down)){
+	part_particles_create(global.P_System, x, y, global.dust_Particle, 4);
 }
