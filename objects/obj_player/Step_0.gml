@@ -31,6 +31,7 @@ if (dashing && dashcd == 0){
 
 
 // collision checking
+/*
 if(place_meeting(x + hMove, y, obj_testWall))
 {
 	while(!place_meeting(x + sign(hMove), y, obj_testWall))
@@ -48,6 +49,7 @@ if(place_meeting(x, y + vMove, obj_testWall))
 	}
 	vMove = 0;
 }
+*/
 
 // fire weapon
 if(mouse_check_button(mb_left)){
@@ -99,6 +101,7 @@ if(mouse_check_button(mb_right)){
 if (winddown > 0) winddown = winddown - 1
 */
 // dash collision (done right before movement cause it messes with it)
+/*
 wall = collision_line(x, y, x+hMove, y+vMove, obj_testWall, false, false)
 if (dashing && wall){
 	dist = distance_to_object(wall) - 4
@@ -114,7 +117,7 @@ if (dashing && wall){
 	else{
 		vMove = dist;
 	}
-}
+}*/
 
 while(tilePlaceMeeting(x+hMove,y,"Wall")){
 	hMove=lerp(hMove,0,.1)
@@ -129,11 +132,6 @@ while(place_meeting(x+hMove,y,obj_furniture)){
 while(place_meeting(x,y+vMove,obj_furniture)){
 	vMove=lerp(vMove,0,.1)
 }
-
-
-
-
-
 
 // movement
 x += hMove;
