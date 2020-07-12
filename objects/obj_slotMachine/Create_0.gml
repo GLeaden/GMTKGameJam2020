@@ -4,3 +4,5 @@ spun = false;
 randomize();
 slots_timer = 30;
 sound = false;
+depth = 101;
+image_speed = 0;
