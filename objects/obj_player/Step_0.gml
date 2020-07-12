@@ -111,3 +111,8 @@ if (mouse_y < obj_player.y-128){
 else{
 	sprite_index = spr_lady;
 }
+
+// dust effect
+if ((right || left || up || down)){
+	part_particles_create(global.P_System, x, y, global.dust_Particle, 4);
+}
