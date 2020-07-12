@@ -89,6 +89,20 @@
             "value": "spr_plankHB",
             "varName": "hitbox",
             "varType": 5
+        },
+        {
+            "id": "011cc143-f890-4b35-adcb-48492fbd6f04",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "120",
+            "varName": "hitstun",
+            "varType": 0
         }
     ],
     "solid": false,

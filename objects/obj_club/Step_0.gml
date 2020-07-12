@@ -1,36 +1,39 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (hit > 0)
-{
-	hit -= 0.05;
-}
 if (hp <= 0)
 {
 	instance_destroy()
 }
 
-spd = 2;
-
-if (instance_exists(obj_player))
+if hitstun > 1
 {
-	move_towards_point(obj_player.x,obj_player.y,max(spd,0));
-	if (obj_player.y < y)
-	{
-		sprite_index = spr_clubB;
-	}
+	hitstun -= 1;
+}
+else
+{
+	spd = 2;
 
-	if (obj_player.y > y)
+	if (instance_exists(obj_player))
 	{
-		sprite_index = spr_clubF;
-	}
-	if (obj_player.y < y)
-	{
-		sprite_index = spr_clubB;
-	}
+		move_towards_point(obj_player.x,obj_player.y,max(spd,0));
+		if (obj_player.y < y)
+		{
+			sprite_index = spr_clubB;
+		}
 
-	if (obj_player.y > y)
-	{
-		sprite_index = spr_clubF;
+		if (obj_player.y > y)
+		{
+			sprite_index = spr_clubF;
+		}
+		if (obj_player.y < y)
+		{
+			sprite_index = spr_clubB;
+		}
+
+		if (obj_player.y > y)
+		{
+			sprite_index = spr_clubF;
+		}
 	}
 }
 /*
