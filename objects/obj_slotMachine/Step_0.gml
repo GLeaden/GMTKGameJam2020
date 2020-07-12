@@ -10,7 +10,7 @@ if (slots_timer == 0 && sound == false && spun == true){
 	audio_play_sound(snd_slotsEnd, 10, false);
 	image_index = image_number - 1;
 	instance_create_layer(x, y+64, "Instances", guns[irandom(4)]);
-	instance_create_layer(x+32, y+64, "Instances", cqc[irandom(1)]);
+	instance_create_layer(x+32, y+64, "Instances", cqcs[irandom(3)]);
 	sound = true;
 }
 else{
