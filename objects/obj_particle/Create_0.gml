@@ -11,7 +11,7 @@ part_type_direction(global.dust_Particle, 0, 359, 0, 1);
 
 part_type_speed(global.dust_Particle, 0.1, 0.2, -0.004, 0);
 
-part_type_life(global.dust_Particle, 50, 70);
+part_type_life(global.dust_Particle, 8, 16);
 
 part_type_orientation(global.dust_Particle, 0, 359, 0.1, 1, 0);
 

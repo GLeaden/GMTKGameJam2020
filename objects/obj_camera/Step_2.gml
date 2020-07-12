@@ -7,3 +7,4 @@ if(instance_exists(obj_player)){
 	camY=lerp(camY,newCamY,.1)
 	camera_set_view_pos(view_camera[0], camX, camY);
 }
+if(mouse_check_button_released(mb_left)) scrshake(false, 0)
