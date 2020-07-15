@@ -60,7 +60,7 @@ if(place_meeting(x, y + vMove, obj_testWall))
 
 // fire weapon
 shot = pointer_null;
-if (projectile_weapon != pointer_null){
+if (projectile_weapon != pointer_null && !dead){
 	if (projectile_weapon.object_index = obj_pistol){
 		if(mouse_check_button_pressed(mb_left)){
 			fire(projectile_weapon);
@@ -83,7 +83,7 @@ if (projectile_weapon != pointer_null){
 
 //if (projectile_weapon)
 
-if(melee_weapon != pointer_null)
+if(melee_weapon != pointer_null &&!dead)
 {
 	
 	switch (melee_state)
@@ -168,7 +168,7 @@ while(place_meeting(x,y+vMove,obj_furniture)){
 if(tilePlaceMeeting(x+lengthdir_x(speed, direction),y+lengthdir_y(speed, direction),"Wall")){
 	speed = 0;	
 }
-if(!tilePlaceMeeting(x+hMove,y+vMove,"Wall")){
+if(!tilePlaceMeeting(x+hMove,y+vMove,"Wall")&&!dead){
 	x += hMove;
 	y += vMove;	
 }

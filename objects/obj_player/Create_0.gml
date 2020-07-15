@@ -4,6 +4,7 @@ projectile_weapon = pointer_null;
 melee_weapon = pointer_null;
 spd = 3;
 cooldown = 0 // fire rate cooldown
+roomsCleared = 0
 
 depth = 0;
 dashcd   = 0 // dash cooldown
