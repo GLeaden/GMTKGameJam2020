@@ -5,4 +5,5 @@ with(other)
 	hp -= obj_laserBeam.damage;
 	hit = 1;
 	sprite_index = spr_cardHurt;
+	scr_freeze(obj_laserBeam.freeze)
 }

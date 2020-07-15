@@ -6,6 +6,8 @@ with(other)
 	hit = 1;
 	hitstun = 1;
 	sprite_index = spr_cardHurt;
+	knockback = other.direction;
+	scr_freeze(other.freeze)
 }
 
 instance_destroy();

@@ -153,6 +153,20 @@
             "value": "0.2",
             "varName": "damage",
             "varType": 0
+        },
+        {
+            "id": "0c3f9128-d38d-4fb9-80fb-90ba15707c0b",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "5",
+            "varName": "freeze",
+            "varType": 1
         }
     ],
     "solid": false,

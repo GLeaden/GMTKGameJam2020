@@ -14,3 +14,5 @@ melee_state = SWINGSTATE.FREE;
 dead = false;
 died = false;
 image_speed = 0;
+
+deathFreeze = 100
