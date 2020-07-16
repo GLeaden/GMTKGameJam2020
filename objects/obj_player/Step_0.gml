@@ -30,6 +30,7 @@ if (dashing && dashcd == 0){
 	part_particles_create(global.P_System, x, y, global.dash_Particle, 1);
 	dashcd = dashrate;
 	dashed = true;
+	instance_create_layer(x,y,"Instances",obj_dashGhost)
 }
 
 

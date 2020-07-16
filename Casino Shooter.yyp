@@ -671,6 +671,14 @@
             }
         },
         {
+            "Key": "8559b67f-6ffc-4689-8bc9-ba696408bbd0",
+            "Value": {
+                "id": "aa1633bf-389c-42d8-a5fc-0e94a27ac5d4",
+                "resourcePath": "objects\\obj_dashGhost\\obj_dashGhost.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8899f080-a925-4890-9267-85acdaf1c250",
             "Value": {
                 "id": "66ea134d-e291-46d6-bb7c-b280ae2521c0",
