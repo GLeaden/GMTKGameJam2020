@@ -1,132 +1,112 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (hp <= 0)
-{
-	instance_destroy()
-}
-
-/*
-	spd = 2;
-
-	if (instance_exists(obj_player))
+if(spawnTime<=0){
+	image_xscale=1
+	if (hp <= 0)
 	{
-		move_towards_point(obj_player.x,obj_player.y,max(spd,0));
-		if (obj_player.y < y)
-		{
-			sprite_index = spr_clubB;
-		}
+		instance_destroy()
+	}
 
-		if (obj_player.y > y)
-		{
-			sprite_index = spr_clubF;
-		}
-		if (obj_player.y < y)
-		{
-			sprite_index = spr_clubB;
-		}
+	while (speed > 0){
+		speed = lerp(speed, 0, 0.5);
+	}
 
-		if (obj_player.y > y)
-		{
-			sprite_index = spr_clubF;
+	if hitstun > 0
+	{
+		hitstun -= 1;
+		sprite_index = spr_cardHurt;
+		direction = knockback;
+		speed = 4
+		if(tilePlaceMeeting(x+lengthdir_x(speed, direction),y+lengthdir_y(speed, direction),"Wall")){
+			speed = 0;	
 		}
 	}
-}
-*/
 
-while (speed > 0){
-	speed = lerp(speed, 0, 0.5);
-}
+	else
+	{
+		if (sprite_index = spr_cardHurt) sprite_index = spr_clubF;
+		if(spd!=0){
+				if (obj_player.x div spd < x div spd)
+				{
+					hMove = -spd;
+				}
+				else
+				{
+					if(obj_player.x div spd > x div spd)
+					{
+						hMove = spd;
+					}else
+					{
+						hMove = 0;
+					}
+				}
 
-if hitstun > 0
-{
-	hitstun -= 1;
-	sprite_index = spr_cardHurt;
-	direction = knockback;
-	speed = 4
+				if (obj_player.y div spd < y div spd)
+				{
+					vMove = -spd;
+				}
+				else
+				{
+					if(obj_player.y div spd > y div spd){
+						vMove = spd;
+					}else{
+						vMove = 0;
+					}
+				}
+		}
+		if (speed>0){	
+			while(tilePlaceMeeting(x+lengthdir_x(speed, direction),y+lengthdir_y(speed, direction),"Wall")){
+				speed=lerp(speed,0,.1)
+			}
+
+			while(place_meeting(x+lengthdir_x(speed, direction),y+lengthdir_y(speed, direction),obj_furniture)){
+				speed=lerp(speed,0,.1)
+			}
+		}
+		while(tilePlaceMeeting(x+hMove,y,"Wall")){
+		hMove=lerp(hMove,0,.1)
+		}
+		while(tilePlaceMeeting(x,y+vMove,"Wall")){
+			vMove=lerp(vMove,0,.1)
+		}
+
+		while(place_meeting(x+hMove,y,obj_furniture)){
+			hMove=lerp(hMove,0,.1)
+		}
+		while(place_meeting(x,y+vMove,obj_furniture)){
+			vMove=lerp(vMove,0,.1)
+		}
 	if(tilePlaceMeeting(x+lengthdir_x(speed, direction),y+lengthdir_y(speed, direction),"Wall")){
 		speed = 0;	
 	}
-}
 
-else
-{
-	if (sprite_index = spr_cardHurt) sprite_index = spr_clubF;
-	if(spd!=0){
-			if (obj_player.x div spd < x div spd)
-			{
-				hMove = -spd;
-			}
-			else
-			{
-				if(obj_player.x div spd > x div spd)
-				{
-					hMove = spd;
-				}else
-				{
-					hMove = 0;
-				}
-			}
-
-			if (obj_player.y div spd < y div spd)
-			{
-				vMove = -spd;
-			}
-			else
-			{
-				if(obj_player.y div spd > y div spd){
-					vMove = spd;
-				}else{
-					vMove = 0;
-				}
-			}
+	if(!tilePlaceMeeting(x+hMove,y+vMove,"Wall")){
+		x += hMove;
+		y += vMove;	
 	}
-	/*
-	if(place_meeting(x + hMove, y, obj_testWall))
-	{
-		while(!place_meeting(x + sign(hMove), y, obj_testWall))
-		{
-			x += sign(hMove);
-		}
-		hMove = 0;
 	}
-
-	if(place_meeting(x, y + vMove, obj_testWall))
-	{
-		while(!place_meeting(x, y + sign(vMove), obj_testWall))
-		{
-			y += sign(vMove);
-		}
-		vMove = 0;
+	if(obj_player.y<y-128){
+		sprite_index=spr_cardB
+	}else{
+		sprite_index=spr_clubF
 	}
-	*/
-	if (speed>0){	
-		while(tilePlaceMeeting(x+lengthdir_x(speed, direction),y+lengthdir_y(speed, direction),"Wall")){
-			speed=lerp(speed,0,.1)
-		}
-
-		while(place_meeting(x+lengthdir_x(speed, direction),y+lengthdir_y(speed, direction),obj_furniture)){
-			speed=lerp(speed,0,.1)
+}else{
+	if(rotmode==1){
+		image_xscale+=rotspd;
+		if(image_xscale>=1){
+			rotmode=-1
 		}
 	}
-	while(tilePlaceMeeting(x+hMove,y,"Wall")){
-	hMove=lerp(hMove,0,.1)
+	if(rotmode==-1){
+		image_xscale-=rotspd;
+		if(image_xscale<=0){
+			rotmode=1
+			if(sprite_index==spr_cardB){
+				sprite_index=spr_clubF
+			}else{
+				sprite_index=spr_cardB
+			}
+		}
 	}
-	while(tilePlaceMeeting(x,y+vMove,"Wall")){
-		vMove=lerp(vMove,0,.1)
-	}
-
-	while(place_meeting(x+hMove,y,obj_furniture)){
-		hMove=lerp(hMove,0,.1)
-	}
-	while(place_meeting(x,y+vMove,obj_furniture)){
-		vMove=lerp(vMove,0,.1)
-	}
-if(tilePlaceMeeting(x+lengthdir_x(speed, direction),y+lengthdir_y(speed, direction),"Wall")){
-	speed = 0;	
-}
-
-if(!tilePlaceMeeting(x+hMove,y+vMove,"Wall")){
-	x += hMove;
-	y += vMove;	
-}
+	spawnTime--;
 }
