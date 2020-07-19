@@ -12,7 +12,7 @@ if (slots_timer == 0 && sound == false && spun == true){
 	instance_create_layer(x, y+64, "Instances", guns[irandom(4)]);
 	instance_create_layer(x+32, y+64, "Instances", cqcs[irandom(3)]);
 	sound = true;
-	for(i = 0; i < 2 + irandom(5); i += 1){
+	for(i = 0; i < 2 + irandom(4); i += 1){
 		enemySpawn(irandom(3));
 	}
 }

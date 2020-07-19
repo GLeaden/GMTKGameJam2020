@@ -7,6 +7,8 @@ if(dmg!=0){
 		hp -= other.dmg;
 		hit = 1;
 		sprite_index = spr_cardHurt;
+		audio_play_sound(snd_hit,10,false)
+		scrshake(true,other.damage/5)
 		scr_freeze(other.freeze)
 	}	
 }
