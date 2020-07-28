@@ -23,3 +23,8 @@ if(instance_exists(obj_player)){
 
 
 if(mouse_check_button_released(mb_left)) scrshake(false, 0)
+if(scrShakeCooldown>0){
+	scrShakeCooldown--
+}else{
+	scrshake(false,0)
+}

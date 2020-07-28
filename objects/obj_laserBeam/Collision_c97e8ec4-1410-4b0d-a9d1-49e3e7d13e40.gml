@@ -7,5 +7,6 @@ with(other)
 	sprite_index = spr_cardHurt;
 	//audio_play_sound(snd_hit,10,false)
 	scrshake(true,other.damage/5)
+	if(obj_camera.scrShakeCooldown<other.damage*25)obj_camera.scrShakeCooldown=other.damage*25
 	scr_freeze(obj_laserBeam.freeze)
 }

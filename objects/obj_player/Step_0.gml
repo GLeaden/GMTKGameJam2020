@@ -193,11 +193,25 @@ if(!dead)
 		image_xscale=1;
 	}
 	if (mouse_y < obj_player.y-128){
-		sprite_index = spr_ladyback;
+		if(hMove==0&&vMove==0){
+			sprite_index = spr_ladyback;
+			image_index=0;
+			image_speed = 0;
+		}else{
+			sprite_index = spr_ladyWB;
+			image_speed = 1;
+		}
 		if (projectile_weapon != pointer_null) projectile_weapon.depth = 100;
 	}
 	else{
-		sprite_index = spr_lady;
+		if(hMove==0&&vMove==0){
+			sprite_index = spr_lady;
+			image_index=0;
+			image_speed = 0;
+		}else{
+			sprite_index = spr_ladyWF;
+			image_speed = 1;
+		}
 		if (projectile_weapon != pointer_null) projectile_weapon.depth = -100;
 	}
 

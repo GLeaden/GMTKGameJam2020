@@ -2,6 +2,7 @@
 // You can write your code in this editor
 if(!dead){
 	audio_play_sound(snd_playerDeath,20,false);
+	image_index=0;
 	scr_freeze(deathFreeze);
 }
 dead = true;
