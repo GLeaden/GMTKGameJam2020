@@ -86,9 +86,17 @@ if(spawnTime<=0){
 	}
 	}
 	if(obj_player.y<y-128){
-		sprite_index=spr_cardB
+		if(hMove!=0||vMove!=0){
+			sprite_index=spr_cardBW
+		}else{
+			sprite_index=spr_cardB
+		}
 	}else{
-		sprite_index=spr_clubF
+		if(hMove!=0||vMove!=0){
+			sprite_index=spr_clubW
+		}else{
+			sprite_index=spr_clubF
+		}
 	}
 }else{
 	if(rotmode==1){

@@ -55,10 +55,18 @@ if(spawnTime<=0){
 		}
 	}
 	if(obj_player.y<y-128){
-		sprite_index=spr_cardB
+		if(hMove!=0||vMove!=0){
+			sprite_index=spr_cardBW
+		}else{
+			sprite_index=spr_cardB
+		}
 		if (gunInst != pointer_null) gunInst.depth = 100
 	}else{
-		sprite_index=spr_diamondF
+		if(hMove!=0||vMove!=0){
+			sprite_index=spr_diamondW
+		}else{
+			sprite_index=spr_diamondF
+		}
 		if (gunInst != pointer_null) gunInst.depth = -100
 	}
 }else{

@@ -63,9 +63,17 @@ if(spawnTime<=0){
 		y += vMove;	
 	}
 	if(obj_player.y<y-128){
-		sprite_index=spr_cardB
+		if(hMove!=0||vMove!=0){
+			sprite_index=spr_cardBW
+		}else{
+			sprite_index=spr_cardB
+		}
 	}else{
-		sprite_index=spr_spadeF
+		if(hMove!=0||vMove!=0){
+			sprite_index=spr_spadeW
+		}else{
+			sprite_index=spr_spadeF
+		}
 	}
 }else{
 	if(rotmode==1){
