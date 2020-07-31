@@ -2,6 +2,7 @@
 // You can write your code in this editor
 with(other)
 {
+	if(hp>0){
 	hp -= obj_arBullet.damage;
 	hit = 1;
 	hitstun = 1;
@@ -11,6 +12,7 @@ with(other)
 	scrshake(true,other.damage/5)
 	if(obj_camera.scrShakeCooldown<other.damage*25)obj_camera.scrShakeCooldown=other.damage*25
 	scr_freeze(other.freeze)
+	}
 }
 
 instance_destroy();

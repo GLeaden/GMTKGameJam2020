@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "14138772-281a-45c2-b7f3-12a24343b7cf",
+            "Value": {
+                "id": "52ab8788-d20d-44f9-8a56-70d53260d976",
+                "resourcePath": "sprites\\spr_diamondE\\spr_diamondE.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "147400b3-ddae-4a97-9724-fae822ab135b",
             "Value": {
                 "id": "7fdc038f-8e60-4377-8102-c83ec9bc9d0a",
@@ -239,6 +247,14 @@
             }
         },
         {
+            "Key": "2c34d173-33bc-46be-8b33-c07f91b25882",
+            "Value": {
+                "id": "084471e1-36c9-4bd3-9103-aee50e9a8ca8",
+                "resourcePath": "sprites\\spr_spadeE\\spr_spadeE.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2edf2e72-7b4a-4393-a66b-e39d04df4969",
             "Value": {
                 "id": "fc145c07-856b-47ba-a1d4-fd9851ce8cb1",
@@ -251,6 +267,14 @@
             "Value": {
                 "id": "28b96c51-dd89-4dd4-a01b-70d1b3f26a6a",
                 "resourcePath": "sprites\\spr_gear\\spr_gear.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3034f558-d853-4830-9c0c-9ae2fe3e304d",
+            "Value": {
+                "id": "f551ef8d-05dc-4f57-814f-316424b48008",
+                "resourcePath": "sprites\\spr_cardBE\\spr_cardBE.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -283,6 +307,14 @@
             "Value": {
                 "id": "52b6f289-b733-4a19-9ddc-e721ede5037b",
                 "resourcePath": "sprites\\spr_crossbow\\spr_crossbow.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3437a318-3c20-491a-9db6-2a27401ace8f",
+            "Value": {
+                "id": "12d016d9-73b6-4b0d-916d-9034d4e85ee8",
+                "resourcePath": "sprites\\spr_heartE\\spr_heartE.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -396,6 +428,14 @@
                 "id": "2fd268b1-269f-4720-a74e-3b92f676e8e1",
                 "resourcePath": "objects\\obj_peaBullet\\obj_peaBullet.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "46529893-6229-4990-828f-e6c39fccccc5",
+            "Value": {
+                "id": "aa8f1b69-646b-4c9f-b066-331b070736d5",
+                "resourcePath": "sprites\\spr_clubE\\spr_clubE.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
