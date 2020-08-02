@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "0c0a4a45-09d1-4d31-a8ad-d40c694ced14",
+            "Value": {
+                "id": "0c88cfde-7587-4f8b-8afb-f3b889799144",
+                "resourcePath": "sprites\\spr_ladyRoll\\spr_ladyRoll.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0c86a70e-9e5a-4468-ae63-8526f0c6f197",
             "Value": {
                 "id": "57fdebb6-1782-4d8e-a78f-88a7addbe404",

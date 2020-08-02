@@ -30,6 +30,8 @@ if (dashing && dashcd == 0){
 	part_particles_create(global.P_System, x, y, global.dash_Particle, 1);
 	dashcd = dashrate;
 	dashed = true;
+	sprite_index=spr_ladyRoll
+	image_index=0
 	instance_create_layer(x,y,"Instances",obj_dashGhost)
 }
 
@@ -192,29 +194,30 @@ if(!dead)
 	else{
 		image_xscale=1;
 	}
-	if (mouse_y < obj_player.y-128){
-		if(hMove==0&&vMove==0){
-			sprite_index = spr_ladyback;
-			image_index=0;
-			image_speed = 0;
-		}else{
-			sprite_index = spr_ladyWB;
-			image_speed = 1;
+	if(sprite_index!=spr_ladyRoll){
+		if (mouse_y < obj_player.y-128){
+			if(hMove==0&&vMove==0){
+				sprite_index = spr_ladyback;
+				image_index=0;
+				image_speed = 0;
+			}else{
+				sprite_index = spr_ladyWB;
+				image_speed = 1;
+			}
+			if (projectile_weapon != pointer_null) projectile_weapon.depth = 100;
 		}
-		if (projectile_weapon != pointer_null) projectile_weapon.depth = 100;
-	}
-	else{
-		if(hMove==0&&vMove==0){
-			sprite_index = spr_lady;
-			image_index=0;
-			image_speed = 0;
-		}else{
-			sprite_index = spr_ladyWF;
-			image_speed = 1;
+		else{
+			if(hMove==0&&vMove==0){
+				sprite_index = spr_lady;
+				image_index=0;
+				image_speed = 0;
+			}else{
+				sprite_index = spr_ladyWF;
+				image_speed = 1;
+			}
+			if (projectile_weapon != pointer_null) projectile_weapon.depth = -100;
 		}
-		if (projectile_weapon != pointer_null) projectile_weapon.depth = -100;
 	}
-
 	// dust effect
 	if ((right || left || up || down)){
 		part_particles_create(global.P_System, x, y, global.dust_Particle, 4);
