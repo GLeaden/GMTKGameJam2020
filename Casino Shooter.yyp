@@ -375,6 +375,14 @@
             }
         },
         {
+            "Key": "3f3e3bde-c314-4b17-b970-2c699ea2e448",
+            "Value": {
+                "id": "93c4ed96-3fb0-4d45-9318-eed0754b1f5a",
+                "resourcePath": "fonts\\fnt_retroDeco\\fnt_retroDeco.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "40141301-59f3-4052-8e12-b6cd8ca3b21c",
             "Value": {
                 "id": "3680f531-da33-49b0-8b44-6e45e5cb11a4",
@@ -735,11 +743,27 @@
             }
         },
         {
+            "Key": "7bac4aba-2349-4041-bc77-7b886de7d029",
+            "Value": {
+                "id": "d548fad2-c468-4c1b-9352-933290a1a5ca",
+                "resourcePath": "sprites\\spr_soundOff\\spr_soundOff.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7c6449a5-c356-48b7-b0aa-b6b2cdbd9d6e",
             "Value": {
                 "id": "b8bdcd34-50bb-449d-ae8e-148d034efc23",
                 "resourcePath": "views\\7c6449a5-c356-48b7-b0aa-b6b2cdbd9d6e.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "81206626-67f9-4260-b8cc-cc022cd45ac6",
+            "Value": {
+                "id": "fff93b06-7a0c-4e62-ac94-4cbe80ec59fa",
+                "resourcePath": "objects\\obj_settingsMusic\\obj_settingsMusic.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1023,6 +1047,14 @@
             }
         },
         {
+            "Key": "be58673e-72a0-4ee9-8a27-de84a84f720a",
+            "Value": {
+                "id": "2511b465-197f-4697-99bd-4ae23cd23779",
+                "resourcePath": "sprites\\spr_soundOn\\spr_soundOn.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bf17f029-fafe-4b28-a8de-b0f50f232057",
             "Value": {
                 "id": "daabed65-4fb7-47c6-a432-cc47f6126809",
@@ -1212,14 +1244,6 @@
                 "id": "d658ed62-741d-4aaa-8d11-3cd69a423573",
                 "resourcePath": "sprites\\spr_dust\\spr_dust.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "dafce844-c515-4384-bd1b-3061f5fd5dbe",
-            "Value": {
-                "id": "fe961c3b-3cb7-4b33-8fa1-be4b99c237ac",
-                "resourcePath": "sounds\\snd_lmao\\snd_lmao.yy",
-                "resourceType": "GMSound"
             }
         },
         {

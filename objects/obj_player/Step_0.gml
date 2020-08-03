@@ -171,7 +171,7 @@ while(place_meeting(x,y+vMove,obj_furniture)){
 if(tilePlaceMeeting(x+lengthdir_x(speed, direction),y+lengthdir_y(speed, direction),"Wall")){
 	speed = 0;	
 }
-if(!tilePlaceMeeting(x+hMove,y+vMove,"Wall")&&!dead){
+if(!tilePlaceMeeting(x+hMove,y+vMove,"Wall")&&!dead&&x+hMove>=0&&y+vMove>=0&&!dead&&x+hMove<=room_width&&y+vMove<=room_height){
 	x += hMove;
 	y += vMove;	
 }
@@ -194,7 +194,7 @@ if(!dead)
 	else{
 		image_xscale=1;
 	}
-	if(sprite_index!=spr_ladyRoll){
+	if(sprite_index!=spr_ladyRoll||(hMove==0&&vMove==0)){
 		if (mouse_y < obj_player.y-128){
 			if(hMove==0&&vMove==0){
 				sprite_index = spr_ladyback;
