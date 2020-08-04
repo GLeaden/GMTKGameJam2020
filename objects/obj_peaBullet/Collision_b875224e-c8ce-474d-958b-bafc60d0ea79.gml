@@ -3,7 +3,7 @@
 with(other)
 {
 	if(hp>0){
-		hp -= obj_arBullet.damage;
+		hp -= other.damage;
 		hit = 1;
 		hitstun = 1;
 		sprite_index = spr_cardHurt;
@@ -12,6 +12,8 @@ with(other)
 		scrshake(true,other.damage/5)
 		if(obj_camera.scrShakeCooldown<other.damage*25)obj_camera.scrShakeCooldown=other.damage*25
 		scr_freeze(other.freeze)
+		dmgTxt = instance_create_layer(x,y-16,"guiLayer",obj_damageText)
+		dmgTxt.str = other.damage
 	}
 }
 

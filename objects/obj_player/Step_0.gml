@@ -223,3 +223,8 @@ if(!dead)
 		part_particles_create(global.P_System, x, y, global.dust_Particle, 4);
 	}
 }
+
+if(restartTimer>0)restartTimer--
+if (keyboard_check(ord("R"))&&restartTimer<=0){
+	room = title;
+}

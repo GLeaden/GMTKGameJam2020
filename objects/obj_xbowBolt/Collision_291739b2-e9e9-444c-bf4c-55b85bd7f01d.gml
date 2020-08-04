@@ -11,5 +11,7 @@ if(dmg!=0&&other.hp>0){
 		scrshake(true,other.damage/5)
 		if(obj_camera.scrShakeCooldown<other.damage)obj_camera.scrShakeCooldown=other.damage
 		scr_freeze(other.freeze)
+		dmgTxt = instance_create_layer(x,y-16,"guiLayer",obj_damageText)
+		dmgTxt.str = other.damage
 	}	
 }

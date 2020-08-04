@@ -10,5 +10,10 @@ with(other)
 		scrshake(true,other.damage/5)
 		if(obj_camera.scrShakeCooldown<other.damage*25)obj_camera.scrShakeCooldown=other.damage*25
 		scr_freeze(obj_laserBeam.freeze)
+		if(random_range(1,5)==1){
+			audio_play_sound(snd_hit,10,false)
+			dmgTxt = instance_create_layer(x,y-16,"guiLayer",obj_damageText)
+			dmgTxt.str = other.damage
+		}
 	}
 }

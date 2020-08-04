@@ -15,3 +15,4 @@ dead = false;
 image_speed = 0;
 
 deathFreeze = 100
+restartTimer = 60

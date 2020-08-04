@@ -25,46 +25,6 @@
             "m_owner": "460e294b-fd57-45f1-afa4-78ab51b0fb37"
         },
         {
-            "id": "c18f01db-5654-4533-ba68-2d721df9c9a9",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "714043db-2acc-47e8-ac0b-6dbc84ab8f79",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "460e294b-fd57-45f1-afa4-78ab51b0fb37"
-        },
-        {
-            "id": "c4d8da60-086c-414f-b746-05b8577d2113",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "6746236c-2907-4f1d-9958-e63ad76739a2",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "460e294b-fd57-45f1-afa4-78ab51b0fb37"
-        },
-        {
-            "id": "03ba04a5-f1ea-426d-8511-937711de93ac",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "3293ff61-6d1e-4a27-bca7-3b035d582471",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "460e294b-fd57-45f1-afa4-78ab51b0fb37"
-        },
-        {
-            "id": "3ac93b18-193f-4637-a2fe-8a3f44e347e0",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "13dfe659-56af-4a5c-8587-5a531a5c0ec1",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "460e294b-fd57-45f1-afa4-78ab51b0fb37"
-        },
-        {
             "id": "f9e9503b-1d23-49cb-9a09-60f685a4f647",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -92,6 +52,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
+            "m_owner": "460e294b-fd57-45f1-afa4-78ab51b0fb37"
+        },
+        {
+            "id": "b875224e-c8ce-474d-958b-bafc60d0ea79",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "c27b1cd1-a2b3-4755-a00a-7467568eeab2",
+            "enumb": 0,
+            "eventtype": 4,
             "m_owner": "460e294b-fd57-45f1-afa4-78ab51b0fb37"
         }
     ],
@@ -166,6 +136,20 @@
             "resourceFilter": 1023,
             "value": "50",
             "varName": "freeze",
+            "varType": 1
+        },
+        {
+            "id": "8a8edcfe-7d8a-4b81-9ef1-4c41b1635f73",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "collisionTimer",
             "varType": 1
         }
     ],

@@ -975,11 +975,27 @@
             }
         },
         {
+            "Key": "ae84561a-4e4c-41ad-8c53-80047f5b88b1",
+            "Value": {
+                "id": "961caf49-6d3d-4a73-b194-640a5ab30c58",
+                "resourcePath": "objects\\obj_damageText\\obj_damageText.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b080dcf5-db85-406f-bdca-7a2de2e6b1fd",
             "Value": {
                 "id": "eca51e12-4a15-46f3-8ee1-c6be0892cd8b",
                 "resourcePath": "objects\\obj_xbow\\obj_xbow.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b084f131-e078-4983-886f-c2b31e6cb2da",
+            "Value": {
+                "id": "14ac7cc2-9f09-4fdb-ae04-0a8bd44f4999",
+                "resourcePath": "fonts\\fnt_retroDecoSmall\\fnt_retroDecoSmall.yy",
+                "resourceType": "GMFont"
             }
         },
         {

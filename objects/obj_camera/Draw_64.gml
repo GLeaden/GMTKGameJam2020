@@ -1,5 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
+draw_set_font(fnt_retroDeco)
+draw_set_halign(fa_left)
+draw_set_valign(fa_top)
 if(instance_exists(obj_debug)) {
 	draw_text(camera_get_view_x(0),camera_get_view_y(0),("Camera X:"+string(camX)+" Y:"+string(camY)));
 }else{
