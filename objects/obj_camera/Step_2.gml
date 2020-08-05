@@ -28,3 +28,9 @@ if(scrShakeCooldown>0){
 }else{
 	scrshake(false,0)
 }
+
+if(!obj_chest.opened){
+	srTimer+=delta_time
+}else{
+	global.srScore=srTimer
+}

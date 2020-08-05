@@ -463,6 +463,14 @@
             }
         },
         {
+            "Key": "4d1658f9-3856-4bf2-bb45-0fc524c5885f",
+            "Value": {
+                "id": "62307d78-699b-447c-85d0-d2ff36482177",
+                "resourcePath": "objects\\obj_highScore\\obj_highScore.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4e8dee5b-2107-4bb5-bb26-19d6f10859ae",
             "Value": {
                 "id": "86ed6c0c-e7fc-41db-8c82-0b63c12711e4",
