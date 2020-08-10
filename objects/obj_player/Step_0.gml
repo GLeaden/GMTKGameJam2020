@@ -32,7 +32,6 @@ if (dashing && dashcd == 0){
 	dashed = true;
 	sprite_index=spr_ladyRoll
 	image_index=0
-	instance_create_layer(x,y,"Instances",obj_dashGhost)
 }
 
 
@@ -178,6 +177,7 @@ if(!tilePlaceMeeting(x+hMove,y+vMove,"Wall")&&!dead&&x+hMove>=0&&y+vMove>=0&&!de
 
 if (dashed) {
 	part_particles_create(global.P_System, x, y, global.dash_Particle, 1);
+	instance_create_layer(x,y,"Instances",obj_dashGhost)
 }
 
 // cooldown management

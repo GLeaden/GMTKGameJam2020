@@ -21,4 +21,4 @@ if(instance_exists(obj_debug)) {
 	}
 }
 draw_set_halign(fa_right)
-draw_text(camera_get_view_x(0)+global.idealWidth,camera_get_view_y(0),srText)
+draw_text(camera_get_view_x(0)+camera_get_view_width(0),camera_get_view_y(0),srText)

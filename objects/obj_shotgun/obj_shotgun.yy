@@ -76,7 +76,7 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "128",
+            "value": "64",
             "varName": "bullet_spread",
             "varType": 0
         },

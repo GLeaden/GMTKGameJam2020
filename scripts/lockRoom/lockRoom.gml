@@ -3,6 +3,8 @@ curCellY=(obj_player.y div global.idealHeight)
 var wallLay_id = layer_get_id("Wall");
 var wallMap_id = layer_tilemap_get_id(wallLay_id);
 global.roomSlotUsed=true
+roomTileW = global.idealWidth/global.tileSize
+roomTileH = global.idealHeight/global.tileSize
 
 if(global.roomLocked=false){
 	global.roomLocked=true
@@ -10,22 +12,22 @@ if(global.roomLocked=false){
 		if(curCellX<3){
 			if(global.gridPath[curCellX+1,curCellY]!="F"&&global.gridPath[curCellX,curCellY]!="S"){
 				if(global.gridPath[curCellX+1,curCellY]=="S"||global.gridPath[curCellX,curCellY]=="F"){
-					doorSpawnX=((global.idealWidth*curCellX)+(global.idealWidth-32))
-					doorSpawnY=((global.idealHeight*curCellY)+(11*32))
+					doorSpawnX=((global.idealWidth*curCellX)+(global.idealWidth-global.tileSize))
+					doorSpawnY=((global.idealHeight*curCellY)+((roomTileH/2-1)*global.tileSize))
 					instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_vDoor)
-					tilemap_set(wallMap_id,8,32+(32*curCellX),12+(24*curCellY))
-					tilemap_set(wallMap_id,8,32+(32*curCellX),13+(24*curCellY))
-					tilemap_set(wallMap_id,8,31+(32*curCellX),12+(24*curCellY))
-					tilemap_set(wallMap_id,8,31+(32*curCellX),13+(24*curCellY))
+					tilemap_set(wallMap_id,8,roomTileW+(roomTileW*curCellX),(roomTileH/2)+((roomTileH)*curCellY))
+					tilemap_set(wallMap_id,8,roomTileW+(roomTileW*curCellX),((roomTileH/2)+1)+((roomTileH)*curCellY))
+					tilemap_set(wallMap_id,8,(roomTileW-1)+(roomTileW*curCellX),(roomTileH/2)+((roomTileH)*curCellY))
+					tilemap_set(wallMap_id,8,(roomTileW-1)+(roomTileW*curCellX),((roomTileH/2)+1)+((roomTileH)*curCellY))
 				}else{
 					if(global.gridPath[curCellX+1,curCellY]<global.gridPath[curCellX,curCellY]){
-						doorSpawnX=((global.idealWidth*curCellX)+(global.idealWidth-32))
-						doorSpawnY=((global.idealHeight*curCellY)+(11*32))
+						doorSpawnX=((global.idealWidth*curCellX)+(global.idealWidth-global.tileSize))
+						doorSpawnY=((global.idealHeight*curCellY)+((roomTileH/2-1)*global.tileSize))
 						instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_vDoor)
-						tilemap_set(wallMap_id,8,32+(32*curCellX),12+(24*curCellY))
-						tilemap_set(wallMap_id,8,32+(32*curCellX),13+(24*curCellY))
-						tilemap_set(wallMap_id,8,31+(32*curCellX),12+(24*curCellY))
-						tilemap_set(wallMap_id,8,31+(32*curCellX),13+(24*curCellY))
+						tilemap_set(wallMap_id,8,roomTileW+(roomTileW*curCellX),(roomTileH/2)+((roomTileH)*curCellY))
+						tilemap_set(wallMap_id,8,roomTileW+(roomTileW*curCellX),((roomTileH/2)+1)+((roomTileH)*curCellY))
+						tilemap_set(wallMap_id,8,(roomTileW-1)+(roomTileW*curCellX),(roomTileH/2)+((roomTileH)*curCellY))
+						tilemap_set(wallMap_id,8,(roomTileW-1)+(roomTileW*curCellX),((roomTileH/2)+1)+((roomTileH)*curCellY))
 					}
 				}
 			}
@@ -35,21 +37,21 @@ if(global.roomLocked=false){
 		if(curCellY<3){
 			if(global.gridPath[curCellX,curCellY+1]!="F"&&global.gridPath[curCellX,curCellY]!="S"){
 				if(global.gridPath[curCellX,curCellY+1]=="S"||global.gridPath[curCellX,curCellY]=="F"){
-					doorSpawnX=((global.idealWidth*curCellX)+(15*32))
-					doorSpawnY=((global.idealHeight*curCellY)+(global.idealHeight-32))
+					doorSpawnX=((global.idealWidth*curCellX)+(((roomTileW/2)-1)*global.tileSize))
+					doorSpawnY=((global.idealHeight*curCellY)+(global.idealHeight-global.tileSize))
 					instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_hDoor)
-					tilemap_set(wallMap_id,8,15+(32*curCellX),23+(24*curCellY))
-					tilemap_set(wallMap_id,8,16+(32*curCellX),23+(24*curCellY))
-					tilemap_set(wallMap_id,8,15+(32*curCellX),24+(24*curCellY))
-					tilemap_set(wallMap_id,8,16+(32*curCellX),24+(24*curCellY))
+					tilemap_set(wallMap_id,8,((roomTileW/2)-1)+(roomTileW*curCellX),(roomTileH-1)+((roomTileH)*curCellY))
+					tilemap_set(wallMap_id,8,(roomTileW/2)+(roomTileW*curCellX),(roomTileH-1)+((roomTileH)*curCellY))
+					tilemap_set(wallMap_id,8,((roomTileW/2)-1)+(roomTileW*curCellX),(roomTileH)+((roomTileH)*curCellY))
+					tilemap_set(wallMap_id,8,(roomTileW/2)+(roomTileW*curCellX),(roomTileH)+((roomTileH)*curCellY))
 				}else{
 					if(global.gridPath[curCellX,curCellY+1]<global.gridPath[curCellX,curCellY]){
-						doorSpawnX=((global.idealWidth*curCellX)+(15*32))
-						doorSpawnY=((global.idealHeight*curCellY)+(global.idealHeight-32))
-						tilemap_set(wallMap_id,8,15+(32*curCellX),23+(24*curCellY))
-						tilemap_set(wallMap_id,8,16+(32*curCellX),23+(24*curCellY))
-						tilemap_set(wallMap_id,8,15+(32*curCellX),24+(24*curCellY))
-						tilemap_set(wallMap_id,8,16+(32*curCellX),24+(24*curCellY))
+						doorSpawnX=((global.idealWidth*curCellX)+(((roomTileW/2)-1)*global.tileSize))
+						doorSpawnY=((global.idealHeight*curCellY)+(global.idealHeight-global.tileSize))
+						tilemap_set(wallMap_id,8,((roomTileW/2)-1)+(roomTileW*curCellX),(roomTileH-1)+((roomTileH)*curCellY))
+						tilemap_set(wallMap_id,8,(roomTileW/2)+(roomTileW*curCellX),(roomTileH-1)+((roomTileH)*curCellY))
+						tilemap_set(wallMap_id,8,((roomTileW/2)-1)+(roomTileW*curCellX),(roomTileH)+((roomTileH)*curCellY))
+						tilemap_set(wallMap_id,8,(roomTileW/2)+(roomTileW*curCellX),(roomTileH)+((roomTileH)*curCellY))
 						instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_hDoor)
 					}
 				}
@@ -61,21 +63,21 @@ if(global.roomLocked=false){
 			if(global.gridPath[curCellX-1,curCellY]!="F"&&global.gridPath[curCellX,curCellY]!="S"){
 				if(global.gridPath[curCellX-1,curCellY]=="S"||global.gridPath[curCellX,curCellY]=="F"){
 					doorSpawnX=((global.idealWidth*curCellX))
-					doorSpawnY=((global.idealHeight*curCellY)+(11*32))
+					doorSpawnY=((global.idealHeight*curCellY)+((roomTileH/2-1)*global.tileSize))
 					instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_vDoor)
-					tilemap_set(wallMap_id,8,(32*curCellX),12+(24*curCellY))
-					tilemap_set(wallMap_id,8,(32*curCellX),13+(24*curCellY))
-					tilemap_set(wallMap_id,8,(32*curCellX)-1,12+(24*curCellY))
-					tilemap_set(wallMap_id,8,(32*curCellX)-1,13+(24*curCellY))
+					tilemap_set(wallMap_id,8,(roomTileW*curCellX),(roomTileH/2)+((roomTileH)*curCellY))
+					tilemap_set(wallMap_id,8,(roomTileW*curCellX),((roomTileH/2)+1)+((roomTileH)*curCellY))
+					tilemap_set(wallMap_id,8,(roomTileW*curCellX)-1,(roomTileH/2)+((roomTileH)*curCellY))
+					tilemap_set(wallMap_id,8,(roomTileW*curCellX)-1,((roomTileH/2)+1)+((roomTileH)*curCellY))
 				}else{
 					if(global.gridPath[curCellX-1,curCellY]<global.gridPath[curCellX,curCellY]){
 						doorSpawnX=((global.idealWidth*curCellX))
-						doorSpawnY=((global.idealHeight*curCellY)+(11*32))
+						doorSpawnY=((global.idealHeight*curCellY)+((roomTileH/2-1)*global.tileSize))
 						instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_vDoor)
-						tilemap_set(wallMap_id,8,(32*curCellX),12+(24*curCellY))
-						tilemap_set(wallMap_id,8,(32*curCellX),13+(24*curCellY))
-						tilemap_set(wallMap_id,8,(32*curCellX)-1,12+(24*curCellY))
-						tilemap_set(wallMap_id,8,(32*curCellX)-1,13+(24*curCellY))
+						tilemap_set(wallMap_id,8,(roomTileW*curCellX),(roomTileH/2)+((roomTileH)*curCellY))
+						tilemap_set(wallMap_id,8,(roomTileW*curCellX),((roomTileH/2)+1)+((roomTileH)*curCellY))
+						tilemap_set(wallMap_id,8,(roomTileW*curCellX)-1,(roomTileH/2)+((roomTileH)*curCellY))
+						tilemap_set(wallMap_id,8,(roomTileW*curCellX)-1,((roomTileH/2)+1)+((roomTileH)*curCellY))
 					}
 				}
 			}
@@ -85,22 +87,22 @@ if(global.roomLocked=false){
 		if(curCellY>0){
 			if(global.gridPath[curCellX,curCellY-1]!="F"&&global.gridPath[curCellX,curCellY]!="S"){
 				if(global.gridPath[curCellX,curCellY-1]=="S"||global.gridPath[curCellX,curCellY]=="F"){
-					doorSpawnX=((global.idealWidth*curCellX)+(15*32))
-					doorSpawnY=((global.idealHeight*curCellY)+(32))
+					doorSpawnX=((global.idealWidth*curCellX)+(((roomTileW/2)-1)*global.tileSize))
+					doorSpawnY=((global.idealHeight*curCellY)+(global.tileSize))
 					instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_hDoor)
-					tilemap_set(wallMap_id,8,15+(32*curCellX),1+(24*curCellY))
-					tilemap_set(wallMap_id,8,16+(32*curCellX),1+(24*curCellY))
-					tilemap_set(wallMap_id,8,15+(32*curCellX),(24*curCellY))
-					tilemap_set(wallMap_id,8,16+(32*curCellX),(24*curCellY))
+					tilemap_set(wallMap_id,8,((roomTileW/2)-1)+(roomTileW*curCellX),1+((roomTileH)*curCellY))
+					tilemap_set(wallMap_id,8,(roomTileW/2)+(roomTileW*curCellX),1+((roomTileH)*curCellY))
+					tilemap_set(wallMap_id,8,((roomTileW/2)-1)+(roomTileW*curCellX),((roomTileH)*curCellY))
+					tilemap_set(wallMap_id,8,(roomTileW/2)+(roomTileW*curCellX),((roomTileH)*curCellY))
 				}else{
 					if(global.gridPath[curCellX,curCellY-1]<global.gridPath[curCellX,curCellY]){
-						doorSpawnX=((global.idealWidth*curCellX)+(15*32))
-						doorSpawnY=((global.idealHeight*curCellY)+(32))
+						doorSpawnX=((global.idealWidth*curCellX)+(((roomTileW/2)-1)*global.tileSize))
+						doorSpawnY=((global.idealHeight*curCellY)+(global.tileSize))
 						instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_hDoor)
-						tilemap_set(wallMap_id,8,15+(32*curCellX),1+(24*curCellY))
-						tilemap_set(wallMap_id,8,16+(32*curCellX),1+(24*curCellY))
-						tilemap_set(wallMap_id,8,15+(32*curCellX),(24*curCellY))
-						tilemap_set(wallMap_id,8,16+(32*curCellX),(24*curCellY))
+						tilemap_set(wallMap_id,8,((roomTileW/2)-1)+(roomTileW*curCellX),1+((roomTileH)*curCellY))
+						tilemap_set(wallMap_id,8,(roomTileW/2)+(roomTileW*curCellX),1+((roomTileH)*curCellY))
+						tilemap_set(wallMap_id,8,((roomTileW/2)-1)+(roomTileW*curCellX),((roomTileH)*curCellY))
+						tilemap_set(wallMap_id,8,(roomTileW/2)+(roomTileW*curCellX),((roomTileH)*curCellY))
 					}
 				}
 			}

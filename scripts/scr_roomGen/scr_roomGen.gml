@@ -119,6 +119,8 @@ var wallLay_id = layer_get_id("Wall");
 var floorLay_id = layer_get_id("Floor");
 var wallMap_id = layer_tilemap_get_id(wallLay_id);
 var floorMap_id = layer_tilemap_get_id(floorLay_id);
+roomTileW = global.idealWidth/global.tileSize
+roomTileH = global.idealHeight/global.tileSize
 //Go room by room, creating rooms.
 for(var i=0;i<global.roomSq;i++){
 	for(var j=0;j<global.roomSq;j++){
@@ -128,17 +130,17 @@ for(var i=0;i<global.roomSq;i++){
 			case "X":
 			break
 			case "S":
-			  for(var k=1;k<31;k++){
-				for(var l=2;l<23;l++){
+			  for(var k=1;k<roomTileW-1;k++){
+				for(var l=2;l<roomTileH-1;l++){
 					mapGridRooms[i,j].rmLayout[k,l]="O"
 				}
 			  }
 			  playSpawnX=((global.idealWidth*(i))+(global.idealWidth*.5))
-			  instance_create_layer(playSpawnX,96,"Instances",obj_player)
+			  instance_create_layer(playSpawnX,(3*global.tileSize),"Instances",obj_player)
 			break
 			case "F":
-			  for(var k=1;k<31;k++){
-				for(var l=2;l<23;l++){
+			  for(var k=1;k<roomTileW-1;k++){
+				for(var l=2;l<roomTileH-1;l++){
 					mapGridRooms[i,j].rmLayout[k,l]="O"
 				}
 			  }
@@ -147,8 +149,8 @@ for(var i=0;i<global.roomSq;i++){
 			  instance_create_layer(chestSpawnX,chestSpawnY,"Instances",obj_chest)
 			break
 			default:
-			  for(var k=1;k<31;k++){
-				for(var l=2;l<23;l++){
+			  for(var k=1;k<roomTileW-1;k++){
+				for(var l=2;l<roomTileH-1;l++){
 					mapGridRooms[i,j].rmLayout[k,l]="O"
 				}
 			  }
@@ -156,21 +158,21 @@ for(var i=0;i<global.roomSq;i++){
 		}
 		//open door paths
 		if(mapGridRooms[i,j].doorRight){
-			mapGridRooms[i,j].rmLayout[31,12]="O"
-			mapGridRooms[i,j].rmLayout[31,13]="O"
+			mapGridRooms[i,j].rmLayout[roomTileW-1,(roomTileH/2)]="O"
+			mapGridRooms[i,j].rmLayout[roomTileW-1,((roomTileH/2)+1)]="O"
 			if(i<3){
 				if(mapGridPath[i+1,j]!="F"&&mapGridPath[i,j]!="S"){
 					if(mapGridPath[i+1,j]=="S"||mapGridPath[i,j]=="F"){
 						if(mapGridPath[i,j]!="F"){
-							slotSpawnX=((global.idealWidth*(i))+(global.idealWidth-96))
-							slotSpawnY=((global.idealHeight*(j))+(11*32))
+							slotSpawnX=((global.idealWidth*(i))+(global.idealWidth-(3*global.tileSize)))
+							slotSpawnY=((global.idealHeight*(j))+(((roomTileH/2)-1)*global.tileSize))
 							instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
 						}else{		
 						}
 					}else{
 						if(mapGridPath[i+1,j]<mapGridPath[i,j]){
-							slotSpawnX=((global.idealWidth*(i))+(global.idealWidth-96))
-							slotSpawnY=((global.idealHeight*(j))+(11*32))
+							slotSpawnX=((global.idealWidth*(i))+(global.idealWidth-(3*global.tileSize)))
+							slotSpawnY=((global.idealHeight*(j))+(((roomTileH/2)-1)*global.tileSize))
 							instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
 						}
 					}
@@ -179,44 +181,44 @@ for(var i=0;i<global.roomSq;i++){
 				if(mapGridPath[i+1,j]!="S"&&mapGridPath[i,j]!="F"){
 					if(mapGridPath[i+1,j]=="F"||mapGridPath[i,j]=="S"){
 						if(mapGridPath[i+1,j]=="F"){
-							doorSpawnX=((global.idealWidth*i)+(global.idealWidth-32))
-							doorSpawnY=((global.idealHeight*j)+(11*32))
+							doorSpawnX=((global.idealWidth*i)+(global.idealWidth-global.tileSize))
+							doorSpawnY=((global.idealHeight*j)+(((roomTileH/2)-1)*global.tileSize))
 							instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_vDoor)
-							tilemap_set(wallMap_id,8,32+(32*i),12+(24*j))
-							tilemap_set(wallMap_id,8,32+(32*i),13+(24*j))
-							tilemap_set(wallMap_id,8,31+(32*i),12+(24*j))
-							tilemap_set(wallMap_id,8,31+(32*i),13+(24*j))
+							tilemap_set(wallMap_id,8,roomTileW+(roomTileW*i),(roomTileH/2)+(roomTileH*j))
+							tilemap_set(wallMap_id,8,roomTileW+(roomTileW*i),((roomTileH/2)+1)+(roomTileH*j))
+							tilemap_set(wallMap_id,8,roomTileW-1+(roomTileW*i),(roomTileH/2)+(roomTileH*j))
+							tilemap_set(wallMap_id,8,roomTileW-1+(roomTileW*i),((roomTileH/2)+1)+(roomTileH*j))
 						}
 					}else{
 						if(mapGridPath[i+1,j]>mapGridPath[i,j]){
-							doorSpawnX=((global.idealWidth*i)+(global.idealWidth-32))
-							doorSpawnY=((global.idealHeight*j)+(11*32))
+							doorSpawnX=((global.idealWidth*i)+(global.idealWidth-global.tileSize))
+							doorSpawnY=((global.idealHeight*j)+(((roomTileH/2)-1)*global.tileSize))
 							instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_vDoor)
-							tilemap_set(wallMap_id,8,32+(32*i),12+(24*j))
-							tilemap_set(wallMap_id,8,32+(32*i),13+(24*j))
-							tilemap_set(wallMap_id,8,31+(32*i),12+(24*j))
-							tilemap_set(wallMap_id,8,31+(32*i),13+(24*j))
+							tilemap_set(wallMap_id,8,roomTileW+(roomTileW*i),(roomTileH/2)+(roomTileH*j))
+							tilemap_set(wallMap_id,8,roomTileW+(roomTileW*i),((roomTileH/2)+1)+(roomTileH*j))
+							tilemap_set(wallMap_id,8,roomTileW-1+(roomTileW*i),(roomTileH/2)+(roomTileH*j))
+							tilemap_set(wallMap_id,8,roomTileW-1+(roomTileW*i),((roomTileH/2)+1)+(roomTileH*j))
 						}
 					}
 				}
 			}
 		}
 		if(mapGridRooms[i,j].doorBottom){
-			mapGridRooms[i,j].rmLayout[15,23]="O"
-			mapGridRooms[i,j].rmLayout[16,23]="O"
+			mapGridRooms[i,j].rmLayout[(roomTileW/2)-1,roomTileH-1]="O"
+			mapGridRooms[i,j].rmLayout[(roomTileW/2),roomTileH-1]="O"
 			if(j<3){
 				if(mapGridPath[i,j+1]!="F"&&mapGridPath[i,j]!="S"){
 					if(mapGridPath[i,j+1]=="S"||mapGridPath[i,j]=="F"){
 						if(mapGridPath[i,j]!="F"){
-							slotSpawnX=((global.idealWidth*(i))+(14*32))
-							slotSpawnY=((global.idealHeight*(j))+(global.idealHeight-96))
+							slotSpawnX=((global.idealWidth*(i))+(((roomTileW/2)-2)*global.tileSize))
+							slotSpawnY=((global.idealHeight*(j))+(global.idealHeight-(3*global.tileSize)))
 							instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
 						}else{		
 						}
 					}else{
 						if(mapGridPath[i,j+1]<mapGridPath[i,j]){
-							slotSpawnX=((global.idealWidth*(i))+(14*32))
-							slotSpawnY=((global.idealHeight*(j))+(global.idealHeight-96))
+							slotSpawnX=((global.idealWidth*(i))+(((roomTileW/2)-2)*global.tileSize))
+							slotSpawnY=((global.idealHeight*(j))+(global.idealHeight-(3*global.tileSize)))
 							instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
 						}
 					}
@@ -225,44 +227,44 @@ for(var i=0;i<global.roomSq;i++){
 				if(mapGridPath[i,j+1]!="S"&&mapGridPath[i,j]!="F"){
 					if(mapGridPath[i,j+1]=="F"||mapGridPath[i,j]=="S"){
 						if(mapGridPath[i,j+1]=="F"){
-							doorSpawnX=((global.idealWidth*i)+(15*32))
-							doorSpawnY=((global.idealHeight*j)+(global.idealHeight-32))
+							doorSpawnX=((global.idealWidth*i)+(((roomTileW/2)-1)*global.tileSize))
+							doorSpawnY=((global.idealHeight*j)+(global.idealHeight-global.tileSize))
 							instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_hDoor)
-							tilemap_set(wallMap_id,8,15+(32*i),23+(24*j))
-							tilemap_set(wallMap_id,8,16+(32*i),23+(24*j))
-							tilemap_set(wallMap_id,8,15+(32*i),24+(24*j))
-							tilemap_set(wallMap_id,8,16+(32*i),24+(24*j))
+							tilemap_set(wallMap_id,8,((roomTileW/2)-1)+(roomTileW*i),roomTileH-1+(roomTileH*j))
+							tilemap_set(wallMap_id,8,(roomTileW/2)+(roomTileW*i),roomTileH-1+(roomTileH*j))
+							tilemap_set(wallMap_id,8,((roomTileW/2)-1)+(roomTileW*i),roomTileH+(roomTileH*j))
+							tilemap_set(wallMap_id,8,(roomTileW/2)+(roomTileW*i),roomTileH+(roomTileH*j))
 						}
 					}else{
 						if(mapGridPath[i,j+1]>mapGridPath[i,j]){
-							doorSpawnX=((global.idealWidth*i)+(15*32))
-							doorSpawnY=((global.idealHeight*j)+(global.idealHeight-32))
+							doorSpawnX=((global.idealWidth*i)+(((roomTileW/2)-1)*global.tileSize))
+							doorSpawnY=((global.idealHeight*j)+(global.idealHeight-global.tileSize))
 							instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_hDoor)
-							tilemap_set(wallMap_id,8,15+(32*i),23+(24*j))
-							tilemap_set(wallMap_id,8,16+(32*i),23+(24*j))
-							tilemap_set(wallMap_id,8,15+(32*i),24+(24*j))
-							tilemap_set(wallMap_id,8,16+(32*i),24+(24*j))
+							tilemap_set(wallMap_id,8,((roomTileW/2)-1)+(roomTileW*i),roomTileH-1+(roomTileH*j))
+							tilemap_set(wallMap_id,8,(roomTileW/2)+(roomTileW*i),roomTileH-1+(roomTileH*j))
+							tilemap_set(wallMap_id,8,((roomTileW/2)-1)+(roomTileW*i),roomTileH+(roomTileH*j))
+							tilemap_set(wallMap_id,8,(roomTileW/2)+(roomTileW*i),roomTileH+(roomTileH*j))
 						}
 					}
 				}
 			}
 		}
 		if(mapGridRooms[i,j].doorLeft){
-			mapGridRooms[i,j].rmLayout[0,12]="O"
-			mapGridRooms[i,j].rmLayout[0,13]="O"
+			mapGridRooms[i,j].rmLayout[0,(roomTileH/2)]="O"
+			mapGridRooms[i,j].rmLayout[0,((roomTileH/2)+1)]="O"
 			if(i>0){
 				if(mapGridPath[i-1,j]!="F"&&mapGridPath[i,j]!="S"){
 					if(mapGridPath[i-1,j]=="S"||mapGridPath[i,j]=="F"){
 						if(mapGridPath[i,j]!="F"){
-							slotSpawnX=((global.idealWidth*(i))+64)
-							slotSpawnY=((global.idealHeight*(j))+(11*32))
+							slotSpawnX=((global.idealWidth*(i))+(2*global.tileSize))
+							slotSpawnY=((global.idealHeight*(j))+(((roomTileH/2)-1)*global.tileSize))
 							instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
 						}else{		
 						}
 					}else{
 						if(mapGridPath[i-1,j]<mapGridPath[i,j]){
-							slotSpawnX=((global.idealWidth*(i))+64)
-							slotSpawnY=((global.idealHeight*(j))+(11*32))
+							slotSpawnX=((global.idealWidth*(i))+(2*global.tileSize))
+							slotSpawnY=((global.idealHeight*(j))+(((roomTileH/2)-1)*global.tileSize))
 							instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
 						}
 					}
@@ -273,44 +275,44 @@ for(var i=0;i<global.roomSq;i++){
 					if(mapGridPath[i-1,j]=="F"||mapGridPath[i,j]=="S"){
 						if(mapGridPath[i-1,j]=="F"){
 							doorSpawnX=((global.idealWidth*i))
-							doorSpawnY=((global.idealHeight*j)+(11*32))
+							doorSpawnY=((global.idealHeight*j)+(((roomTileH/2)-1)*global.tileSize))
 							instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_vDoor)
-							tilemap_set(wallMap_id,8,(32*i),12+(24*j))
-							tilemap_set(wallMap_id,8,(32*i),13+(24*j))
-							tilemap_set(wallMap_id,8,(32*i)-1,12+(24*j))
-							tilemap_set(wallMap_id,8,(32*i)-1,13+(24*j))
+							tilemap_set(wallMap_id,8,(roomTileW*i),(roomTileH/2)+(roomTileH*j))
+							tilemap_set(wallMap_id,8,(roomTileW*i),((roomTileH/2)+1)+(roomTileH*j))
+							tilemap_set(wallMap_id,8,(roomTileW*i)-1,(roomTileH/2)+(roomTileH*j))
+							tilemap_set(wallMap_id,8,(roomTileW*i)-1,((roomTileH/2)+1)+(roomTileH*j))
 						}
 					}else{
 						if(mapGridPath[i-1,j]>mapGridPath[i,j]){
 						doorSpawnX=((global.idealWidth*i))
-						doorSpawnY=((global.idealHeight*j)+(11*32))
+						doorSpawnY=((global.idealHeight*j)+(((roomTileH/2)-1)*global.tileSize))
 						instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_vDoor)
-						tilemap_set(wallMap_id,8,(32*i),12+(24*j))
-						tilemap_set(wallMap_id,8,(32*i),13+(24*j))
-						tilemap_set(wallMap_id,8,(32*i)-1,12+(24*j))
-						tilemap_set(wallMap_id,8,(32*i)-1,13+(24*j))
+						tilemap_set(wallMap_id,8,(roomTileW*i),(roomTileH/2)+(roomTileH*j))
+						tilemap_set(wallMap_id,8,(roomTileW*i),((roomTileH/2)+1)+(roomTileH*j))
+						tilemap_set(wallMap_id,8,(roomTileW*i)-1,(roomTileH/2)+(roomTileH*j))
+						tilemap_set(wallMap_id,8,(roomTileW*i)-1,((roomTileH/2)+1)+(roomTileH*j))
 						}
 					}
 				}
 		}
 		if(mapGridRooms[i,j].doorTop){
-			mapGridRooms[i,j].rmLayout[15,0]="O"
-			mapGridRooms[i,j].rmLayout[16,0]="O"
-			mapGridRooms[i,j].rmLayout[15,1]="O"
-			mapGridRooms[i,j].rmLayout[16,1]="O"
+			mapGridRooms[i,j].rmLayout[((roomTileW/2)-1),0]="O"
+			mapGridRooms[i,j].rmLayout[(roomTileW/2),0]="O"
+			mapGridRooms[i,j].rmLayout[((roomTileW/2)-1),1]="O"
+			mapGridRooms[i,j].rmLayout[(roomTileW/2),1]="O"
 			if(j>0){
 				if(mapGridPath[i,j-1]!="F"&&mapGridPath[i,j]!="S"){
 					if(mapGridPath[i,j-1]=="S"||mapGridPath[i,j]=="F"){
 						if(mapGridPath[i,j]!="F"){
-							slotSpawnX=((global.idealWidth*(i))+(14*32))
-							slotSpawnY=((global.idealHeight*(j))+(96))
+							slotSpawnX=((global.idealWidth*(i))+(((roomTileW/2)-2)*global.tileSize))
+							slotSpawnY=((global.idealHeight*(j))+(3*global.tileSize))
 							instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
 						}else{	
 						}
 					}else{
 						if(mapGridPath[i,j-1]<mapGridPath[i,j]){
-							slotSpawnX=((global.idealWidth*(i))+(14*32))
-							slotSpawnY=((global.idealHeight*(j))+(96))
+							slotSpawnX=((global.idealWidth*(i))+(((roomTileW/2)-2)*global.tileSize))
+							slotSpawnY=((global.idealHeight*(j))+(3*global.tileSize))
 							instance_create_layer(slotSpawnX,slotSpawnY,"Instances",obj_slotMachine)
 						}
 					}
@@ -320,56 +322,56 @@ for(var i=0;i<global.roomSq;i++){
 				if(mapGridPath[i,j-1]!="S"&&mapGridPath[i,j]!="F"){
 					if(mapGridPath[i,j-1]=="F"||mapGridPath[i,j]=="S"){
 						if(mapGridPath[i,j-1]=="F"){
-							doorSpawnX=((global.idealWidth*i)+(15*32))
-							doorSpawnY=((global.idealHeight*j)+(32))
+							doorSpawnX=((global.idealWidth*i)+(((roomTileW/2)-1)*global.tileSize))
+							doorSpawnY=((global.idealHeight*j)+(global.tileSize))
 							instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_hDoor)
-							tilemap_set(wallMap_id,8,15+(32*i),1+(24*j))
-							tilemap_set(wallMap_id,8,16+(32*i),1+(24*j))
-							tilemap_set(wallMap_id,8,15+(32*i),(24*j))
-							tilemap_set(wallMap_id,8,16+(32*i),(24*j))
+							tilemap_set(wallMap_id,8,((roomTileW/2)-1)+(roomTileW*i),1+(roomTileH*j))
+							tilemap_set(wallMap_id,8,(roomTileW/2)+(roomTileW*i),1+(roomTileH*j))
+							tilemap_set(wallMap_id,8,((roomTileW/2)-1)+(roomTileW*i),(roomTileH*j))
+							tilemap_set(wallMap_id,8,(roomTileW/2)+(roomTileW*i),(roomTileH*j))
 						}
 					}else{
 						if(mapGridPath[i,j-1]>mapGridPath[i,j]){
-							doorSpawnX=((global.idealWidth*i)+(15*32))
-							doorSpawnY=((global.idealHeight*j)+(32))
+							doorSpawnX=((global.idealWidth*i)+(((roomTileW/2)-1)*global.tileSize))
+							doorSpawnY=((global.idealHeight*j)+(global.tileSize))
 							instance_create_layer(doorSpawnX,doorSpawnY,"Instances",obj_hDoor)
-							tilemap_set(wallMap_id,8,15+(32*i),1+(24*j))
-							tilemap_set(wallMap_id,8,16+(32*i),1+(24*j))
-							tilemap_set(wallMap_id,8,15+(32*i),(24*j))
-							tilemap_set(wallMap_id,8,16+(32*i),(24*j))
+							tilemap_set(wallMap_id,8,((roomTileW/2)-1)+(roomTileW*i),1+(roomTileH*j))
+							tilemap_set(wallMap_id,8,(roomTileW/2)+(roomTileW*i),1+(roomTileH*j))
+							tilemap_set(wallMap_id,8,((roomTileW/2)-1)+(roomTileW*i),(roomTileH*j))
+							tilemap_set(wallMap_id,8,(roomTileW/2)+(roomTileW*i),(roomTileH*j))
 						}
 					}
 				}
 		}
 		//layout tiles
-		for(var m=0;m<32;m++){
-			for(var n=0;n<24;n++){
+		for(var m=0;m<roomTileW;m++){
+			for(var n=0;n<roomTileH;n++){
 				switch(mapGridRooms[i,j].rmLayout[m,n]){
 				case "O":
 					switch(rmColor){
 					case 0:
-					  tilemap_set(floorMap_id,11,m+(32*i),n+(24*j))
+					  tilemap_set(floorMap_id,11,m+(roomTileW*i),n+(roomTileH*j))
 					break
 					case 1:
-					  tilemap_set(floorMap_id,14,m+(32*i),n+(24*j))
+					  tilemap_set(floorMap_id,14,m+(roomTileW*i),n+(roomTileH*j))
 					break
 					case 2:
-					  tilemap_set(floorMap_id,35,m+(32*i),n+(24*j))
+					  tilemap_set(floorMap_id,35,m+(roomTileW*i),n+(roomTileH*j))
 					break
 					case 3:
-					  tilemap_set(floorMap_id,38,m+(32*i),n+(24*j))
+					  tilemap_set(floorMap_id,38,m+(roomTileW*i),n+(roomTileH*j))
 					break
 					}
 				break
 				default:
-					if(n<23){
+					if(n<roomTileH-1){
 						if(mapGridRooms[i,j].rmLayout[m,n+1]=="O"){
-							tilemap_set(wallMap_id,24,m+(32*i),n+(24*j))
+							tilemap_set(wallMap_id,24,m+(roomTileW*i),n+(roomTileH*j))
 						}else{
-							tilemap_set(wallMap_id,8,m+(32*i),n+(24*j))
+							tilemap_set(wallMap_id,8,m+(roomTileW*i),n+(roomTileH*j))
 						}
 					}else{
-						tilemap_set(wallMap_id,8,m+(32*i),n+(24*j))
+						tilemap_set(wallMap_id,8,m+(roomTileW*i),n+(roomTileH*j))
 					}
 				break
 				}
