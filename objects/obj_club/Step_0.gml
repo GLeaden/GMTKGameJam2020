@@ -118,6 +118,7 @@ if(hp>0&&(sprite_index!=spr_cardBE&&sprite_index!=spr_clubE)){
 }
 if (hp <= 0&&(sprite_index!=spr_cardBE&&sprite_index!=spr_clubE)){
 	image_index=1
+	speed=0
 	if(obj_player.y<y-128){
 		sprite_index=spr_cardBE
 	}else{

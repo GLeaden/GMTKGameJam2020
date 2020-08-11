@@ -150,7 +150,21 @@ if (speed>0){
 		speed--
 	}
 }
+//check anything in between x,y and x+hmove and y+vmove
+tempHMove = 0
+tempVMove = 0
 
+while(!tilePlaceMeeting(x+tempHMove,y+tempVMove,"Wall")&&point_distance(tempHMove,tempVMove,hMove,vMove)>8){
+	show_debug_message(string(tempHMove)+","+string(tempVMove))
+	tempHMove = lerp(tempHMove,hMove,.1)
+	tempVMove = lerp(tempVMove,vMove,.1)
+	draw_text(x+tempHMove,y+tempVMove,"x")
+}
+
+if(tempHMove>0)hMove = tempHMove
+if(tempVMove>0)vMove = tempVMove
+
+//end weird collision check, i think this should stop dashing through doors
 
 while(tilePlaceMeeting(x+hMove,y,"Wall")&&hMove!=0){
 	hMove=lerp(hMove,0,.1)

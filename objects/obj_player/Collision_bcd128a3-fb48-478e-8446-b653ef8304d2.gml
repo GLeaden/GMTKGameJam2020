@@ -9,4 +9,5 @@ if(sprite_index!=spr_ladyRoll){
 	dead = true;
 	sprite_index = spr_die;
 	image_speed = 1;
+	speed=0
 }

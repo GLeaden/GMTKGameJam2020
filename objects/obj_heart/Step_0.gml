@@ -60,6 +60,7 @@ if(hp>0&&(sprite_index!=spr_cardBE&&sprite_index!=spr_heartE)){
 				y += vMove;	
 			}
 		}
+		depth=0
 		if(obj_player.y<y-128){
 			if(hMove!=0||vMove!=0){
 				sprite_index=spr_cardBW
@@ -105,6 +106,7 @@ if (hp <= 0&&(sprite_index!=spr_cardBE&&sprite_index!=spr_heartE)){
 	if(gunInst!=pointer_null)instance_destroy(instance_nearest(x, y, obj_enemyGun));
 	spawnTime=0;
 	gunInst=pointer_null
+	speed=0
 	image_index=1
 	if(obj_player.y<y-128){
 		sprite_index=spr_cardBE
