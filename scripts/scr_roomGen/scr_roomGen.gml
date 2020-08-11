@@ -1,5 +1,6 @@
 //room generation by ya boi ian
-
+room_width=global.idealWidth*global.roomSq
+room_height=global.idealHeight*global.roomSq
 //room layouts
 
 var mapGridPath

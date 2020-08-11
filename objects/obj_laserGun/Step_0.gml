@@ -21,4 +21,7 @@ if (ownedByPlayer){
 		audio_stop_sound(noise);
 		audio_play_sound(gunshot,10,false);
 	}
+	if(obj_player.sprite_index==spr_die){
+		visible=false
+	}
 }

@@ -11,4 +11,7 @@ if (ownedByPlayer){
   else{
 	  image_yscale=1;
   }
+  if(obj_player.sprite_index==spr_die){
+	visible=false
+  }
 }
