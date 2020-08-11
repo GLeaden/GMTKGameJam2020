@@ -5,5 +5,5 @@
 	}
 
 if(tilePlaceMeeting(x,y,"Wall")){
-	instance_destroy()
+	//instance_destroy()
 }
